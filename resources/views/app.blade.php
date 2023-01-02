@@ -4,11 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title inertia>{{ config('app.name', 'GRUPO ATOS') }}</title>
-
         <title>GRUPO ATOS</title>
-        <link rel="icon" href="/images/impotractor/impotractor-only-logo.png">
-        <link rel="stylesheet" href="/images/impotractor/impotractor-only-logo.png">
+        <link rel="icon" href="/assets/Logos/logo.png">
+        <link rel="stylesheet" href="/assets/Logos/logo.png">
 
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap">
