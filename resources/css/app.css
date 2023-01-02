@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.max-w-app{
+    @apply max-w-7xl mx-auto py-2 px-4;
+}
