@@ -37,7 +37,7 @@
                             <li>
                                 <a
                                     class="inline-block text-lg	no-underline py-2 px-4 hover:text-yellow-400"
-                                    href="/#Values"
+                                    href="/#about"
                                     >¿Qué hacemos?</a
                                 >
                             </li>
@@ -94,7 +94,7 @@
                     <a class="inline-block no-underline hover:text-yellow-400">
                         <a
                             class="inline-block text-lg	no-underline py-2 px-4 hover:text-yellow-400"
-                            href="/#Values"
+                            href="/#about"
                             >¿Qué hacemos?</a
                         >
                     </a>

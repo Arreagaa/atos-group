@@ -21,10 +21,12 @@ import AHero from "./AHero.vue";
             <ABagTitleHistory id="history" />
             <div class="bg-[url('/assets/2-historia/FondoHistoria.png')]">
                 <AHistory />
-                <ABagTitleProducts />
-                <AProducts id="products" />
+                <div id="products">
+                    <ABagTitleProducts />
+                    <AProducts />
+                </div>
             </div>
-            <div class="products pt-16">
+            <div id="about" class="products pt-16">
                 <div class="text-yellow-500 uppercase text-center mt-20 mb-8">
                     <h1 class="title-video font-bold lg:text-5xl text-4xl">
                         Esto es lo
