@@ -67,7 +67,7 @@ export default {
                         </div>
                     </div>
 
-                    <div class="lg:hidden px-4 ml-2 w-full lg:w-2/5">
+                    <div class="lg:hidden px-4 ml-6 w-full lg:w-2/5">
                         <div
                             class="mx-auto mb-8 max-w-lg text-center lg:mx-0 lg:max-w-md lg:text-left"
                         >
@@ -144,7 +144,7 @@ export default {
                         </div>
                     </div>
 
-                    <div class="lg:hidden px-4 ml-2 w-full lg:w-2/5">
+                    <div class="lg:hidden px-4 ml-6 w-full lg:w-2/5">
                         <div
                             class="mx-auto mb-8 max-w-lg text-center lg:mx-0 lg:max-w-md lg:text-left"
                         >
@@ -221,7 +221,7 @@ export default {
                         </div>
                     </div>
 
-                    <div class="lg:hidden px-4 ml-2 w-full lg:w-2/5">
+                    <div class="lg:hidden px-4 ml-6 w-full lg:w-2/5">
                         <div
                             class="mx-auto mb-8 max-w-lg text-center lg:mx-0 lg:max-w-md lg:text-left"
                         >

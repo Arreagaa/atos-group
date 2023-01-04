@@ -1,10 +1,10 @@
 <template>
     <div class="container max-w-5xl mx-auto m-8">
-        <div>
+        <div class="flex flex-col items-center -mt-32">
             <img
                 src="/assets/2-historia/Icon-certification.png"
                 alt="image"
-                class="rounded mx-auto d-block"
+                class="mx-auto d-block border-4 border-white rounded-full bg-white"
             />
         </div>
         <br />

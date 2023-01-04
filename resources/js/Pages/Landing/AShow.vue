@@ -10,7 +10,7 @@ import AProducts from "./AProducts.vue";
 import AHero from "./AHero.vue";
 </script>
 <template>
-    <section id="Welcome" class="bg-[url('/assets/1-Principal/Principal.png')]">
+    <section id="Welcome" class="bg-[url('/assets/1-Principal/Principal.png')] bg-cover">
         <div>
             <AppHeader />
             <AHero />
