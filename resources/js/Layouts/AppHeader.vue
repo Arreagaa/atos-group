@@ -4,7 +4,7 @@
             <div
                 class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-6 py-3"
             >
-                <label for="menu-toggle" class="cursor-pointer md:hidden block">
+                <label for="menu-toggle" class="absolute top-6 right-4 cursor-pointer md:hidden block">
                     <svg
                         class="fill-current text-white"
                         xmlns="http://www.w3.org/2000/svg"
@@ -29,35 +29,35 @@
                         >
                             <li>
                                 <a
-                                    class="inline-block no-underline py-2 px-4 hover:text-yellow-200"
-                                    href="/#About"
+                                    class="inline-block text-lg	no-underline py-2 px-4 hover:text-yellow-400"
+                                    href="/#history"
                                     >¿Quiénes Somos?</a
                                 >
                             </li>
                             <li>
                                 <a
-                                    class="inline-block no-underline py-2 px-4 hover:text-yellow-200"
+                                    class="inline-block text-lg	no-underline py-2 px-4 hover:text-yellow-400"
                                     href="/#Values"
                                     >¿Qué hacemos?</a
                                 >
                             </li>
                             <li>
                                 <a
-                                    class="inline-block no-underline py-2 px-4 hover:text-yellow-200"
-                                    href="/#Products"
+                                    class="inline-block text-lg	no-underline py-2 px-4 hover:text-yellow-400"
+                                    href="/#products"
                                     >Productos</a
                                 >
                             </li>
                             <li>
                                 <a
-                                    class="inline-block no-underline py-2 px-4 hover:text-yellow-200"
+                                    class="inline-block text-lg	no-underline py-2 px-4 hover:text-yellow-400"
                                     href="/#Contact"
                                     >Media</a
                                 >
                             </li>
                             <li>
                                 <a
-                                    class="inline-block no-underline py-2 px-4 hover:text-yellow-200"
+                                    class="inline-block text-lg	no-underline py-2 px-4 hover:text-yellow-400"
                                     href="/#Contact"
                                     >Contáctanos</a
                                 >
@@ -83,41 +83,41 @@
                     class="order-2 md:order-3 flex items-center lg:block hidden"
                     id="nav-content"
                 >
-                    <a class="inline-block no-underline hover:text-yellow-200">
+                    <a class="inline-block no-underline hover:text-yellow-400">
                         <a
-                            class="inline-block no-underline py-2 px-4 hover:text-yellow-200"
-                            href="/#About"
+                            class="inline-block text-lg	no-underline py-2 px-4 hover:text-yellow-400"
+                            href="/#history"
                             >¿Quiénes Somos?</a
                         >
                     </a>
 
-                    <a class="inline-block no-underline hover:text-yellow-200">
+                    <a class="inline-block no-underline hover:text-yellow-400">
                         <a
-                            class="inline-block no-underline py-2 px-4 hover:text-yellow-200"
+                            class="inline-block text-lg	no-underline py-2 px-4 hover:text-yellow-400"
                             href="/#Values"
                             >¿Qué hacemos?</a
                         >
                     </a>
 
-                    <a class="inline-block no-underline hover:text-yellow-200">
+                    <a class="inline-block no-underline hover:text-yellow-400">
                         <a
-                            class="inline-block no-underline py-2 px-4 hover:text-yellow-200"
-                            href="/#Products"
+                            class="inline-block text-lg	no-underline py-2 px-4 hover:text-yellow-400"
+                            href="/#products"
                             >Productos</a
                         >
                     </a>
 
-                    <a class="inline-block no-underline hover:text-yellow-200">
+                    <a class="inline-block no-underline hover:text-yellow-400">
                         <a
-                            class="inline-block no-underline py-2 px-4 hover:text-yellow-200"
+                            class="inline-block text-lg	no-underline py-2 px-4 hover:text-yellow-400"
                             href="/#Contact"
                             >Media
                         </a>
                     </a>
 
-                    <a class="inline-block no-underline hover:text-yellow-200">
+                    <a class="inline-block no-underline hover:text-yellow-400">
                         <a
-                            class="inline-block no-underline py-2 px-4 hover:text-yellow-200"
+                            class="inline-block text-lg	no-underline py-2 px-4 hover:text-yellow-400"
                             href="/#Contact"
                             >Contáctanos
                         </a>

@@ -1,36 +1,83 @@
 <template>
-    <div class="hero bg-transparent">
-        <section>
-            <div class="text-white py-20">
-                <div
-                    class="container mx-auto flex flex-col md:flex-row items-center my-12 md:my-24"
-                >
-                    <div
-                        class="flex flex-col w-full lg:w-1/3 justify-center items-start p-8"
-                    >
-                        <h1
-                            class="text-3xl md:text-5xl p-2 text-yellow-300 tracking-loose"
+    <section id="hero">
+        <div class="hero-container">
+            <path d="M51,267 C243,25 254,26 459,283" />
+            <div id="heroCarousel" class="carousel slide carousel-fade">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div
+                            class="lg:block hidden carousel-container absolute top-40 left-52"
                         >
-                            TechFest
-                        </h1>
-                        <h2
-                            class="text-3xl md:text-5xl leading-relaxed md:leading-snug mb-2"
+                            <section
+                                class="flex flex-wrap items-center -mx-6 px-4 py-4 mx-auto w-full lg:max-w-screen-lg sm:max-w-screen-sm md:max-w-screen-md"
+                            >
+                                <div class="flex px-3 w-full">
+                                    <div
+                                        class="text-yellow-500 mx-auto mb-8 max-w-lg text-center lg:mx-0 lg:max-w-md lg:text-left"
+                                    >
+                                        <h2
+                                            class="atos mb-4 font-semibold text-left lg:text-8xl"
+                                        >
+                                            Excelencia agrícola desde 1933
+                                        </h2>
+
+                                        <p
+                                            class="visible mx-0 mt-3 mb-0 text-xl leading-relaxed text-left text-slate-200"
+                                        >
+                                            450 hectáreas con producción de
+                                            banano de la variedad Gran Enano.
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+
+                        <div
+                            class="lg:hidden carousel-container absolute top-40 left-4"
                         >
-                            Space : The Timeless Infinity
-                        </h2>
-                        <p class="text-sm md:text-base text-gray-50 mb-4">
-                            Explore your favourite events and register now to
-                            showcase your talent and win exciting prizes.
-                        </p>
-                        <a
-                            href="#"
-                            class="bg-transparent hover:bg-yellow-300 text-yellow-300 hover:text-black rounded shadow hover:shadow-lg py-2 px-4 border border-yellow-300 hover:border-transparent"
-                        >
-                            Explore Now</a
-                        >
+                            <section
+                                class="flex flex-wrap items-center -mx-3 px-4 mx-auto w-full lg:max-w-screen-lg sm:max-w-screen-sm md:max-w-screen-md"
+                            >
+                                <div class="flex px-3 w-full lg:w-2/5">
+                                    <div
+                                        class="text-yellow-500 mx-auto mb-8 max-w-lg text-center lg:mx-0 lg:max-w-md lg:text-left"
+                                    >
+                                        <h2
+                                            class="atos mb-4 text-7xl font-semibold text-left"
+                                        >
+                                            Excelencia agrícola desde 1933
+                                        </h2>
+
+                                        <p
+                                            class="visible mx-0 mt-3 mb-0 text-xl leading-relaxed text-left text-slate-200"
+                                        >
+                                            450 hectáreas con producción de
+                                            banano de la variedad Gran Enano.
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 </template>
+
+<style>
+.atos {
+    font-family: Outfit-Black;
+}
+#hero {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+@media (max-height: 500px) {
+    #hero {
+        height: 150vh;
+    }
+}
+</style>
