@@ -3,7 +3,7 @@
         class="cards-products max-w-app grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-6 mt-20 -m-16 uppercase"
     >
         <div
-            class="w-full bg-white p-12 flex flex-col justify-center items-center"
+            class="w-full bg-white p-12 flex flex-col justify-center items-center hover:translate-x-1 hover:-translate-y-1 delay-50 duration-100"
         >
             <div class="mb-8">
                 <img
@@ -17,7 +17,7 @@
             </div>
         </div>
         <div
-            class="w-full bg-white p-12 flex flex-col justify-center items-center"
+            class="w-full bg-white p-12 flex flex-col justify-center items-center hover:translate-x-1 hover:-translate-y-1 delay-50 duration-100"
         >
             <div class="mb-8">
                 <img
@@ -31,7 +31,7 @@
             </div>
         </div>
         <div
-            class="w-full bg-white p-12 flex flex-col justify-center items-center"
+            class="w-full bg-white p-12 flex flex-col justify-center items-center hover:translate-x-1 hover:-translate-y-1 delay-50 duration-100"
         >
             <div class="mb-8">
                 <img
@@ -45,7 +45,7 @@
             </div>
         </div>
         <div
-            class="w-full bg-white p-12 flex flex-col justify-center items-center"
+            class="w-full bg-white p-12 flex flex-col justify-center items-center hover:translate-x-1 hover:-translate-y-1 delay-50 duration-100"
         >
             <div class="mb-8">
                 <img
@@ -59,7 +59,7 @@
             </div>
         </div>
         <div
-            class="w-full bg-white p-12 flex flex-col justify-center items-center"
+            class="w-full bg-white p-12 flex flex-col justify-center items-center hover:translate-x-1 hover:-translate-y-1 delay-50 duration-100"
         >
             <div class="mb-8">
                 <img

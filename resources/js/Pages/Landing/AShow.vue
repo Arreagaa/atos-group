@@ -2,6 +2,8 @@
 import AppHeader from "../../Layouts/AppHeader.vue";
 import ABagTitleHistory from "./utils/ABagTitleHistory.vue";
 import ABagTitleProducts from "./utils/ABagTitleProducts.vue";
+import AInformation from "./utils/AInformation.vue";
+import ACta from "./utils/ACta.vue";
 import AVideo from "./AVideo.vue";
 import AHistory from "./AHistory.vue";
 import AProducts from "./AProducts.vue";
@@ -43,6 +45,11 @@ import AHero from "./AHero.vue";
     <section>
         <div class="relative">
             <br />
+            <AInformation />
+            <br />
+            <ACta />
+            <br />
+            <br />
         </div>
     </section>
 </template>
@@ -52,7 +59,10 @@ import AHero from "./AHero.vue";
     font-family: Outfit-Black;
     src: url("../../../../public/assets/Font/Outfit-Black.ttf");
 }
-#welcome,
+@font-face {
+    font-family: Outfit-Regular;
+    src: url("../../../../public/assets/Font/Outfit-Regular.ttf");
+}
 .title-video {
     font-family: Outfit-Black;
 }
