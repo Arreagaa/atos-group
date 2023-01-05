@@ -34,7 +34,7 @@ import AHero from "./AHero.vue";
                 </div>
             </div>
             <div id="about" class="products pt-16">
-                <div class="text-yellow-500 uppercase text-center mt-20 mb-8">
+                <div class="text-amber-300 uppercase text-center mt-20 mb-8">
                     <h1 class="title-video font-bold lg:text-5xl text-4xl">
                         Esto es lo
                     </h1>

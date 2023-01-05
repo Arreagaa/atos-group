@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-transparent max-w-fill text-white font-bold">
+    <div class="bg-transparent max-w-fill text-zinc-900 font-bold">
         <nav id="header" class="w-full z-30 top-0 py-1">
             <div
                 class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-6 py-3"
@@ -32,35 +32,35 @@
                         >
                             <li>
                                 <a
-                                    class="inline-block text-lg no-underline py-2 px-4 hover:text-yellow-500"
+                                    class="inline-block text-lg no-underline py-2 px-4 hover:text-amber-300"
                                     href="/#history"
                                     >¿Quiénes Somos?</a
                                 >
                             </li>
                             <li>
                                 <a
-                                    class="inline-block text-lg no-underline py-2 px-4 hover:text-yellow-500"
+                                    class="inline-block text-lg no-underline py-2 px-4 hover:text-amber-300"
                                     href="/#about"
                                     >¿Qué hacemos?</a
                                 >
                             </li>
                             <li>
                                 <a
-                                    class="inline-block text-lg no-underline py-2 px-4 hover:text-yellow-500"
+                                    class="inline-block text-lg no-underline py-2 px-4 hover:text-amber-300"
                                     href="/#products"
                                     >Productos</a
                                 >
                             </li>
                             <li>
                                 <a
-                                    class="inline-block text-lg no-underline py-2 px-4 hover:text-yellow-500"
+                                    class="inline-block text-lg no-underline py-2 px-4 hover:text-amber-300"
                                     href="/#media"
                                     >Media</a
                                 >
                             </li>
                             <li>
                                 <a
-                                    class="inline-block text-lg no-underline py-2 px-4 hover:text-yellow-500"
+                                    class="inline-block text-lg no-underline py-2 px-4 hover:text-amber-300"
                                     href="/#Contact"
                                     >Contáctanos</a
                                 >
@@ -86,41 +86,41 @@
                     class="order-2 md:order-3 flex items-center lg:block hidden"
                     id="nav-content"
                 >
-                    <a class="inline-block no-underline hover:text-zinc-900">
+                    <a class="inline-block no-underline">
                         <a
-                            class="inline-block text-lg no-underline py-2 px-4 hover:text-zinc-900"
+                            class="inline-block text-lg no-underline py-2 px-4 hover:text-white"
                             href="/#history"
                             >¿Quiénes Somos?</a
                         >
                     </a>
 
-                    <a class="inline-block no-underline hover:text-zinc-900">
+                    <a class="inline-block no-underline">
                         <a
-                            class="inline-block text-lg no-underline py-2 px-4 hover:text-zinc-900"
+                            class="inline-block text-lg no-underline py-2 px-4 hover:text-white"
                             href="/#about"
                             >¿Qué hacemos?</a
                         >
                     </a>
 
-                    <a class="inline-block no-underline hover:text-zinc-900">
+                    <a class="inline-block no-underline">
                         <a
-                            class="inline-block text-lg no-underline py-2 px-4 hover:text-zinc-900"
+                            class="inline-block text-lg no-underline py-2 px-4 hover:text-white"
                             href="/#products"
                             >Productos</a
                         >
                     </a>
 
-                    <a class="inline-block no-underline hover:text-zinc-900">
+                    <a class="inline-block no-underline">
                         <a
-                            class="inline-block text-lg no-underline py-2 px-4 hover:text-zinc-900"
+                            class="inline-block text-lg no-underline py-2 px-4 hover:text-white"
                             href="/#media"
                             >Media
                         </a>
                     </a>
 
-                    <a class="inline-block no-underline hover:text-zinc-900">
+                    <a class="inline-block no-underline">
                         <a
-                            class="inline-block text-lg no-underline py-2 px-4 hover:text-zinc-900"
+                            class="inline-block text-lg no-underline py-2 px-4 hover:text-white"
                             href="/#Contact"
                             >Contáctanos
                         </a>

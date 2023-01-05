@@ -45,13 +45,13 @@ export default {
                             </h2>
 
                             <h2
-                                class="box mb-4 text-7xl font-bold text-left text-yellow-500"
+                                class="box mb-4 text-7xl font-bold text-left text-amber-300"
                             >
                                 1,632,000
                             </h2>
 
                             <h2
-                                class="box mb-4 text-2xl font-bold text-left text-yellow-500"
+                                class="box mb-4 text-2xl font-bold text-left text-amber-300"
                             >
                                 Cajas por año.
                             </h2>
@@ -78,13 +78,13 @@ export default {
                             </h2>
 
                             <h2
-                                class="box mb-4 text-7xl font-bold text-left text-yellow-500"
+                                class="box mb-4 text-7xl font-bold text-left text-amber-300"
                             >
                                 1,632,000
                             </h2>
 
                             <h2
-                                class="box mb-4 text-2xl font-bold text-left text-yellow-500"
+                                class="box mb-4 text-2xl font-bold text-left text-amber-300"
                             >
                                 Cajas por año.
                             </h2>
@@ -122,13 +122,13 @@ export default {
                             </h2>
 
                             <h2
-                                class="box mb-4 text-7xl font-bold text-left text-yellow-500"
+                                class="box mb-4 text-7xl font-bold text-left text-amber-300"
                             >
                                 1,632,000
                             </h2>
 
                             <h2
-                                class="box mb-4 text-2xl font-bold text-left text-yellow-500"
+                                class="box mb-4 text-2xl font-bold text-left text-amber-300"
                             >
                                 Cajas por año.
                             </h2>
@@ -155,13 +155,13 @@ export default {
                             </h2>
 
                             <h2
-                                class="box mb-4 text-7xl font-bold text-left text-yellow-500"
+                                class="box mb-4 text-7xl font-bold text-left text-amber-300"
                             >
                                 1,632,000
                             </h2>
 
                             <h2
-                                class="box mb-4 text-2xl font-bold text-left text-yellow-500"
+                                class="box mb-4 text-2xl font-bold text-left text-amber-300"
                             >
                                 Cajas por año.
                             </h2>
@@ -199,13 +199,13 @@ export default {
                             </h2>
 
                             <h2
-                                class="box mb-4 text-7xl font-bold text-left text-yellow-500"
+                                class="box mb-4 text-7xl font-bold text-left text-amber-300"
                             >
                                 1,632,000
                             </h2>
 
                             <h2
-                                class="box mb-4 text-2xl font-bold text-left text-yellow-500"
+                                class="box mb-4 text-2xl font-bold text-left text-amber-300"
                             >
                                 Cajas por año.
                             </h2>
@@ -232,13 +232,13 @@ export default {
                             </h2>
 
                             <h2
-                                class="box mb-4 text-7xl font-bold text-left text-yellow-500"
+                                class="box mb-4 text-7xl font-bold text-left text-amber-300"
                             >
                                 1,632,000
                             </h2>
 
                             <h2
-                                class="box mb-4 text-2xl font-bold text-left text-yellow-500"
+                                class="box mb-4 text-2xl font-bold text-left text-amber-300"
                             >
                                 Cajas por año.
                             </h2>

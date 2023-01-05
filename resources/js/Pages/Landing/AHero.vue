@@ -13,7 +13,7 @@
                             >
                                 <div class="flex px-3 w-full">
                                     <div
-                                        class="text-yellow-500 mx-auto mb-8 max-w-lg text-center lg:mx-0 lg:max-w-md lg:text-left"
+                                        class="text-amber-300 mx-auto mb-8 max-w-lg text-center lg:mx-0 lg:max-w-md lg:text-left"
                                     >
                                         <h2
                                             class="atos mb-4 font-semibold text-left lg:text-8xl"
@@ -40,7 +40,7 @@
                             >
                                 <div class="flex px-3 w-full lg:w-2/5">
                                     <div
-                                        class="text-yellow-500 mx-auto mb-8 max-w-lg text-center lg:mx-0 lg:max-w-md lg:text-left"
+                                        class="text-amber-300 mx-auto mb-8 max-w-lg text-center lg:mx-0 lg:max-w-md lg:text-left"
                                     >
                                         <h2
                                             class="atos mb-4 text-7xl font-semibold text-left"
