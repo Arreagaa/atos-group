@@ -2,7 +2,9 @@
 import AppHeader from "../../Layouts/AppHeader.vue";
 import ABagTitleHistory from "./utils/ABagTitleHistory.vue";
 import ABagTitleProducts from "./utils/ABagTitleProducts.vue";
+import ABagTitleGallery from "./utils/ABagTitleGallery.vue";
 import AInformation from "./utils/AInformation.vue";
+import AGallery from "./AGallery.vue";
 import ACta from "./utils/ACta.vue";
 import AVideo from "./AVideo.vue";
 import AHistory from "./AHistory.vue";
@@ -10,7 +12,10 @@ import AProducts from "./AProducts.vue";
 import AHero from "./AHero.vue";
 </script>
 <template>
-    <section id="Welcome" class="bg-[url('/assets/1-Principal/Principal.png')] bg-cover">
+    <section
+        id="Welcome"
+        class="bg-[url('/assets/1-Principal/Principal.png')] bg-cover"
+    >
         <div>
             <AppHeader />
             <AHero />
@@ -49,7 +54,13 @@ import AHero from "./AHero.vue";
             <br />
             <ACta />
             <br />
-            <br />
+        </div>
+    </section>
+
+    <section id="media">
+        <div class="relative">
+            <ABagTitleGallery />
+            <AGallery />
         </div>
     </section>
 </template>

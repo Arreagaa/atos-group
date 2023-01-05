@@ -54,7 +54,7 @@
                             <li>
                                 <a
                                     class="inline-block text-lg no-underline py-2 px-4 hover:text-yellow-500"
-                                    href="/#Contact"
+                                    href="/#media"
                                     >Media</a
                                 >
                             </li>
@@ -113,7 +113,7 @@
                     <a class="inline-block no-underline hover:text-zinc-900">
                         <a
                             class="inline-block text-lg no-underline py-2 px-4 hover:text-zinc-900"
-                            href="/#Contact"
+                            href="/#media"
                             >Media
                         </a>
                     </a>
