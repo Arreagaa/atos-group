@@ -7,7 +7,7 @@
         >
             <div class="mb-8">
                 <img
-                    class="object-center object-cover h-36 w-36"
+                    class="object-center object-cover"
                     src="/assets/3-Productos/Icon-Algodon.png"
                     alt="photo"
                 />
@@ -21,7 +21,7 @@
         >
             <div class="mb-8">
                 <img
-                    class="object-center object-cover h-36 w-36"
+                    class="object-center object-cover"
                     src="/assets/3-Productos/Icon-Platano.png"
                     alt="photo"
                 />
@@ -35,7 +35,7 @@
         >
             <div class="mb-8">
                 <img
-                    class="object-center object-cover h-36 w-36"
+                    class="object-center object-cover"
                     src="/assets/3-Productos/Icon-Pimiento.png"
                     alt="photo"
                 />
@@ -49,7 +49,7 @@
         >
             <div class="mb-8">
                 <img
-                    class="object-center object-cover h-36 w-36"
+                    class="object-center object-cover"
                     src="/assets/3-Productos/Icon-Tomate.png"
                     alt="photo"
                 />
@@ -63,7 +63,7 @@
         >
             <div class="mb-8">
                 <img
-                    class="object-center object-cover h-36 w-36"
+                    class="object-center object-cover"
                     src="/assets/3-Productos/Icon-Banano.png"
                     alt="photo"
                 />
