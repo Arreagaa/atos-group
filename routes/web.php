@@ -2,7 +2,9 @@
 
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactController;
 use Inertia\Inertia;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -37,3 +39,5 @@ use Inertia\Inertia;
 Route::get('/', function () {
     return Inertia::render('Landing/AShow');
 })->name('landing');
+
+Route::post('/contact', ContactController::class)->name('contact');
