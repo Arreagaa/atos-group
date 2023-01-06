@@ -10,8 +10,9 @@
                     />
                     <div class="icons mt-6 lg:mb-0 mb-6">
                         <a
-                            class="inline-flex tracking-wide no-underline hover:no-underline font-bold text-gray-800"
+                            class="inline-flex tracking-wide no-underline hover:no-underline"
                             href="/"
+                            target="_blank"
                         >
                             <img
                                 src="/assets/SocialMedia/Icon-FB.png"
@@ -20,8 +21,9 @@
                             />
                         </a>
                         <a
-                            class="inline-flex tracking-wide no-underline hover:no-underline font-bold text-gray-800"
+                            class="inline-flex tracking-wide no-underline hover:no-underline"
                             href="/"
+                            target="_blank"
                         >
                             <img
                                 src="/assets/SocialMedia/Icon-IG.png"
@@ -30,8 +32,9 @@
                             />
                         </a>
                         <a
-                            class="inline-flex tracking-wide no-underline hover:no-underline font-bold text-gray-800"
+                            class="inline-flex tracking-wide no-underline hover:no-underline"
                             href="/"
+                            target="_blank"
                         >
                             <img
                                 src="/assets/SocialMedia/Icon-YTB.png"
@@ -52,28 +55,28 @@
                                 <li>
                                     <a
                                         class="text-white hover:text-amber-300 font-semibold block pb-2 text-sm"
-                                        href="https://www.creative-tim.com/presentation?ref=njs-profile"
+                                        href="/#history"
                                         >History</a
                                     >
                                 </li>
                                 <li>
                                     <a
                                         class="text-white hover:text-amber-300 font-semibold block pb-2 text-sm"
-                                        href="https://blog.creative-tim.com?ref=njs-profile"
-                                        >Aboout</a
+                                        href="/#about"
+                                        >About</a
                                     >
                                 </li>
                                 <li>
                                     <a
                                         class="text-white hover:text-amber-300 font-semibold block pb-2 text-sm"
-                                        href="https://www.github.com/creativetimofficial?ref=njs-profile"
+                                        href="/#products"
                                         >Products</a
                                     >
                                 </li>
                                 <li>
                                     <a
                                         class="text-white hover:text-amber-300 font-semibold block pb-2 text-sm"
-                                        href="https://www.creative-tim.com/bootstrap-themes/free?ref=njs-profile"
+                                        href="/#media"
                                         >Media</a
                                     >
                                 </li>
@@ -88,28 +91,31 @@
                                 <li>
                                     <a
                                         class="text-white hover:text-amber-300 font-semibold block pb-2 text-sm"
-                                        href="https://github.com/creativetimofficial/notus-js/blob/main/LICENSE.md?ref=njs-profile"
+                                        href="https://policies.google.com/privacy?hl=es"
+                                        target="_blank"
                                         >Privacy Policy</a
                                     >
                                 </li>
                                 <li>
                                     <a
                                         class="text-white hover:text-amber-300 font-semibold block pb-2 text-sm"
-                                        href="https://creative-tim.com/privacy?ref=njs-profile"
+                                        href="/"
                                         >Website Access</a
                                     >
                                 </li>
                                 <li>
                                     <a
                                         class="text-white hover:text-amber-300 font-semibold block pb-2 text-sm"
-                                        href="https://creative-tim.com/contact-us?ref=njs-profile"
+                                        href="/"
+                                        target="_blank"
                                         >Site Map</a
                                     >
                                 </li>
                                 <li>
                                     <a
                                         class="text-white hover:text-amber-300 font-semibold block pb-2 text-sm"
-                                        href="https://creative-tim.com/terms?ref=njs-profile"
+                                        href="https://policies.google.com/privacy?hl=es"
+                                        target="_blank"
                                         >Usage Terms &amp; Conditions</a
                                     >
                                 </li>

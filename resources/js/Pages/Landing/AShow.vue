@@ -13,6 +13,7 @@ import ACta from "./utils/ACta.vue";
 import AVideo from "./AVideo.vue";
 import AHistory from "./AHistory.vue";
 import AProducts from "./AProducts.vue";
+import ABack from "./utils/ABack.vue";
 import AHero from "./AHero.vue";
 </script>
 <template>
@@ -67,12 +68,10 @@ import AHero from "./AHero.vue";
         <div class="relative">
             <ABagTitleGallery />
             <AGallery />
-            <br />
         </div>
     </section>
 
     <section id="contact">
-        <br />
         <div
             class="relative bg-[url('/assets/5-contacto/contacto.png')] bg-cover"
         >
@@ -84,6 +83,7 @@ import AHero from "./AHero.vue";
     </section>
     <section>
         <AppFooter />
+        <ABack />
     </section>
 </template>
 
