@@ -61,6 +61,7 @@ export default {
     height: 45px;
     opacity: 0;
     visibility: hidden;
+    border-radius: 50%;
     font-size: 22px;
     transition: 0.6s;
     overflow: hidden;
