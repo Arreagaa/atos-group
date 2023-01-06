@@ -6,6 +6,7 @@ import ABagTitleHistory from "./utils/ABagTitleHistory.vue";
 import ABagTitleProducts from "./utils/ABagTitleProducts.vue";
 import ABagTitleGallery from "./utils/ABagTitleGallery.vue";
 import AInformation from "./utils/AInformation.vue";
+import AWidget from "./utils/AWidget.vue";
 /* COMPONENTES */
 import AContact from "./AContact.vue";
 import AGallery from "./AGallery.vue";
@@ -84,6 +85,7 @@ import AHero from "./AHero.vue";
     <section>
         <AppFooter />
         <ABack />
+        <AWidget />
     </section>
 </template>
 

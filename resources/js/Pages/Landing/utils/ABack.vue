@@ -15,7 +15,7 @@ export default {
         const that = this;
         window.addEventListener("scroll", () => {
             let scrollPos = window.scrollY;
-            if (scrollPos >= 100) {
+            if (scrollPos >= 5000) {
                 that.isTop = true;
             } else {
                 that.isTop = false;
@@ -28,15 +28,15 @@ export default {
     <div
         @click="scrollToTop()"
         :class="['back-to-top-btn', { 'go-top': isTop }]"
+        class="rounded-full z-50"
     >
         <i
             ><svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
-                viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="w-6 h-6 d-inline align-center ml-2"
+                class="ml-2.5"
             >
                 <path
                     stroke-linecap="round"
@@ -54,41 +54,29 @@ export default {
     bottom: -100px;
     right: 20px;
     color: #ffffff;
-    background-color: #feb302;
-    z-index: 4;
+    background-color: rgb(252 211 77);
     width: 45px;
-    text-align: center;
     height: 45px;
     opacity: 0;
     visibility: hidden;
-    border-radius: 50%;
-    font-size: 22px;
     transition: 0.6s;
     overflow: hidden;
 }
 
 i {
     position: relative;
-    right: 0;
-    left: 0;
-    top: 45%;
-    transform: translateY(-45%);
-    align-items: center;
-    text-align: center;
-    font-size: 30px;
-    margin-left: auto;
-    margin-right: auto;
+    top: 25%;
 }
 .go-top {
     opacity: 1;
     visibility: visible;
-    bottom: 50px;
+    bottom: 95px;
+    margin-right: 5px;
 }
 :hover {
-    background-color: #feb302;
+    background-color: #000;
     color: #ffffff;
     transition: 0.6s;
-    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
-    transform: translateY(-5px);
+    transform: translateY(-2px);
 }
 </style>
