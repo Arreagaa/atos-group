@@ -1,9 +1,13 @@
 <script setup>
 import AppHeader from "../../Layouts/AppHeader.vue";
+import AppFooter from "../../Layouts/AppFooter.vue";
+/* TITLE */
 import ABagTitleHistory from "./utils/ABagTitleHistory.vue";
 import ABagTitleProducts from "./utils/ABagTitleProducts.vue";
 import ABagTitleGallery from "./utils/ABagTitleGallery.vue";
 import AInformation from "./utils/AInformation.vue";
+/* COMPONENTES */
+import AContact from "./AContact.vue";
 import AGallery from "./AGallery.vue";
 import ACta from "./utils/ACta.vue";
 import AVideo from "./AVideo.vue";
@@ -26,7 +30,9 @@ import AHero from "./AHero.vue";
         <div class="relative">
             <br />
             <ABagTitleHistory id="history" />
-            <div class="bg-[url('/assets/2-historia/FondoHistoria.png')]">
+            <div
+                class="bg-[url('/assets/2-historia/FondoHistoria.png')] bg-cover"
+            >
                 <AHistory />
                 <div id="products">
                     <ABagTitleProducts />
@@ -61,7 +67,23 @@ import AHero from "./AHero.vue";
         <div class="relative">
             <ABagTitleGallery />
             <AGallery />
+            <br />
         </div>
+    </section>
+
+    <section id="contact">
+        <br />
+        <div
+            class="relative bg-[url('/assets/5-contacto/contacto.png')] bg-cover"
+        >
+            <br />
+            <AContact />
+            <br />
+            <br />
+        </div>
+    </section>
+    <section>
+        <AppFooter />
     </section>
 </template>
 
