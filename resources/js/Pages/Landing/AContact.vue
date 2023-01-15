@@ -46,7 +46,7 @@ const submit = () => {
                     <input
                         v-if="form.errors.name"
                         v-model="form.name"
-                        class="appearance-none block w-full bg-grey-lighter text-grey-darker border-2 rounded py-3 px-4 mb-3 focus-danger focus-form"
+                        class="appearance-none block w-full bg-grey-lighter text-grey-darker border-2 rounded-lg py-3 px-4 mb-3 focus-danger focus-form"
                         id="name"
                         type="text"
                         placeholder="Nombre y Apellido *"
@@ -64,7 +64,7 @@ const submit = () => {
                     <input
                         v-if="form.errors.phone"
                         v-model="form.phone"
-                        class="appearance-none block w-full bg-grey-lighter text-grey-darker border-2 rounded py-3 px-4 mb-3 focus-danger focus-form"
+                        class="appearance-none block w-full bg-grey-lighter text-grey-darker border-2 rounded-lg py-3 px-4 mb-3 focus-danger focus-form"
                         id="phone"
                         type="phone"
                         placeholder="Teléfono *"
@@ -84,7 +84,7 @@ const submit = () => {
                     <input
                         v-if="form.errors.email"
                         v-model="form.email"
-                        class="appearance-none block w-full bg-grey-lighter text-grey-darker border-2 rounded py-3 px-4 mb-3 focus-danger focus-form"
+                        class="appearance-none block w-full bg-grey-lighter text-grey-darker border-2 rounded-lg py-3 px-4 mb-3 focus-danger focus-form"
                         id="email"
                         type="email"
                         placeholder="Correo Electrónico *"
@@ -104,7 +104,7 @@ const submit = () => {
                     <textarea
                         v-if="form.errors.body"
                         v-model="form.body"
-                        class="appearance-none block w-full bg-grey-lighter text-grey-darker border-2 rounded py-3 px-4 mb-3 focus-danger focus-form"
+                        class="appearance-none block w-full bg-grey-lighter text-grey-darker border-2 rounded-lg py-3 px-4 mb-3 focus-danger focus-form"
                         id="message"
                         type="text"
                         placeholder="Mensaje *"
