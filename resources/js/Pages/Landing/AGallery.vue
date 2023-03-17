@@ -1,7 +1,7 @@
 <template>
     <body>
         <section>
-            <div class="container max-w-app mb-32">
+            <div class="container max-w-app">
                 <div class="img-container-grid">
                     <div class="img-space">
                         <img

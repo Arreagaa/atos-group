@@ -4,7 +4,7 @@
             class="container mx-auto flex justify-center items-center px-4 md:px-10 pb-10"
         >
             <div
-                class="text-history bg-transparent text-2xl text-black font-normal px-3 md:px-4 py-2 flex flex-col justify-center items-center"
+                class="lightFont text-history bg-transparent text-2xl text-black font-normal px-3 md:px-4 py-2 flex flex-col justify-center items-center"
             >
                 <p class="mt-10 leading-normal text-center md:w-9/12 lg:w-7/12">
                     Somos una empresa familiar que desde 1945 nos hemos dedicado
@@ -80,12 +80,3 @@
         </div>
     </div>
 </template>
-<style>
-@font-face {
-    font-family: Outfit-Light;
-    src: url("../../../../public/assets/Font/Outfit-Light.ttf");
-}
-.text-history {
-    font-family: Outfit-Light;
-}
-</style>

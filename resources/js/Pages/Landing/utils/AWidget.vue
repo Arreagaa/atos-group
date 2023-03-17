@@ -1,13 +1,14 @@
 <script type="text/javascript">
 (function () {
     var options = {
-        email: "crjavier1021@gmail.com",
-        whatsapp: "+(502) 4278 3573",
-        call_to_action: "Envíanos un mensaje",
+        call: "+502 2295 6100",
+        call_color: "#A8CE50",
+        whatsapp: "+(502) 4005 1798",
+        call_to_action: "¡Ponte en Contacto!",
         button_color: "rgb(252 211 77)",
         position: "right",
-        order: "email,whatsapp",
-        pre_filled_message: "WhatsApp Contact",
+        order: "call,whatsapp",
+        pre_filled_message: "Contacto de WhatsApp",
     };
     var proto = "https:",
         host = "getbutton.io",
@@ -23,8 +24,12 @@
     x.parentNode.insertBefore(s, x);
 })();
 </script>
+
 <style>
 .sc-1au8ryl-0 {
     visibility: hidden;
+}
+.r8rfzx-2 {
+    background-color: #a8ce50 !important;
 }
 </style>

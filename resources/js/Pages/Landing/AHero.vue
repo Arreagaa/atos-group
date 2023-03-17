@@ -16,7 +16,7 @@
                                         class="text-amber-300 mx-auto mb-8 max-w-lg text-center lg:mx-0 lg:max-w-md lg:text-left"
                                     >
                                         <h2
-                                            class="atos mb-4 font-semibold text-left lg:text-8xl"
+                                            class="blackFont atos mb-4 font-semibold text-left lg:text-8xl"
                                         >
                                             Excelencia agrícola desde 1933
                                         </h2>
@@ -43,7 +43,7 @@
                                         class="text-amber-300 mx-auto mb-8 max-w-lg text-center lg:mx-0 lg:max-w-md lg:text-left"
                                     >
                                         <h2
-                                            class="atos mb-4 text-7xl font-semibold text-left"
+                                            class="blackFont atos mb-4 text-7xl font-semibold text-left"
                                         >
                                             Excelencia agrícola desde 1933
                                         </h2>
@@ -66,9 +66,6 @@
 </template>
 
 <style>
-.atos {
-    font-family: Outfit-Black;
-}
 #hero {
     width: 100%;
     height: 100vh;

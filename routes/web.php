@@ -17,27 +17,36 @@ use Inertia\Inertia;
 |
 */
 
-/*Route::get('/', function () {
-    return Inertia::render('Welcome', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
-});*/
-
-/*Route::middleware([
-    'auth:sanctum',
-    config('jetstream.auth_session'),
-    'verified',
-])->group(function () {
-    Route::get('/dashboard', function () {
-        return Inertia::render('Dashboard');
-    })->name('dashboard');
-});*/
-
 Route::get('/', function () {
     return Inertia::render('Landing/AShow');
 })->name('landing');
+
+Route::get('/sustainability', function () {
+    return Inertia::render('Sustainability/ASustainability');
+})->name('sustainability');
+
+Route::get('/products', function () {
+    return Inertia::render('Products/AProducts');
+})->name('products');
+
+Route::get('/news', function () {
+    return Inertia::render('News/AShow');
+})->name('news');
+
+Route::get('/socialWork', function () {
+    return Inertia::render('SocialWork/AShow');
+})->name('socialWork');
+
+Route::get('/environment', function () {
+    return Inertia::render('AEnvironment/AShow');
+})->name('environment');
+
+Route::get('/laboratory', function () {
+    return Inertia::render('Laboratory/AShow');
+})->name('laboratory');
+
+Route::get('/bio-security', function () {
+    return Inertia::render('Bio-security/AShow');
+})->name('bio-security');
 
 Route::post('/contact', ContactController::class)->name('contact');

@@ -1,14 +1,8 @@
 <script>
-// Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from "swiper/vue";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
-
-// import required modules
 import { Navigation } from "swiper";
-
 export default {
     components: {
         Swiper,
@@ -39,25 +33,25 @@ export default {
                                 />
                             </div>
                             <h2
-                                class="text-box mb-4 text-2xl font-normal text-left text-white"
+                                class="regularFont text-box mb-4 text-2xl font-normal text-left text-white"
                             >
                                 Se está exportando alrededor de
                             </h2>
 
                             <h2
-                                class="box mb-4 text-7xl font-bold text-left text-amber-300"
+                                class="blackFont box mb-4 text-7xl font-bold text-left text-amber-300"
                             >
                                 1,632,000
                             </h2>
 
                             <h2
-                                class="box mb-4 text-2xl font-bold text-left text-amber-300"
+                                class="blackFont box mb-4 text-2xl font-bold text-left text-amber-300"
                             >
                                 Cajas por año.
                             </h2>
 
                             <p
-                                class="text-box visible mx-0 mt-8 mb-0 text-lg leading-relaxed text-justify text-white -ml-44"
+                                class="regularFont text-box visible mx-0 mt-8 mb-0 text-lg leading-relaxed text-justify text-white -ml-44"
                             >
                                 Actualmente contamos con 450 hectáreas con
                                 producción de banano de la variedad Gran Enano
@@ -72,25 +66,25 @@ export default {
                             class="mx-auto mb-8 max-w-lg text-center lg:mx-0 lg:max-w-md lg:text-left"
                         >
                             <h2
-                                class="text-box mb-4 text-2xl font-normal text-left text-white"
+                                class="text-blackFont box mb-4 text-2xl font-normal text-left text-white"
                             >
                                 Se está exportando alrededor de
                             </h2>
 
                             <h2
-                                class="box mb-4 text-7xl font-bold text-left text-amber-300"
+                                class="blackFont box mb-4 text-7xl font-bold text-left text-amber-300"
                             >
                                 1,632,000
                             </h2>
 
                             <h2
-                                class="box mb-4 text-2xl font-bold text-left text-amber-300"
+                                class="blackFont box mb-4 text-2xl font-bold text-left text-amber-300"
                             >
                                 Cajas por año.
                             </h2>
 
                             <p
-                                class="text-box visible mx-0 mt-8 mb-0 text-lg leading-relaxed text-justify text-white"
+                                class="regularFont text-box visible mx-0 mt-8 mb-0 text-lg leading-relaxed text-justify text-white"
                             >
                                 Actualmente contamos con 450 hectáreas con
                                 producción de banano de la variedad Gran Enano
@@ -116,25 +110,25 @@ export default {
                                 />
                             </div>
                             <h2
-                                class="text-box mb-4 text-2xl font-normal text-left text-white"
+                                class="text-blackFont box mb-4 text-2xl font-normal text-left text-white"
                             >
                                 Se está exportando alrededor de
                             </h2>
 
                             <h2
-                                class="box mb-4 text-7xl font-bold text-left text-amber-300"
+                                class="blackFont box mb-4 text-7xl font-bold text-left text-amber-300"
                             >
                                 1,632,000
                             </h2>
 
                             <h2
-                                class="box mb-4 text-2xl font-bold text-left text-amber-300"
+                                class="blackFont box mb-4 text-2xl font-bold text-left text-amber-300"
                             >
                                 Cajas por año.
                             </h2>
 
                             <p
-                                class="text-box visible mx-0 mt-8 mb-0 text-lg leading-relaxed text-justify text-white -ml-44"
+                                class="regularFont text-box visible mx-0 mt-8 mb-0 text-lg leading-relaxed text-justify text-white -ml-44"
                             >
                                 Actualmente contamos con 450 hectáreas con
                                 producción de banano de la variedad Gran Enano
@@ -149,25 +143,25 @@ export default {
                             class="mx-auto mb-8 max-w-lg text-center lg:mx-0 lg:max-w-md lg:text-left"
                         >
                             <h2
-                                class="text-box mb-4 text-2xl font-normal text-left text-white"
+                                class="text-blackFont box mb-4 text-2xl font-normal text-left text-white"
                             >
                                 Se está exportando alrededor de
                             </h2>
 
                             <h2
-                                class="box mb-4 text-7xl font-bold text-left text-amber-300"
+                                class="blackFont box mb-4 text-7xl font-bold text-left text-amber-300"
                             >
                                 1,632,000
                             </h2>
 
                             <h2
-                                class="box mb-4 text-2xl font-bold text-left text-amber-300"
+                                class="blackFont box mb-4 text-2xl font-bold text-left text-amber-300"
                             >
                                 Cajas por año.
                             </h2>
 
                             <p
-                                class="text-box visible mx-0 mt-8 mb-0 text-lg leading-relaxed text-justify text-white"
+                                class="regularFont text-box visible mx-0 mt-8 mb-0 text-lg leading-relaxed text-justify text-white"
                             >
                                 Actualmente contamos con 450 hectáreas con
                                 producción de banano de la variedad Gran Enano
@@ -193,25 +187,25 @@ export default {
                                 />
                             </div>
                             <h2
-                                class="text-box mb-4 text-2xl font-normal text-left text-white"
+                                class="text-blackFont box mb-4 text-2xl font-normal text-left text-white"
                             >
                                 Se está exportando alrededor de
                             </h2>
 
                             <h2
-                                class="box mb-4 text-7xl font-bold text-left text-amber-300"
+                                class="blackFont box mb-4 text-7xl font-bold text-left text-amber-300"
                             >
                                 1,632,000
                             </h2>
 
                             <h2
-                                class="box mb-4 text-2xl font-bold text-left text-amber-300"
+                                class="blackFont box mb-4 text-2xl font-bold text-left text-amber-300"
                             >
                                 Cajas por año.
                             </h2>
 
                             <p
-                                class="text-box visible mx-0 mt-8 mb-0 text-lg leading-relaxed text-justify text-white -ml-44"
+                                class="regularFont text-box visible mx-0 mt-8 mb-0 text-lg leading-relaxed text-justify text-white -ml-44"
                             >
                                 Actualmente contamos con 450 hectáreas con
                                 producción de banano de la variedad Gran Enano
@@ -226,25 +220,25 @@ export default {
                             class="mx-auto mb-8 max-w-lg text-center lg:mx-0 lg:max-w-md lg:text-left"
                         >
                             <h2
-                                class="text-box mb-4 text-2xl font-normal text-left text-white"
+                                class="text-blackFont box mb-4 text-2xl font-normal text-left text-white"
                             >
                                 Se está exportando alrededor de
                             </h2>
 
                             <h2
-                                class="box mb-4 text-7xl font-bold text-left text-amber-300"
+                                class="blackFont box mb-4 text-7xl font-bold text-left text-amber-300"
                             >
                                 1,632,000
                             </h2>
 
                             <h2
-                                class="box mb-4 text-2xl font-bold text-left text-amber-300"
+                                class="blackFont box mb-4 text-2xl font-bold text-left text-amber-300"
                             >
                                 Cajas por año.
                             </h2>
 
                             <p
-                                class="text-box visible mx-0 mt-8 mb-0 text-lg leading-relaxed text-justify text-white"
+                                class="regularFont text-box visible mx-0 mt-8 mb-0 text-lg leading-relaxed text-justify text-white"
                             >
                                 Actualmente contamos con 450 hectáreas con
                                 producción de banano de la variedad Gran Enano
@@ -282,8 +276,6 @@ export default {
     text-align: center;
     font-size: 18px;
     background: #fff;
-
-    /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -309,12 +301,5 @@ export default {
     background-size: cover;
     padding: 120px 0;
     height: 700px;
-}
-
-.box {
-    font-family: Outfit-Black;
-}
-.text-box {
-    font-family: Outfit-Regular;
 }
 </style>

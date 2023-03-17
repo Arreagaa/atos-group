@@ -16,6 +16,7 @@ import AHistory from "./AHistory.vue";
 import AProducts from "./AProducts.vue";
 import ABack from "./utils/ABack.vue";
 import AHero from "./AHero.vue";
+import ACertifications from "./ACertifications.vue";
 </script>
 <template>
     <section
@@ -29,7 +30,7 @@ import AHero from "./AHero.vue";
     </section>
 
     <section>
-        <div class="relative">
+        <div class="view relative">
             <br />
             <ABagTitleHistory id="history" />
             <div
@@ -42,7 +43,7 @@ import AHero from "./AHero.vue";
                 </div>
             </div>
             <div id="about" class="products pt-16">
-                <div class="text-amber-300 uppercase text-center mt-20 mb-8">
+                <div class="blackFont text-amber-300 uppercase text-center mt-20 mb-8">
                     <h1 class="title-video font-bold lg:text-5xl text-4xl">
                         Esto es lo
                     </h1>
@@ -56,23 +57,27 @@ import AHero from "./AHero.vue";
     </section>
 
     <section>
-        <div class="relative">
+        <div>
             <br />
             <AInformation />
             <br />
             <ACta />
+            <ACertifications />
+        </div>
+    </section>
+
+    <section id="media" class="products">
+        <div>
+            <br />
+            <ABagTitleGallery />
+            <AGallery />
+            <br />
             <br />
         </div>
     </section>
 
-    <section id="media">
-        <div class="relative">
-            <ABagTitleGallery />
-            <AGallery />
-        </div>
-    </section>
-
-    <section id="contact">
+    <section id="contact" class="products">
+        <br />
         <div
             class="relative bg-[url('/assets/5-contacto/contacto.png')] bg-cover"
         >
@@ -90,18 +95,7 @@ import AHero from "./AHero.vue";
 </template>
 
 <style>
-@font-face {
-    font-family: Outfit-Black;
-    src: url("../../../../public/assets/Font/Outfit-Black.ttf");
-}
-@font-face {
-    font-family: Outfit-Regular;
-    src: url("../../../../public/assets/Font/Outfit-Regular.ttf");
-}
-.title-video {
-    font-family: Outfit-Black;
-}
-.relative {
+.view {
     background-color: #fff;
 }
 .products {

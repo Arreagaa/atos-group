@@ -1,5 +1,5 @@
 <template>
-    <div class="container max-w-5xl mx-auto m-8">
+    <div class="blackFont container max-w-5xl mx-auto m-8">
         <div class="flex flex-col items-center -mt-32">
             <img
                 src="/assets/2-historia/Icon-certification.png"
@@ -34,8 +34,3 @@
         </div>
     </div>
 </template>
-<style>
-.container {
-    font-family: Outfit-Black;
-}
-</style>

@@ -2,6 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: Outfit-Black;
+    src: url("../../public/assets/Font/Outfit-Black.ttf");
+}
+@font-face {
+    font-family: Outfit-Regular;
+    src: url("../../public/assets/Font/Outfit-Regular.ttf");
+}
+@font-face {
+    font-family: Outfit-Light;
+    src: url("../../public/assets/Font/Outfit-Light.ttf");
+}
+@font-face {
+    font-family: Outfit-Bold;
+    src: url("../../public/assets/Font/Outfit-Bold.ttf");
+}
+.blackFont{
+    font-family: Outfit-Black;
+}
+.regularFont{
+    font-family: Outfit-Regular;
+}
+.lightFont{
+    font-family: Outfit-Light;
+}
+.boldFont{
+    font-family: Outfit-Bold;
+}
 .max-w-app{
     @apply max-w-7xl mx-auto py-2 px-4;
 }

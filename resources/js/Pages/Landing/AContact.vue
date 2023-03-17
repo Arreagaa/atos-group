@@ -29,7 +29,7 @@ const submit = () => {
 };
 </script>
 <template>
-    <div class="contact max-w-app rounded px-8 pb-8 mb-16 flex flex-col mt-36">
+    <div class="regularFont contact max-w-app rounded px-8 pb-8 mb-16 flex flex-col mt-36">
         <div class="max-w-5xl mx-auto mb-20">
             <br />
             <div class="uppercase">
@@ -147,8 +147,3 @@ const submit = () => {
         </form>
     </div>
 </template>
-<style>
-.contact {
-    font-family: Outfit-Regular;
-}
-</style>

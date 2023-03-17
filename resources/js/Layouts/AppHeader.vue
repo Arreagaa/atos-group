@@ -23,7 +23,7 @@
                 <input class="hidden" type="checkbox" id="menu-toggle" />
 
                 <div
-                    class="hidden md:flex md:items-center md:w-auto w-full order-3 md:order-1"
+                    class="regularFont hidden md:flex md:items-center md:w-auto w-full order-3 md:order-1"
                     id="menu"
                 >
                     <nav class="lg:hidden">
@@ -47,15 +47,92 @@
                             <li>
                                 <a
                                     class="inline-block text-xl no-underline py-2 px-4 hover:text-amber-300"
-                                    href="/#products"
+                                    href="/products"
                                     >Productos</a
                                 >
                             </li>
                             <li>
+                                <div class="inline-flex no-underline relative">
+                                    <input
+                                        type="checkbox"
+                                        id="sortbox"
+                                        class="hidden absolute"
+                                    />
+                                    <label
+                                        for="sortbox"
+                                        class="flex items-center space-x-1 cursor-pointer"
+                                    >
+                                        <span
+                                            class="inline-block text-xl no-underline py-2 pl-4 hover:text-amber-300"
+                                            >Sostenibilidad</span
+                                        >
+                                        <svg
+                                            class="h-4 w-4"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke="currentColor"
+                                        >
+                                            <path
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="2"
+                                                d="M19 9l-7 7-7-7"
+                                            />
+                                        </svg>
+                                    </label>
+
+                                    <div
+                                        id="sortboxmenu"
+                                        class="absolute mt-1 right-1 top-full min-w-max shadow rounded opacity-0 bg-white border transition delay-75 ease-in-out z-10"
+                                    >
+                                        <ul
+                                            class="block text-left text-gray-700"
+                                        >
+                                            <li>
+                                                <a
+                                                    href="/sustainability"
+                                                    class="block px-3 py-2 hover:text-amber-300"
+                                                    >Nuestro Enfoque</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="/socialWork"
+                                                    class="block px-3 py-2 hover:text-amber-300"
+                                                    >Trabajo social</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="/environment"
+                                                    class="block px-3 py-2 hover:text-amber-300"
+                                                    >Medio Ambiente
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="/laboratory"
+                                                    class="block px-3 py-2 hover:text-amber-300"
+                                                    >Laboratorio</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="/bio-security"
+                                                    class="block px-3 py-2 hover:text-amber-300"
+                                                    >Bio-seguridad</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
                                 <a
                                     class="inline-block text-xl no-underline py-2 px-4 hover:text-amber-300"
-                                    href="/#media"
-                                    >Media</a
+                                    href="/news"
+                                    >Noticias</a
                                 >
                             </li>
                             <li>
@@ -83,7 +160,7 @@
                 </div>
 
                 <div
-                    class="order-2 md:order-3 flex items-center lg:block hidden"
+                    class="regularFont order-2 md:order-3 flex items-center lg:block hidden"
                     id="nav-content"
                 >
                     <a class="inline-block no-underline">
@@ -105,16 +182,90 @@
                     <a class="inline-block no-underline">
                         <a
                             class="inline-block text-xl no-underline py-2 px-4 hover:text-amber-300"
-                            href="/#products"
+                            href="/products"
                             >Productos</a
                         >
                     </a>
 
+                    <div class="inline-flex no-underline relative">
+                        <input
+                            type="checkbox"
+                            id="sortboxlg"
+                            class="hidden absolute"
+                        />
+                        <label
+                            for="sortboxlg"
+                            class="flex items-center space-x-1 cursor-pointer"
+                        >
+                            <span
+                                class="inline-block text-xl no-underline py-2 pl-4 hover:text-amber-300"
+                                >Sostenibilidad</span
+                            >
+                            <svg
+                                class="h-4 w-4"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M19 9l-7 7-7-7"
+                                />
+                            </svg>
+                        </label>
+
+                        <div
+                            id="sortboxmenulg"
+                            class="absolute mt-1 right-1 top-full min-w-max shadow rounded opacity-0 bg-white border transition delay-75 ease-in-out z-10"
+                        >
+                            <ul class="block text-left text-gray-700">
+                                <li>
+                                    <a
+                                        href="/sustainability"
+                                        class="block px-3 py-2 hover:text-amber-300"
+                                        >Nuestro Enfoque</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="/socialWork"
+                                        class="block px-3 py-2 hover:text-amber-300"
+                                        >Trabajo social</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="/environment"
+                                        class="block px-3 py-2 hover:text-amber-300"
+                                        >Medio Ambiente
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="/laboratory"
+                                        class="block px-3 py-2 hover:text-amber-300"
+                                        >Laboratorio</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="/bio-security"
+                                        class="block px-3 py-2 hover:text-amber-300"
+                                        >Bio-seguridad</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
                     <a class="inline-block no-underline">
                         <a
                             class="inline-block text-xl no-underline py-2 px-4 hover:text-amber-300"
-                            href="/#media"
-                            >Media
+                            href="/news"
+                            >Noticias
                         </a>
                     </a>
 
@@ -128,7 +279,7 @@
                 </div>
 
                 <div
-                    class="order-2 md:order-3 flex items-center lg:hidden"
+                    class="regularFont order-2 md:order-3 flex items-center lg:hidden"
                     id="nav-content"
                 ></div>
             </div>
@@ -137,10 +288,6 @@
 </template>
 
 <style>
-#menu,
-#nav-content {
-    font-family: Outfit-Regular;
-}
 #menu-toggle:checked + #menu {
     display: block;
 }
@@ -149,8 +296,13 @@
     transition: all 0.3s;
     transform: scale(1);
 }
-
 .hover\:grow:hover {
     transform: scale(1.02);
+}
+#sortbox:checked ~ #sortboxmenu {
+    opacity: 1;
+}
+#sortboxlg:checked ~ #sortboxmenulg {
+    opacity: 1;
 }
 </style>
