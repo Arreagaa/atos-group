@@ -131,17 +131,9 @@
                 <div class="w-full md:w-4/12 px-4 mx-auto text-center">
                     <div class="text-base text-white font-semibold py-1">
                         Copyright © <span id="get-current-year">2023,</span>
-                        <a
-                            href="https://www.creative-tim.com/product/notus-js"
-                            class="text-white hover:text-yellow-400"
-                            target="_blank"
-                        >
+                        <a href="/" class="text-white hover:text-yellow-400">
                             Grupo Atos</a
                         >.
-                        <a
-                            href="https://www.creative-tim.com?ref=njs-profile"
-                            class="text-white hover:text-amber-300"
-                        ></a>
                     </div>
                 </div>
             </div>
