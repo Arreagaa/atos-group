@@ -5,10 +5,10 @@ import AppFooter from "../../Layouts/AppFooter.vue";
 <template>
     <AppWhiteHeader />
     <div
-        class="lg:block hidden py-48 bg-[url('/assets/img/Sostenibillidad.jpg')] bg-cover"
+        class="lg:block hidden py-72 bg-[url('/assets/img/Sostenibillidad.jpg')] bg-cover"
     >
         <div class="container items-center m-auto px-6 text-white">
-            <p class="boldFont mt-48 text-8xl font-bold text-center">
+            <p class="boldFont text-8xl font-bold text-center">
                 Sostenibillidad
             </p>
             <p class="lightFont text-4xl font-base text-center mt-12">

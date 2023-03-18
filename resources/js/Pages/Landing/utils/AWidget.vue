@@ -2,8 +2,9 @@
 (function () {
     var options = {
         call: "+502 2295 6100",
-        call_color: "#A8CE50",
+        call_color: "#666666",
         whatsapp: "+(502) 4005 1798",
+        whatsapp_color: "#666666",
         call_to_action: "¡Ponte en Contacto!",
         button_color: "rgb(252 211 77)",
         position: "right",
@@ -30,6 +31,6 @@
     visibility: hidden;
 }
 .r8rfzx-2 {
-    background-color: #a8ce50 !important;
+    background-color: #666666 !important;
 }
 </style>

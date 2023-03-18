@@ -49,7 +49,7 @@ import AppFooter from "../../Layouts/AppFooter.vue";
             protectoras, desinfectantes etc. Para asegurar la integridad y salud
             de nuestros colaboradores. <br />
             <br />
-            <span class="boldFont text-4xl font-bold"
+            <span class="boldFont lg:text-4xl font-bold"
                 >Fusarium Raza 4 tropical:</span
             >
             <br />

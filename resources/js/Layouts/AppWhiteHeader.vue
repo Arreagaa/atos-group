@@ -1,3 +1,7 @@
+<script setup>
+import Dropdown from "@/Components/Dropdown.vue";
+import DropdownLink from "@/Components/DropdownLink.vue";
+</script>
 <template>
     <div class="bg-white max-w-fill text-white font-bold">
         <nav id="header" class="w-full z-30 top-0 py-1">
@@ -52,80 +56,70 @@
                                 >
                             </li>
                             <li>
-                                <div class="inline-flex no-underline relative">
-                                    <input
-                                        type="checkbox"
-                                        id="sortbox"
-                                        class="hidden absolute"
-                                    />
-                                    <label
-                                        for="sortbox"
-                                        class="flex items-center space-x-1 cursor-pointer"
-                                    >
-                                        <span
-                                            class="inline-block text-xl no-underline py-2 pl-4 hover:text-amber-300"
-                                            >Sostenibilidad</span
-                                        >
-                                        <svg
-                                            class="h-4 w-4"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            fill="none"
-                                            viewBox="0 0 24 24"
-                                            stroke="currentColor"
-                                        >
-                                            <path
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                                stroke-width="2"
-                                                d="M19 9l-7 7-7-7"
-                                            />
-                                        </svg>
-                                    </label>
+                                <div class="inline-block py-2 no-underline">
+                                    <Dropdown align="right" width="48">
+                                        <template #trigger>
+                                            <button
+                                                class="inline-flex text-sm border-transparent rounded-full focus:outline-none focus:border-gray-300 transition"
+                                            ></button>
 
-                                    <div
-                                        id="sortboxmenu"
-                                        class="absolute mt-1 right-1 top-full min-w-max shadow rounded opacity-0 bg-white border transition delay-75 ease-in-out z-10"
-                                    >
-                                        <ul
-                                            class="block text-left text-gray-500"
-                                        >
-                                            <li>
-                                                <a
-                                                    href="/sustainability"
-                                                    class="block px-3 py-2 hover:text-amber-300"
-                                                    >Nuestro Enfoque</a
+                                            <span
+                                                class="inline-flex rounded-md"
+                                            >
+                                                <button
+                                                    type="button"
+                                                    class="inline-flex items-center text-xl no-underline py-2 px-4 hover:text-amber-300 leading-4 transition"
                                                 >
-                                            </li>
-                                            <li>
-                                                <a
-                                                    href="/socialWork"
-                                                    class="block px-3 py-2 hover:text-amber-300"
-                                                    >Trabajo social</a
-                                                >
-                                            </li>
-                                            <li>
-                                                <a
-                                                    href="/environment"
-                                                    class="block px-3 py-2 hover:text-amber-300"
-                                                    >Medio Ambiente
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a
-                                                    href="/laboratory"
-                                                    class="block px-3 py-2 hover:text-amber-300"
-                                                    >Laboratorio</a
-                                                >
-                                            </li>
-                                            <li>
-                                                <a
-                                                    href="/bio-security"
-                                                    class="block px-3 py-2 hover:text-amber-300"
-                                                    >Bio-seguridad</a
-                                                >
-                                            </li>
-                                        </ul>
-                                    </div>
+                                                    Sostenibilidad
+
+                                                    <svg
+                                                        class="ml-2 -mr-0.5 h-4 w-4"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        viewBox="0 0 20 20"
+                                                        fill="currentColor"
+                                                    >
+                                                        <path
+                                                            fill-rule="evenodd"
+                                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                                            clip-rule="evenodd"
+                                                        />
+                                                    </svg>
+                                                </button>
+                                            </span>
+                                        </template>
+                                        <template #content>
+                                            <a
+                                                href="/sustainability"
+                                                class="block px-4 py-2 text-sm text-gray-400 no-underline hover:text-amber-300"
+                                            >
+                                                Nuestro Enfoque
+                                            </a>
+                                            <DropdownLink
+                                                :href="route('socialWork')"
+                                            >
+                                                Trabajo social
+                                            </DropdownLink>
+                                            <DropdownLink
+                                                :href="route('environment')"
+                                            >
+                                                Medio Ambiente
+                                            </DropdownLink>
+                                            <DropdownLink
+                                                :href="route('laboratory')"
+                                            >
+                                                Laboratorio
+                                            </DropdownLink>
+                                            <DropdownLink
+                                                :href="route('bio-security')"
+                                            >
+                                                Bio-seguridad
+                                            </DropdownLink>
+
+                                            <div
+                                                class="border-t border-gray-100"
+                                            />
+                                        </template>
+                                    </Dropdown>
                                 </div>
                             </li>
                             <li>
@@ -187,78 +181,58 @@
                         >
                     </a>
 
-                    <div class="inline-flex no-underline relative">
-                        <input
-                            type="checkbox"
-                            id="sortboxlg"
-                            class="hidden absolute"
-                        />
-                        <label
-                            for="sortboxlg"
-                            class="flex items-center space-x-1 cursor-pointer"
-                        >
-                            <span
-                                class="inline-block text-xl no-underline py-2 pl-4 hover:text-amber-300"
-                                >Sostenibilidad</span
-                            >
-                            <svg
-                                class="h-4 w-4"
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                            >
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M19 9l-7 7-7-7"
-                                />
-                            </svg>
-                        </label>
+                    <div class="inline-block no-underline">
+                        <Dropdown align="right" width="48">
+                            <template #trigger>
+                                <button
+                                    class="inline-flex text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-gray-300 transition"
+                                ></button>
 
-                        <div
-                            id="sortboxmenulg"
-                            class="absolute mt-1 right-1 top-full min-w-max shadow rounded opacity-0 bg-white border transition delay-75 ease-in-out z-10"
-                        >
-                            <ul class="block text-left text-gray-500">
-                                <li>
-                                    <a
-                                        href="/sustainability"
-                                        class="block px-3 py-2 hover:text-amber-300"
-                                        >Nuestro Enfoque</a
+                                <span class="inline-flex rounded-md">
+                                    <button
+                                        type="button"
+                                        class="inline-flex items-center text-xl no-underline py-2 px-4 hover:text-amber-300 leading-4 transition"
                                     >
-                                </li>
-                                <li>
-                                    <a
-                                        href="/socialWork"
-                                        class="block px-3 py-2 hover:text-amber-300"
-                                        >Trabajo social</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        href="/environment"
-                                        class="block px-3 py-2 hover:text-amber-300"
-                                        >Medio Ambiente
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="/laboratory"
-                                        class="block px-3 py-2 hover:text-amber-300"
-                                        >Laboratorio</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        href="/bio-security"
-                                        class="block px-3 py-2 hover:text-amber-300"
-                                        >Bio-seguridad</a
-                                    >
-                                </li>
-                            </ul>
-                        </div>
+                                        Sostenibilidad
+
+                                        <svg
+                                            class="ml-2 -mr-0.5 h-4 w-4"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20"
+                                            fill="currentColor"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                                clip-rule="evenodd"
+                                            />
+                                        </svg>
+                                    </button>
+                                </span>
+                            </template>
+                            <template #content>
+                                <a
+                                    href="/sustainability"
+                                    class="block px-4 py-2 text-sm text-gray-400 no-underline hover:text-amber-300"
+                                >
+                                    Nuestro Enfoque
+                                </a>
+                                <DropdownLink :href="route('socialWork')">
+                                    Trabajo social
+                                </DropdownLink>
+                                <DropdownLink :href="route('environment')">
+                                    Medio Ambiente
+                                </DropdownLink>
+                                <DropdownLink :href="route('laboratory')">
+                                    Laboratorio
+                                </DropdownLink>
+                                <DropdownLink :href="route('bio-security')">
+                                    Bio-seguridad
+                                </DropdownLink>
+
+                                <div class="border-t border-gray-100" />
+                            </template>
+                        </Dropdown>
                     </div>
 
                     <a class="inline-block no-underline">

@@ -5,10 +5,10 @@ import AppFooter from "../../Layouts/AppFooter.vue";
 <template>
     <AppWhiteHeader />
     <div
-        class="lg:block hidden py-48 bg-[url('/assets/img/socialWork.jpeg')] bg-cover"
+        class="lg:block hidden py-72 bg-[url('/assets/img/socialWork.jpeg')] bg-cover"
     >
         <div class="container items-center m-auto px-6 text-white">
-            <p class="boldFont mt-48 text-8xl font-bold text-center">
+            <p class="boldFont text-8xl font-bold text-center">
                 Trabajo Social
             </p>
             <p class="lightFont text-4xl font-base text-center mt-12">
@@ -28,9 +28,7 @@ import AppFooter from "../../Layouts/AppFooter.vue";
             <p class="boldFont text-5xl font-bold text-center">
                 Trabajo Social
             </p>
-            <p
-                class="lightFont text-xl lg:text-2xl lightFont font-base text-center mt-12"
-            >
+            <p class="lightFont text-xl lightFont font-base text-center mt-12">
                 Estamos orientados a lograr calidad de vida laboral, compromiso
                 y la <br />
                 retención de talento, aspectos que impactan de forma positiva en
@@ -41,7 +39,7 @@ import AppFooter from "../../Layouts/AppFooter.vue";
     </div>
 
     <div class="max-w-app my-12 items-left text-left">
-        <h1 class="boldFont text-4xl text-amber-300">
+        <h1 class="boldFont font-bold text-4xl text-amber-300">
             MAS DE 50 PROYECTOS CON <br />
             NUESTRAS COMUNIDADES:
         </h1>

@@ -6,21 +6,23 @@
                 class="blackFont container mx-auto w-full text-4xl font-bold text-center text-zinc-600"
             >
                 Los grandes
-            </h1>
-            <h1
-                class="blackFont container mx-auto w-full text-8xl font-bold text-center text-zinc-600"
-            >
-                trabajos
-            </h1>
-            <h1
-                class="regularFont mx-auto w-full text-6xl font-normal text-center text-zinc-600"
-            >
-                son hechos por la
-            </h1>
-            <h1
-                class="blackFont container mx-auto w-full text-8xl font-bold text-center text-amber-300"
-            >
-                perseverancia
+                <br />
+                <span
+                    class="blackFont container mx-auto w-full text-8xl font-bold text-center text-zinc-600"
+                >
+                    trabajos
+                </span>
+                <br />
+                <span
+                    class="regularFont mx-auto w-full text-6xl font-normal text-center text-zinc-600"
+                >
+                    son hechos por la
+                </span>
+                <span
+                    class="blackFont container mx-auto w-full text-8xl font-bold text-center text-amber-300"
+                >
+                    perseverancia
+                </span>
             </h1>
         </div>
         <div class="lg:hidden uppercase">
@@ -28,21 +30,24 @@
                 class="blackFont container mx-auto w-full text-2xl font-bold text-center text-zinc-600"
             >
                 Los grandes
-            </h1>
-            <h1
-                class="blackFont container mx-auto w-full text-5xl font-bold text-center text-zinc-600"
-            >
-                trabajos
-            </h1>
-            <h1
-                class="regularFont mx-auto w-full text-3xl font-normal text-center text-zinc-600"
-            >
-                son hechos por la
-            </h1>
-            <h1
-                class="blackFont container mx-auto w-full text-5xl font-bold text-center text-amber-300"
-            >
-                perseverancia
+                <br />
+                <span
+                    class="blackFont container mx-auto w-full text-5xl font-bold text-center text-zinc-600"
+                >
+                    trabajos
+                </span>
+                <br />
+                <span
+                    class="regularFont mx-auto w-full text-3xl font-normal text-center text-zinc-600"
+                >
+                    son hechos por la
+                </span>
+                <br />
+                <span
+                    class="blackFont container mx-auto w-full text-5xl font-bold text-center text-amber-300"
+                >
+                    perseverancia
+                </span>
             </h1>
         </div>
     </div>

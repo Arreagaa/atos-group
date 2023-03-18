@@ -1,37 +1,29 @@
 <template>
-    <div class="blackFont lg:block hidden container max-w-5xl mx-auto m-8 uppercase">
+    <div
+        class="blackFont lg:block hidden container max-w-6xl mx-auto m-8 uppercase"
+    >
         <h1
             class="leading-tight mx-auto w-full my-2 text-5xl font-bold leading-tight text-center text-zinc-900"
         >
-            Nos dedicamos a
-        </h1>
-        <h1
-            class="leading-tight mx-auto w-full my-2 text-5xl font-bold leading-tight text-center text-zinc-900"
-        >
-            la producción de
-        </h1>
-        <h1
-            class="leading-tight mx-auto w-full my-2 text-5xl font-bold leading-tight text-center text-zinc-900"
-        >
-            diferentes cultivos
+            A LO LARGO DE NUESTRA HISTORIA <br />
+            <span
+                class="leading-tight mx-auto w-full my-2 text-5xl font-bold leading-tight text-center text-zinc-900"
+            >
+                HEMOS PRODUCIDO DIFERENTES CULTIVOS: <br />
+            </span>
         </h1>
     </div>
-
-    <div class="blackFont lg:hidden container max-w-5xl mx-auto m-8 uppercase">
+    <div class="blackFont lg:hidden container mx-auto m-8 uppercase">
         <h1
-            class="leading-tight mx-auto w-full my-2 text-4xl font-bold leading-tight text-center text-zinc-900"
+            class="leading-tight mx-auto w-full my-2 text-3xl font-bold leading-tight text-center text-zinc-900"
         >
-            Nos dedicamos a
-        </h1>
-        <h1
-            class="leading-tight mx-auto w-full my-2 text-4xl font-bold leading-tight text-center text-zinc-900"
-        >
-            la producción de
-        </h1>
-        <h1
-            class="leading-tight mx-auto w-full my-2 text-4xl font-bold leading-tight text-center text-zinc-900"
-        >
-            diferentes cultivos
+            A LO LARGO DE <br />
+            NUESTRA HISTORIA <br />
+            <span
+                class="leading-tight mx-auto w-full my-2 text-3xl font-bold leading-tight text-center text-zinc-900"
+            >
+                HEMOS PRODUCIDO DIFERENTES CULTIVOS: <br />
+            </span>
         </h1>
     </div>
 </template>

@@ -51,12 +51,13 @@ export default {
                             </h2>
 
                             <p
-                                class="regularFont text-box visible mx-0 mt-8 mb-0 text-lg leading-relaxed text-justify text-white -ml-44"
+                                class="regularFont text-box visible mx-0 mt-8 mb-0 text-2xl leading-relaxed text-justify text-white -ml-44"
                             >
                                 Actualmente contamos con 450 hectáreas con
-                                producción de banano de la variedad Gran Enano
-                                para la exportación a los diferentes puntos del
-                                mundo.
+                                producción <br />
+                                de banano de la variedad Gran Enano para la
+                                exportación <br />
+                                a los diferentes puntos del mundo.
                             </p>
                         </div>
                     </div>
@@ -66,7 +67,7 @@ export default {
                             class="mx-auto mb-8 max-w-lg text-center lg:mx-0 lg:max-w-md lg:text-left"
                         >
                             <h2
-                                class="text-blackFont box mb-4 text-2xl font-normal text-left text-white"
+                                class="text-blackFont box mb-4 text-xl font-normal text-left text-white"
                             >
                                 Se está exportando alrededor de
                             </h2>
@@ -84,7 +85,7 @@ export default {
                             </h2>
 
                             <p
-                                class="regularFont text-box visible mx-0 mt-8 mb-0 text-lg leading-relaxed text-justify text-white"
+                                class="regularFont text-box visible mx-0 mt-8 mb-0 text-xl leading-relaxed text-justify text-white mr-4"
                             >
                                 Actualmente contamos con 450 hectáreas con
                                 producción de banano de la variedad Gran Enano

@@ -18,14 +18,14 @@ import AppFooter from "../../Layouts/AppFooter.vue";
     </div>
 
     <div
-        class="lg:hidden py-48 bg-[url('/assets/img/laboratory.jpeg')] bg-cover bg-center"
+        class="lg:hidden py-48 bg-[url('/assets/img/laboratoryrs.jpeg')] bg-cover bg-center"
     >
         <div class="container items-center m-auto px-6 text-white">
             <p class="boldFont text-5xl boldFont font-bold text-center">
                 Laboratorio
             </p>
             <p
-                class="lightFont text-xl lg:text-2xl lightFont font-base text-center mt-12"
+                class="lightFont text-xl lg:text-2xl lightFont font-base text-center mt-6"
             >
                 Control de plagas y enfermedades.
             </p>
@@ -38,28 +38,25 @@ import AppFooter from "../../Layouts/AppFooter.vue";
                     class="w-full lg:py-8 mx-auto -mt-2 lg:text-3xl text-xl text-justify text-blueGray-600"
                 >
                     El laboratorio lo hicimos para controlar plagas y
-                    enfermedades que tenemos en las <br />
-                    plantaciones para reducir el uso de cargas químicas <br />
-                    que se aplicaban anterior mente y en la mayoría del sector.
+                    enfermedades que tenemos en las plantaciones para reducir el
+                    uso de cargas químicas que se aplicaban anterior mente y en
+                    la mayoría del sector.
                     <br />
                     <br />
                     <span class="boldFont font-bold">
                         Con esto hemos eliminado o reducido las aplicaciones
-                        químicas para el control <br />
-                        de: Nematodos, Cochinilla algodonosa, Tortuguilla,
-                        Aphidos, Picudo, Gallina <br />
-                        ciega, Hormigas, etc. <br />
+                        químicas para el control de: Nematodos, Cochinilla
+                        algodonosa, Tortuguilla, Aphidos, Picudo, Gallina ciega,
+                        Hormigas, etc. <br />
                     </span>
                     <br />
                     <span
                         >Beneficios secundarios que se obtienen de las
-                        liberaciones como : <br />
-                        Aumento de las poblaciones de enemigos naturales, mejora
-                        la disponibilidad de <br />
+                        liberaciones como : Aumento de las poblaciones de
+                        enemigos naturales, mejora la disponibilidad de
                         nutrientes en el suelo, disminuye la necesidad de regar,
-                        mejora el sistema radicular <br />
-                        de la planta, acelera la descomposicion de la materia
-                        orgánica, etc.</span
+                        mejora el sistema radicular de la planta, acelera la
+                        descomposicion de la materia orgánica, etc.</span
                     >
                 </p>
             </div>
@@ -193,7 +190,7 @@ import AppFooter from "../../Layouts/AppFooter.vue";
                     <br />
                     <br />
                     <span class="boldFont font-bold"
-                        >Pseudomonas fluorescens::</span
+                        >Pseudomonas fluorescens:</span
                     >
                     es un bacilo Gram-negativo, recto o ligeramente curvado pero
                     no vibrioide, es saprofito. Se puede encontrar en suelo y
@@ -203,10 +200,11 @@ import AppFooter from "../../Layouts/AppFooter.vue";
                     radicular.
                     <br />
                     <br />
-                    Es un hongo entomopatógeno, anteriormente conocido como
-                    Paecilomyces fumosoroseus. Se muestra prometedor como
-                    pesticida biológico con una amplia gama de huéspedes como
-                    mosca blanca, Araña roja, Lepidopteros, etc.
+                    Como parte del Manejo Integrado de Plagas que implementamos,
+                    Importamos un Acaro depredador ( Neoseiulus Californicus )
+                    para control de la plaga, Araña Roja ( Tetranychus urticae )
+                    y con esto reducimos a 0 aplicaciones de químicos para el
+                    control de la plaga.
                 </p>
             </div>
         </div>

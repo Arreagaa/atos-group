@@ -1,5 +1,11 @@
 <script setup></script>
 <template>
+    <div class="blackFont text-amber-300 uppercase text-center mt-20 mb-8">
+        <h1 class="title-video font-bold lg:text-5xl text-4xl">
+            Esto es lo <br />
+            que hacemos
+        </h1>
+    </div>
     <div class="flex items-center justify-center mb-16">
         <video
             class="w-4/5 aspect-video -m-16 mt-8"

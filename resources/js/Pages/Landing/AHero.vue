@@ -22,9 +22,9 @@
                                         </h2>
 
                                         <p
-                                            class="visible mx-0 mt-3 mb-0 text-xl leading-relaxed text-left text-slate-200"
+                                            class="lightFont visible mx-0 mt-3 mb-0 text-2xl leading-relaxed text-left text-slate-200"
                                         >
-                                            450 hectáreas con producción de
+                                            450 hectáreas con producción de <br>
                                             banano de la variedad Gran Enano.
                                         </p>
                                     </div>
@@ -49,7 +49,7 @@
                                         </h2>
 
                                         <p
-                                            class="visible mx-0 mt-3 mb-0 text-xl leading-relaxed text-left text-slate-200"
+                                            class="lightFont visible mx-0 mt-3 mb-0 text-xl leading-relaxed text-left text-slate-200"
                                         >
                                             450 hectáreas con producción de
                                             banano de la variedad Gran Enano.

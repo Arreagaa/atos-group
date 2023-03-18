@@ -1,5 +1,5 @@
 <template>
-    <div class="lg:block hidden container max-w-fit mx-auto mt-4">
+    <div class="boldFont lg:block hidden container max-w-fit mx-auto mt-4">
         <div class="flex text-start justify-around w-full gap-28 uppercase">
             <h1 class="font-bold tracking-tight text-zinc-600 mt-5 mt-32">
                 <span class="block text-zinc-600 text-2xl"
@@ -26,7 +26,7 @@
         <br />
     </div>
     <div
-        class="lg:hidden container max-w-fit mx-auto mt-4 justify-center text-center items-center uppercase"
+        class="boldFont lg:hidden container max-w-fit mx-auto mt-4 justify-center text-center items-center uppercase"
     >
         <div class="">
             <h1 class="font-bold tracking-tight text-zinc-600 mt-20">

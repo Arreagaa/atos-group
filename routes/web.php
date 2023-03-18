@@ -26,7 +26,7 @@ Route::get('/sustainability', function () {
 })->name('sustainability');
 
 Route::get('/products', function () {
-    return Inertia::render('Products/AProducts');
+    return Inertia::render('Products/AShow');
 })->name('products');
 
 Route::get('/news', function () {
