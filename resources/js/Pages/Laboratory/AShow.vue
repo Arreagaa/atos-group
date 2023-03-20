@@ -52,7 +52,7 @@ import AppFooter from "../../Layouts/AppFooter.vue";
                     <br />
                     <span
                         >Beneficios secundarios que se obtienen de las
-                        liberaciones como : Aumento de las poblaciones de
+                        liberaciones como: Aumento de las poblaciones de
                         enemigos naturales, mejora la disponibilidad de
                         nutrientes en el suelo, disminuye la necesidad de regar,
                         mejora el sistema radicular de la planta, acelera la
