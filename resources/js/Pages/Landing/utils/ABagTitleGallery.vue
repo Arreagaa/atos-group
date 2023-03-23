@@ -44,7 +44,7 @@
                 </span>
                 <br />
                 <span
-                    class="blackFont container mx-auto w-full text-5xl font-bold text-center text-amber-300"
+                    class="blackFont container mx-auto w-full text-4xl font-bold text-center text-amber-300"
                 >
                     perseverancia
                 </span>
