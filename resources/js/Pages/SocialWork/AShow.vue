@@ -45,7 +45,7 @@ import AppFooter from "../../Layouts/AppFooter.vue";
         </h1>
         <div class="bg-white mt-12">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 xl:gap-12 mt-4">
-                <div class="flex space-x-16 mt-8 items-center items-center">
+                <div class="flex lg:space-x-6 space-x-4 mt-8 items-center items-center">
                     <div>
                         <img
                             src="/assets/TrabajoSocial/elementos-11.png"
@@ -85,7 +85,7 @@ import AppFooter from "../../Layouts/AppFooter.vue";
                     </div>
                 </div>
 
-                <div class="flex space-x-8 mt-8 items-center">
+                <div class="flex lg:space-x-8 space-x-6 mt-8 items-center">
                     <div>
                         <img
                             src="/assets/TrabajoSocial/elementos-13.png"
