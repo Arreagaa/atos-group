@@ -50,33 +50,28 @@ import ACertifications from "./ACertifications.vue";
 
     <section>
         <div>
-            <br />
-            <AInformation />
-            <br />
+            <div class="py-4">
+                <AInformation />
+            </div>
             <ACta />
             <ACertifications />
         </div>
     </section>
 
     <section id="media" class="products">
-        <div>
-            <br />
+        <div class="py-12">
             <ABagTitleGallery />
             <AGallery />
-            <br />
-            <br />
         </div>
     </section>
 
     <section id="contact" class="products">
-        <br />
         <div
-            class="relative bg-[url('/assets/5-contacto/contacto.png')] bg-cover"
+            class="relative bg-[url('/assets/5-contacto/contacto.png')] bg-cover mt-2"
         >
-            <br />
+           <div class="py-10">
             <AContact />
-            <br />
-            <br />
+           </div>
         </div>
     </section>
     <section>

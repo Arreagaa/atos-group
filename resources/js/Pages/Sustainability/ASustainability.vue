@@ -30,10 +30,9 @@ import AppFooter from "../../Layouts/AppFooter.vue";
             </p>
             <p class="lightFont text-xl font-base text-center mt-12">
                 Nos enfocamos en crear valor a largo plazo para los accionistas
-                mediante <br />
-                el aprovechamiento de oportunidades y la gestión eficaz de los
-                riesgos <br />
-                inherentes al desarrollo económico, medioambiental y social.
+                mediante el aprovechamiento de oportunidades y la gestión eficaz
+                de los riesgos inherentes al desarrollo económico,
+                medioambiental y social.
             </p>
         </div>
     </div>

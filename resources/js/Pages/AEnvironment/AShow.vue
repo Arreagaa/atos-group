@@ -32,7 +32,7 @@ import AppFooter from "../../Layouts/AppFooter.vue";
 
     <div class="max-w-app my-12 items-left text-justify">
         <p
-            class="lg:block hidden lightFont mx-40 text-3xl font-light leading-relaxed mt-4 mb-4 text-blueGray-600"
+            class="lightFont lg:mx-40 lg:text-3xl text-xl font-light leading-relaxed mt-4 mb-4 text-blueGray-600"
         >
             <span class="boldFont font-bold">El compost o la composta</span> es
             un producto obtenido a partir de diferentes materiales de origen
