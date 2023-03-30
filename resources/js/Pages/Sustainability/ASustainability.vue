@@ -11,7 +11,7 @@ import AppFooter from "../../Layouts/AppFooter.vue";
             <p class="boldFont text-8xl font-bold text-center">
                 Sostenibillidad
             </p>
-            <p class="lightFont text-4xl font-base text-center mt-12">
+            <p class="lightFont text-2xl font-base text-center mt-12">
                 Nos enfocamos en crear valor a largo plazo para los accionistas
                 mediante <br />
                 el aprovechamiento de oportunidades y la gestión eficaz de los

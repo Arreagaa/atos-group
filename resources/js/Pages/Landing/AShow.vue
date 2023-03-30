@@ -66,12 +66,10 @@ import ACertifications from "./ACertifications.vue";
     </section>
 
     <section id="contact" class="products">
-        <div
-            class="relative bg-[url('/assets/5-contacto/contacto.png')] bg-cover mt-2"
-        >
-           <div class="py-10">
-            <AContact />
-           </div>
+        <div class="bg-[url('/assets/5-contacto/contacto.png')] bg-cover">
+            <div class="py-4">
+                <AContact />
+            </div>
         </div>
     </section>
     <section>

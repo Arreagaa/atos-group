@@ -11,7 +11,7 @@ import AppFooter from "../../Layouts/AppFooter.vue";
             <p class="boldFont text-8xl font-bold text-center">
                 Medio Ambiente
             </p>
-            <p class="lightFont text-4xl font-base text-center mt-8">
+            <p class="lightFont text-2xl font-base text-center mt-8">
                 Manejo de los desechos de empacadoras.
             </p>
         </div>
@@ -30,9 +30,9 @@ import AppFooter from "../../Layouts/AppFooter.vue";
         </div>
     </div>
 
-    <div class="max-w-app my-12 items-left text-justify">
+    <div class="max-w-app my-12 items-left">
         <p
-            class="lightFont lg:mx-40 lg:text-3xl text-xl font-light leading-relaxed mt-4 mb-4 text-blueGray-600"
+            class="lightFont lg:mx-40 text-xl font-light leading-relaxed mt-4 mb-4 text-blueGray-600"
         >
             <span class="boldFont font-bold">El compost o la composta</span> es
             un producto obtenido a partir de diferentes materiales de origen

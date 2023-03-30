@@ -29,12 +29,14 @@ const submit = () => {
 };
 </script>
 <template>
-    <div class="regularFont contact max-w-app rounded px-8 pb-8 mb-16 flex flex-col mt-36">
+    <div
+        class="regularFont contact max-w-app rounded px-8 pb-8 mb-16 flex flex-col mt-28"
+    >
         <div class="max-w-5xl mx-auto mb-20">
             <br />
             <div class="uppercase">
                 <h1
-                    class="container mx-auto w-full text-5xl font-bold text-center text-white"
+                    class="container mx-auto w-full lg:text-5xl text-4xl font-bold text-center text-white"
                 >
                     ¿Seguimos en contacto?
                 </h1>

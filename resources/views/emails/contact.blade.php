@@ -8,7 +8,7 @@
 
 <br>
 <p>
-    * Contactar al Cliente por Número Teléfono {{$phone}} o por Correo Electrónico {{$email}}.
+    Contactar al Cliente por Número Teléfono {{$phone}} o por Correo Electrónico {{$email}}.
 </p>
 
 <p>

@@ -6,11 +6,11 @@ import DropdownLink from "@/Components/DropdownLink.vue";
     <div class="bg-transparent max-w-fill text-white font-bold">
         <nav id="header" class="w-full z-30 top-0 py-1">
             <div
-                class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-6 py-3"
+                class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-3 py-3"
             >
                 <label
                     for="menu-toggle"
-                    class="absolute top-6 right-4 cursor-pointer md:hidden block"
+                    class="absolute top-6 right-6 cursor-pointer md:hidden block"
                 >
                     <svg
                         class="fill-current text-white"
@@ -142,13 +142,13 @@ import DropdownLink from "@/Components/DropdownLink.vue";
 
                 <div>
                     <a
-                        class="flex items-center tracking-wide no-underline hover:no-underline font-bold text-gray-800 mr-4"
+                        class="flex items-center tracking-wide no-underline hover:no-underline font-bold text-gray-800 mr-8"
                         href="/"
                     >
                         <img
                             src="/assets/Logos/LogoFooter.png"
                             alt="image"
-                            class="rounded mx-auto d-block"
+                            class="rounded mx-auto d-block scale-90"
                         />
                     </a>
                 </div>

@@ -9,7 +9,7 @@ import AppFooter from "../../Layouts/AppFooter.vue";
     >
         <div class="container items-center m-auto px-6 text-white">
             <p class="boldFont text-8xl font-bold text-center">Bio-seguridad</p>
-            <p class="lightFont text-4xl font-base text-center mt-8">
+            <p class="lightFont text-2xl font-base text-center mt-8">
                 Asegurar la integridad y salud de nuestros colaboradores.
             </p>
         </div>
@@ -26,9 +26,9 @@ import AppFooter from "../../Layouts/AppFooter.vue";
         </div>
     </div>
 
-    <div class="max-w-app my-12 lightFont items-left text-justify">
+    <div class="max-w-app my-12 lightFont items-left">
         <p
-            class="mx-4 lg:mx-40 lg:text-3xl text-xl font-light leading-relaxed mt-4 mb-4 text-blueGray-600"
+            class="mx-4 lg:mx-40 text-xl font-light leading-relaxed mt-4 mb-4 text-blueGray-600"
         >
             Covid: Desde el inicio de la pandemia iniciamos aumentando el
             servicio de transporte que se le brinda al personal para asegurar el
@@ -49,7 +49,7 @@ import AppFooter from "../../Layouts/AppFooter.vue";
             protectoras, desinfectantes etc. Para asegurar la integridad y salud
             de nuestros colaboradores. <br />
             <br />
-            <span class="boldFont lg:text-4xl font-bold"
+            <span class="boldFont lg:text-2xl font-bold"
                 >Fusarium Raza 4 tropical:</span
             >
             <br />

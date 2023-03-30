@@ -24,7 +24,7 @@ export default {
                 >
                     <div class="lg:block hidden px-40 ml-64 w-full lg:w-2/5">
                         <div
-                            class="mx-auto mb-8 max-w-lg text-center lg:mx-0 lg:max-w-md lg:text-left"
+                            class="mx-auto mb-8 max-w-lg text-left lg:mx-0 lg:max-w-md lg:text-left"
                         >
                             <div class="absolute -ml-48">
                                 <img
@@ -51,20 +51,19 @@ export default {
                             </h2>
 
                             <p
-                                class="regularFont text-box visible mx-0 mt-8 mb-0 text-2xl leading-relaxed text-justify text-white -ml-44"
+                                class="regularFont text-box visible mx-2 mt-8 mb-0 text-xl leading-relaxed text-white -ml-44"
                             >
                                 Actualmente contamos con 450 hectáreas con
-                                producción <br />
-                                de banano de la variedad Gran Enano para la
-                                exportación <br />
-                                a los diferentes puntos del mundo.
+                                producción de banano de la variedad Gran Enano
+                                para la exportación a los diferentes puntos del
+                                mundo.
                             </p>
                         </div>
                     </div>
 
                     <div class="lg:hidden px-4 ml-3 w-full lg:w-2/5">
                         <div
-                            class="mx-auto mb-8 max-w-lg text-center lg:mx-0 lg:max-w-md lg:text-left"
+                            class="mx-auto mb-8 max-w-lg lg:mx-0 lg:max-w-md text-left"
                         >
                             <h2
                                 class="text-blackFont box mb-4 text-xl font-normal text-left text-white"
@@ -85,7 +84,7 @@ export default {
                             </h2>
 
                             <p
-                                class="regularFont text-box visible mx-0 mt-8 mb-0 text-xl leading-relaxed text-justify text-white mr-4"
+                                class="regularFont text-box visible mx-0 mt-8 mb-0 text-xl leading-relaxed text-white mr-4"
                             >
                                 Actualmente contamos con 450 hectáreas con
                                 producción de banano de la variedad Gran Enano
@@ -98,24 +97,24 @@ export default {
             </swiper-slide>
             <swiper-slide
                 ><card
-                    class="card bg-[url('/assets/banners/banner_trazabilidad.png')] flex flex-wrap items-center -mx-3 font-sans px-4 mx-auto w-full pb-20"
+                    class="card bg-[url('/assets/banners/banner_trazabilidad.png')] bg-center flex flex-wrap items-center -mx-3 font-sans px-4 mx-auto w-full pb-20"
                 >
                     <div class="lg:block hidden px-40 ml-64 w-full lg:w-2/5">
                         <div
-                            class="mx-auto mb-8 max-w-lg text-center lg:mx-0 lg:max-w-md lg:text-left"
+                            class="mx-auto mb-8 max-w-lg text-left lg:mx-0 lg:max-w-md lg:text-left"
                         >
                             <p
-                                class="regularFont text-box visible mx-0 mt-8 mb-0 text-2xl leading-relaxed text-justify text-zinc-600 -ml-44"
+                                class="regularFont text-box visible mx-0 mt-8 mb-0 text-2xl leading-relaxed text-zinc-600 -ml-44"
                             >
                                 Contamos con equipo experto en
                             </p>
                             <span
-                                class="blackFont text-box visible mx-0 mb-0 text-7xl leading-relaxed text-justify text-amber-300 -ml-44"
+                                class="blackFont text-box visible mx-0 mb-0 text-7xl leading-relaxed text-amber-300 -ml-44"
                             >
                                 Trazabilidad
                             </span>
                             <p
-                                class="regularFont text-box visible mx-0 mb-0 text-2xl leading-relaxed text-justify text-zinc-600 -ml-44"
+                                class="regularFont text-box visible mx-0 mb-0 text-xl leading-relaxed text-zinc-600 -ml-44"
                             >
                                 Que se dedica a conocer el origen, la ubicación
                                 y el historial de un producto en cualquier
@@ -126,20 +125,20 @@ export default {
 
                     <div class="lg:hidden px-4 ml-6 w-full lg:w-2/5">
                         <div
-                            class="mx-auto mb-40 max-w-lg text-center lg:mx-0 lg:max-w-md lg:text-left"
+                            class="mx-auto mb-40 max-w-lg text-left lg:mx-0 lg:max-w-md lg:text-left"
                         >
                             <p
-                                class="regularFont text-box visible mx-0 mb-0 text-xl leading-relaxed text-justify text-zinc-600"
+                                class="regularFont text-box visible mx-0 mb-0 text-xl leading-relaxed text-zinc-600"
                             >
                                 Contamos con equipo experto en
                             </p>
                             <p
-                                class="blackFont text-box visible mx-0 mb-0 text-5xl leading-relaxed text-justify text-amber-300"
+                                class="blackFont text-box visible mx-0 mb-0 text-5xl leading-relaxed text-amber-300"
                             >
                                 Trazabilidad
                             </p>
                             <p
-                                class="regularFont text-box visible mx-0 mb-0 text-xl leading-relaxed text-justify text-zinc-600"
+                                class="regularFont text-box visible mx-0 mb-0 text-xl leading-relaxed text-zinc-600"
                             >
                                 Que se dedica a conocer el origen, la ubicación
                                 y el historial de un producto en cualquier
@@ -155,15 +154,15 @@ export default {
                 >
                     <div class="lg:block hidden px-36 ml-64 w-full lg:w-2/5">
                         <div
-                            class="mx-auto mb-8 max-w-lg text-center lg:mx-0 lg:max-w-md lg:text-left"
+                            class="mx-auto mb-8 max-w-lg text-left lg:mx-0 lg:max-w-md lg:text-left"
                         >
                             <span
-                                class="blackFont text-box visible mx-0 mb-0 text-7xl leading-relaxed text-justify text-white -ml-44"
+                                class="blackFont text-box visible mx-0 mb-0 text-7xl leading-relaxed text-white -ml-44"
                             >
                                 Sostenibilidad
                             </span>
                             <p
-                                class="regularFont text-box visible mx-0 mb-0 text-2xl leading-relaxed text-justify text-white -ml-44"
+                                class="regularFont text-box visible mx-0 mb-0 text-xl leading-relaxed text-white -ml-44"
                             >
                                 Nos enfocamos en crear valor a largo plazo para
                                 los accionistas mediante el aprovechamiento de
@@ -174,17 +173,17 @@ export default {
                         </div>
                     </div>
 
-                    <div class="lg:hidden px-4 ml-3 w-full lg:w-2/5">
+                    <div class="lg:hidden px-4 ml-6 w-full lg:w-2/5">
                         <div
-                            class="mx-auto mb-40 max-w-lg text-center lg:mx-0 lg:max-w-md lg:text-left"
+                            class="mx-auto mb-40 max-w-lg text-left lg:mx-0 lg:max-w-md lg:text-left"
                         >
                             <p
-                                class="blackFont text-box visible mx-0 mb-0 text-5xl leading-relaxed text-justify text-white"
+                                class="blackFont text-box visible mx-0 mb-0 text-5xl leading-relaxed text-white"
                             >
                                 Sostenibilidad
                             </p>
                             <p
-                                class="regularFont text-box visible mx-0 mb-0 text-lg leading-relaxed text-justify text-white"
+                                class="regularFont text-box visible mx-0 mb-0 text-lg leading-relaxed text-white"
                             >
                                 Nos enfocamos en crear valor a largo plazo para
                                 los accionistas mediante el aprovechamiento de

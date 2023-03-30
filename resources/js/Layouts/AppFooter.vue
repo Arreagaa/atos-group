@@ -6,9 +6,9 @@
                     <img
                         src="/assets/Logos/LogoFooter.png"
                         alt="image"
-                        class="rounded mx-auto inline-flex"
+                        class="rounded inline-flex scale-90"
                     />
-                    <div class="icons mt-6 lg:mb-0 mb-6">
+                    <div class="icons mt-6 lg:mb-0 mb-6 px-3">
                         <a
                             class="inline-flex tracking-wide no-underline hover:no-underline"
                             href="/"
@@ -17,7 +17,7 @@
                             <img
                                 src="/assets/SocialMedia/Icon-FB.png"
                                 alt="image"
-                                class="rounded mx-auto h-10 w-10"
+                                class="rounded mx-auto h-8 w-8"
                             />
                         </a>
                         <a
@@ -28,7 +28,7 @@
                             <img
                                 src="/assets/SocialMedia/Icon-IG.png"
                                 alt="image"
-                                class="rounded mx-auto ml-2 h-10 w-10"
+                                class="rounded mx-auto ml-2 h-8 w-8"
                             />
                         </a>
                         <a
@@ -39,7 +39,7 @@
                             <img
                                 src="/assets/SocialMedia/Icon-YTB.png"
                                 alt="image"
-                                class="rounded mx-auto ml-4 h-10 w-10"
+                                class="rounded mx-auto ml-4 h-8 w-8"
                             />
                         </a>
                     </div>

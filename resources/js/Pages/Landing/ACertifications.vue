@@ -1,37 +1,42 @@
 <template>
-    <div class="py-2 bg-white">
-        <div class="container m-auto px-6 space-y-8 md:px-12 lg:px-56">
-            <div class="lg:hidden boldFont text-center mt-8 text-xl">
-                <p>EN ALIANZA CON</p>
-            </div>
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5">
-                <div class="lg:block hidden boldFont p-4 mt-12 text-xl">
-                    <p>EN ALIANZA CON</p>
-                </div>
-                <div class="p-4">
-                    <img src="/assets/alianzas/RFA.png" class="w-32" alt="" />
-                </div>
-                <div class="lg:block hidden p-6 lg:mt-12 scale-150">
+    <section class="bg-white">
+        <div class="py-8 lg:py-8 mx-auto max-w-screen-lg px-0">
+            <h2
+                class="mb-8 lg:mb-8 text-2xl boldFont tracking-tight leading-tight text-center text-gray-900"
+            >
+                EN ALIANZA CON
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                <a class="flex justify-center items-center">
                     <img
-                        src="/assets/alianzas/globalgap.png"
-                        class="w-32"
+                        src="/assets/alianzas/RFA.png"
+                        class="lg:w-32 w-28 lg:pb-0 pb-2"
                         alt=""
                     />
-                </div>
-                <div class="lg:hidden p-6 mt-10 scale-125">
+                </a>
+                <a class="flex justify-center items-center">
                     <img
                         src="/assets/alianzas/globalgap.png"
-                        class="w-32"
+                        class="lg:w-56 w-40 lg:pb-0 pb-2"
                         alt=""
                     />
-                </div>
-                <div class="p-4 ml-2">
-                    <img src="/assets/alianzas/apib.png" class="w-32" alt="" />
-                </div>
-                <div class="p-4 mt-8">
-                    <img src="/assets/alianzas/fda.png" class="w-32" alt="" />
-                </div>
+                </a>
+                <a class="flex justify-center items-center lg:pl-0 pl-6">
+                    <img
+                        src="/assets/alianzas/apib.png"
+                        class="w-32 lg:py-0 py-4"
+                        alt=""
+                    />
+                </a>
+
+                <a class="flex justify-center items-center">
+                    <img
+                        src="/assets/alianzas/fda.png"
+                        class="w-32 lg:py-0 py-4"
+                        alt=""
+                    />
+                </a>
             </div>
         </div>
-    </div>
+    </section>
 </template>

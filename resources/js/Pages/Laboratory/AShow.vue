@@ -11,7 +11,7 @@ import AppFooter from "../../Layouts/AppFooter.vue";
             <p class="boldFont text-8xl boldFont font-bold text-center">
                 Laboratorio
             </p>
-            <p class="lightFont text-4xl font-base text-center mt-4">
+            <p class="lightFont text-2xl font-base text-center mt-4">
                 Control de plagas y enfermedades.
             </p>
         </div>
@@ -32,11 +32,9 @@ import AppFooter from "../../Layouts/AppFooter.vue";
         </div>
     </div>
     <section class="py-20 bg-white">
-        <div class="flex flex-col px-8 mx-auto space-y-12 max-w-7xl xl:px-12">
+        <div class="flex flex-col px-8 mx-auto space-y-8 max-w-7xl xl:px-12">
             <div class="lightFont relative items-left">
-                <p
-                    class="w-full lg:py-8 mx-auto -mt-2 lg:text-3xl text-xl text-justify text-blueGray-600"
-                >
+                <p class="w-full mx-auto text-xl text-blueGray-600">
                     El laboratorio lo hicimos para controlar plagas y
                     enfermedades que tenemos en las plantaciones para reducir el
                     uso de cargas químicas que se aplicaban anterior mente y en
@@ -60,14 +58,12 @@ import AppFooter from "../../Layouts/AppFooter.vue";
                     >
                 </p>
             </div>
-            <div class="flex flex-col mb-8 animated fadeIn sm:flex-row">
-                <div
-                    class="flex items-center mb-8 sm:w-1/2 md:w-5/12 sm:order-last"
-                >
+            <div class="flex flex-col animated fadeIn sm:flex-row">
+                <div class="flex items-center sm:w-1/2 md:w-5/12 sm:order-last">
                     <img src="/assets/laboratory/hongos.png" alt="" />
                 </div>
                 <div
-                    class="flex flex-col justify-center mt-2 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pr-16"
+                    class="flex flex-col justify-center mt-2 md:mt-0 sm:w-1/2 md:w-7/12 sm:pr-16"
                 >
                     <p
                         class="boldFont mb-2 text-3xl leading-none text-left text-blueGray-600 uppercase"
@@ -75,7 +71,7 @@ import AppFooter from "../../Layouts/AppFooter.vue";
                         Hongos
                     </p>
                     <p
-                        class="lightFont mt-5 lg:text-3xl text-xl text-blueGray-600 text md:text-left"
+                        class="lightFont mt-5 text-xl text-blueGray-600 text md:text-left"
                         style="text-align: justify"
                     >
                         Trichoderma harzianum es un hongo saprofito, ampliamente
@@ -86,7 +82,7 @@ import AppFooter from "../../Layouts/AppFooter.vue";
                     </p>
                     <br />
                     <p
-                        class="lightFont mt-5 lg:text-3xl text-xl text-blueGray-600 text md:text-left"
+                        class="lightFont mt-5 text-xl text-blueGray-600 text md:text-left"
                         style="text-align: justify"
                     >
                         <span class="boldFont font-bold"
@@ -101,9 +97,7 @@ import AppFooter from "../../Layouts/AppFooter.vue";
                 </div>
             </div>
             <div class="lightFont relative items-left">
-                <p
-                    class="w-full lg:py-8 mx-auto -mt-2 lg:text-3xl text-xl text-justify text-blueGray-600"
-                >
+                <p class="w-full mx-auto text-xl text-blueGray-600">
                     Paecilomyces lilacinus es un hongo que controla
                     fitonematodos, principalmente especies del nematodo
                     agallador Meloidogyne spp. Este hongo parasita huevos,
@@ -136,14 +130,12 @@ import AppFooter from "../../Layouts/AppFooter.vue";
                     mosca blanca, Araña roja, Lepidopteros, etc.
                 </p>
             </div>
-            <div class="flex flex-col mb-8 animated fadeIn sm:flex-row">
-                <div
-                    class="flex items-center mb-8 sm:w-1/2 md:w-5/12 sm:order-last"
-                >
+            <div class="flex flex-col animated fadeIn sm:flex-row">
+                <div class="flex items-center sm:w-1/2 md:w-5/12 sm:order-last">
                     <img src="/assets/laboratory/bacterias.png" alt="" />
                 </div>
                 <div
-                    class="flex flex-col justify-center mt-2 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pr-16"
+                    class="flex flex-col justify-center mt-2 md:mt-0 sm:w-1/2 md:w-7/12 sm:pr-16"
                 >
                     <p
                         class="boldFont mb-2 text-3xl font-bold leading-none text-left text-blueGray-600 uppercase"
@@ -151,7 +143,7 @@ import AppFooter from "../../Layouts/AppFooter.vue";
                         Bacterias
                     </p>
                     <p
-                        class="lightFont mt-5 lg:text-3xl text-xl text-blueGray-600 text md:text-left"
+                        class="lightFont mt-5 text-xl text-blueGray-600 text md:text-left"
                         style="text-align: justify"
                     >
                         <span class="boldFont font-bold">Chromobacteria:</span>
@@ -160,7 +152,7 @@ import AppFooter from "../../Layouts/AppFooter.vue";
                     </p>
                     <br />
                     <p
-                        class="lightFont mt-5 lg:text-3xl text-xl text-blueGray-600 text md:text-left"
+                        class="lightFont mt-5 text-xl text-blueGray-600 text md:text-left"
                         style="text-align: justify"
                     >
                         <span class="boldFont font-bold"
@@ -176,9 +168,7 @@ import AppFooter from "../../Layouts/AppFooter.vue";
                 </div>
             </div>
             <div class="lightFont relative items-left">
-                <p
-                    class="w-full lg:py-8 mx-auto -mt-2 lg:text-3xl text-xl text-justify text-blueGray-600"
-                >
+                <p class="w-full mx-auto text-xl text-blueGray-600">
                     <span class="boldFont font-bold">Bacillus subtilis:</span>
                     es una bacteria cosmopolita presente en numerosos hábitats y
                     resulta ser un excelente agente de control biológico de
