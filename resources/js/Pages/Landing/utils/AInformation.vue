@@ -35,11 +35,11 @@
                 <span class="block text-zinc-600">cajas de banano</span
                 ><span class="block text-zinc-600">premium por año</span>
             </h1>
-            <div class="flex flex-col items-center -mb-32 z-50">
+            <div class="flex flex-col items-center -mb-32">
                 <img
                     src="/assets/4-Exportacion/Icon-banans.png"
                     alt="image"
-                    class="mx-auto d-block border-4 border-white rounded-full bg-white z-50"
+                    class="mx-auto d-block border-4 border-white rounded-full bg-white z-50 scale-90"
                 />
             </div>
         </div>
