@@ -4,18 +4,26 @@
             class="container mx-auto flex justify-center items-center px-4 md:px-10 pb-10"
         >
             <div
-                class="lightFont text-history bg-transparent text-2xl text-black font-normal px-3 md:px-4 py-2 flex flex-col justify-center items-center"
+                class="lightFont text-history bg-transparent text-xl text-black font-normal px-3 md:px-4 py-2 flex flex-col justify-center items-center"
             >
-                <p class="mt-10 leading-normal text-center md:w-9/12 lg:w-7/12">
-                    Somos una empresa familiar que desde 1945 nos hemos dedicado
+                <p class="mt-2 leading-normal text-center md:w-9/12 lg:w-7/12">
+                    Somos una empresa familiar que desde 1933 nos hemos dedicado
                     a producir artículos agrícolas de la mejor calidad para su
                     exportación a los diferentes destinos del mundo.
                 </p>
                 <br />
+                <p class="mt-2 leading-normal text-center md:w-9/12 lg:w-7/12">
+                    Gracias a las enseñanzas transmitidas por nuestros
+                    fundadores, nos enfocamos en contribuir al desarrollo social
+                    y económico, de nuestros colaboradores, sus familias y
+                    comunidades donde trabajamos. Y asi, poder ser una compania
+                    agroindustrial de clase mundial.
+                </p>
+                <br />
                 <p class="mt-10 leading-normal text-center md:w-9/12 lg:w-7/12">
-                    Nos hemos convertido en la empresa Líder de la región,
-                    cumpliendo con los valores y requisitos de ser una empresa
-                    exportadora. Distinguiéndonos por
+                    Somos una empresa líder en la región, cumpliendo con los
+                    valores y requisitos de ser una empresa exportadora.
+                    Distinguiéndonos por:
                 </p>
                 <br />
                 <div class="flex flex-wrap mt-10 justify-center uppercase">

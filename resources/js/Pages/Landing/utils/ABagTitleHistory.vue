@@ -8,13 +8,13 @@
             />
         </div>
         <br />
-        <div class="lg:block hidden">
+        <div class="lg:block hidden text-5xl">
             <h1
-                class="leading-tight mx-auto w-full my-2 text-5xl font-bold leading-tight text-center text-amber-300"
+                class="leading-tight mx-auto w-full my-2 font-bold leading-tight text-center text-amber-300"
             >
                 CONOCE MÁS DE <br />
                 <span
-                    class="leading-tight mx-auto w-full my-2 text-5xl font-bold leading-tight text-center text-amber-300"
+                    class="leading-tight mx-auto w-full my-2 font-bold leading-tight text-center text-amber-300"
                 >
                     NUESTRA HISTORIA
                 </span>
