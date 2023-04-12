@@ -2,9 +2,9 @@
     <section class="bg-white">
         <div class="py-8 lg:py-8 mx-auto max-w-screen-lg px-0">
             <h2
-                class="mb-8 lg:mb-8 text-2xl boldFont tracking-tight leading-tight text-center text-gray-900"
+                class="mb-8 lg:mb-8 text-2xl boldFont tracking-tight leading-tight text-center text-gray-900 uppercase"
             >
-                EN ALIANZA CON
+                trabajamos de la mano
             </h2>
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                 <a class="flex justify-center items-center">

@@ -16,7 +16,7 @@
                         />
                     </div>
                     <div class="h_rectangle">
-                        <img src="/assets/Gallery/kids.jpg" class="img-grid" />
+                        <img src="/assets/Gallery/IMG_1140.jpg" class="img-grid" />
                     </div>
                     <div class="img-space">
                         <img
@@ -30,7 +30,7 @@
                     <div class="bigsquare_blank">
                         <div class="inner_square">
                             <img
-                                src="/assets/Gallery/workman.jpg"
+                                src="/assets/Gallery/IMG_1184.jpg"
                                 class="img-grid"
                             />
                         </div>
@@ -42,7 +42,7 @@
                         </div>
                         <div class="inner_square">
                             <img
-                                src="/assets/Gallery/algodon.jpg"
+                                src="/assets/Gallery/Algodon.jpg"
                                 class="img-grid"
                             />
                         </div>

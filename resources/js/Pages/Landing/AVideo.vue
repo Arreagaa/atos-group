@@ -10,9 +10,11 @@
         <video
             class="w-4/5 aspect-video -m-16 mt-8"
             src="/assets/Gallery/GrupoAtos.mp4"
+            poster="/assets/Gallery/IMG_1345.jpg"
             controls
             preload
             loop
+            style="object-fit: cover; object-position: center"
         ></video>
         <br />
     </div>

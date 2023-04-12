@@ -49,4 +49,8 @@ Route::get('/bio-security', function () {
     return Inertia::render('Bio-security/AShow');
 })->name('bio-security');
 
+Route::get('/certifications', function () {
+    return Inertia::render('Certifications/AShow');
+})->name('certifications');
+
 Route::post('/contact', ContactController::class)->name('contact');

@@ -95,14 +95,14 @@ import DropdownLink from "@/Components/DropdownLink.vue";
                                                 Nuestro Enfoque
                                             </a>
                                             <DropdownLink
+                                                :href="route('environment')"
+                                            >
+                                                Agricultura Regenerativa
+                                            </DropdownLink>
+                                            <DropdownLink
                                                 :href="route('socialWork')"
                                             >
                                                 Trabajo social
-                                            </DropdownLink>
-                                            <DropdownLink
-                                                :href="route('environment')"
-                                            >
-                                                Medio Ambiente
                                             </DropdownLink>
                                             <DropdownLink
                                                 :href="route('laboratory')"
@@ -113,6 +113,11 @@ import DropdownLink from "@/Components/DropdownLink.vue";
                                                 :href="route('bio-security')"
                                             >
                                                 Bio-seguridad
+                                            </DropdownLink>
+                                            <DropdownLink
+                                                :href="route('certifications')"
+                                            >
+                                                Certificaciones
                                             </DropdownLink>
 
                                             <div
@@ -217,17 +222,20 @@ import DropdownLink from "@/Components/DropdownLink.vue";
                                 >
                                     Nuestro Enfoque
                                 </a>
+                                <DropdownLink :href="route('environment')">
+                                    Agricultura Regenerativa
+                                </DropdownLink>
                                 <DropdownLink :href="route('socialWork')">
                                     Trabajo social
-                                </DropdownLink>
-                                <DropdownLink :href="route('environment')">
-                                    Medio Ambiente
                                 </DropdownLink>
                                 <DropdownLink :href="route('laboratory')">
                                     Laboratorio
                                 </DropdownLink>
                                 <DropdownLink :href="route('bio-security')">
                                     Bio-seguridad
+                                </DropdownLink>
+                                <DropdownLink :href="route('certifications')">
+                                    Certificaciones
                                 </DropdownLink>
 
                                 <div class="border-t border-gray-100" />

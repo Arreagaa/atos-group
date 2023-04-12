@@ -47,8 +47,8 @@ import AppFooter from "../../Layouts/AppFooter.vue";
             <h1
                 class="boldFont leading-tight mx-auto w-full my-2 text-8xl font-bold leading-tight text-zinc-600"
             >
-                REUTILIZAR EL <br />
-                100% DE MATERIALES
+                REUTILIZAR O RECICLAR EL 100% <br />
+                DE MATERIALES
             </h1>
             <p
                 class="lightFont text-5xl leading-tight mx-auto w-full my-2 leading-tight text-zinc-600"
@@ -69,7 +69,7 @@ import AppFooter from "../../Layouts/AppFooter.vue";
             <h1
                 class="boldFont leading-tight mx-auto w-full my-2 text-4xl font-bold leading-tight text-zinc-600"
             >
-                REUTILIZAR EL <br />
+                REUTILIZAR O RECICLAR EL <br />
                 100% DE MATERIALES
             </h1>
             <p

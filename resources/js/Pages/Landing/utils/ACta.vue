@@ -28,7 +28,7 @@ export default {
                         >
                             <div class="absolute -ml-48">
                                 <img
-                                    src="/assets/4-Exportacion/icon-export.png"
+                                    src="/assets/4-Exportacion/Icon-export.png"
                                     alt=""
                                 />
                             </div>

@@ -9,7 +9,7 @@ import AppFooter from "../../Layouts/AppFooter.vue";
     >
         <div class="container items-center m-auto px-6 text-white">
             <p class="boldFont text-8xl font-bold text-center">
-                Medio Ambiente
+                Agricultura Regenerativa
             </p>
             <p class="lightFont text-2xl font-base text-center mt-8">
                 Manejo de los desechos de empacadoras.
@@ -22,7 +22,7 @@ import AppFooter from "../../Layouts/AppFooter.vue";
     >
         <div class="container items-center m-auto px-6 text-white">
             <p class="boldFont text-5xl font-bold text-center">
-                Medio Ambiente
+                Agricultura Regenerativa
             </p>
             <p class="lightFont text-xl font-base text-center mt-12">
                 Manejo de los desechos de empacadoras.
