@@ -1,17 +1,23 @@
 @component('mail::message')
-<h1>Correo Grupo Atos</h1>
-<h2>Mensaje de {{$name}}</h2>
 
+<h1>Correo Grupo Atos</h1>
+@component('mail::panel')
+    Mensaje de {{$name}}
+@endcomponent
 <p>
     {{$body}}
 </p>
-
 <br>
 <p>
-    Contactar al Cliente por Número Teléfono {{$phone}} o por Correo Electrónico {{$email}}.
+    Medios de Contacto:
 </p>
-
+<ul>
+    <li>Número Teléfono: {{$phone}}</li>
+    <li>Correo Electrónico: {{$email}}</li>
+</ul>
+<hr>
 <p>
     ¡Los grandes trabajos son hechos por la perseverancia!
 </p>
+
 @endcomponent

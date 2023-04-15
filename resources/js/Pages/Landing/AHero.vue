@@ -18,15 +18,21 @@
                                         <h2
                                             class="blackFont atos mb-4 font-semibold text-left lg:text-8xl"
                                         >
-                                            Excelencia agrícola desde 1933
+                                            {{
+                                                $t(
+                                                    "Excelencia agrícola desde 1933"
+                                                )
+                                            }}
                                         </h2>
 
                                         <p
-                                            class="lightFont visible mx-0 mt-3 mb-0 text-2xl leading-relaxed text-left text-slate-200"
+                                            class="lightFont visible mx-0 mt-3 mb-0 text-2xl leading-relaxed text-left text-slate-200 pr-8"
                                         >
-                                            450 hectáreas con producción de
-                                            <br />
-                                            banano de la variedad Gran Enano.
+                                            {{
+                                                $t(
+                                                    "450 hectáreas con producción de banano de la variedad Gran Enano."
+                                                )
+                                            }}
                                         </p>
                                     </div>
                                 </div>
@@ -46,14 +52,21 @@
                                         <h2
                                             class="blackFont atos mb-4 text-7xl font-semibold text-left max-[375px]:text-6xl"
                                         >
-                                            Excelencia agrícola desde 1933
+                                            {{
+                                                $t(
+                                                    "Excelencia agrícola desde 1933"
+                                                )
+                                            }}
                                         </h2>
 
                                         <p
                                             class="lightFont visible mx-0 mt-3 mb-0 text-xl leading-relaxed text-left text-slate-200"
                                         >
-                                            450 hectáreas con producción de
-                                            banano de la variedad Gran Enano.
+                                            {{
+                                                $t(
+                                                    "450 hectáreas con producción de banano de la variedad Gran Enano."
+                                                )
+                                            }}
                                         </p>
                                     </div>
                                 </div>

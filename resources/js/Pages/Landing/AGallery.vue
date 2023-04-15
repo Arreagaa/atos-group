@@ -16,7 +16,7 @@
                         />
                     </div>
                     <div class="h_rectangle">
-                        <img src="/assets/Gallery/IMG_1140.jpg" class="img-grid" />
+                        <img src="/assets/Gallery/IMG_1226.jpg" class="img-grid" />
                     </div>
                     <div class="img-space">
                         <img
@@ -55,8 +55,8 @@
                     </div>
                     <div class="v_rectangle">
                         <img
-                            src="/assets/Gallery/bananas1.jpg"
-                            class="img-grid"
+                            src="/assets/Gallery/IMG_1345.jpg"
+                            class="img-grid object-left"
                         />
                     </div>
                 </div>
@@ -121,7 +121,6 @@
     left: 0;
     position: absolute;
     object-fit: cover;
-    object-position: center;
     padding: 2.5px;
 }
 </style>

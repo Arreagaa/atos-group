@@ -7,21 +7,19 @@ import AppFooter from "../../Layouts/AppFooter.vue";
         <AppWhiteHeader />
     </div>
     <section class="bg-white">
-        <div class="container px-6 py-16 mx-auto">
-            <div class="lg:block hidden text-center">
-                <p class="lightFont mt-4 text-amber-300 text-3xl font-bold">
-                    Entérate de todas nuestras
+        <div class="container px-6 lg:py-16 py-8 mx-auto">
+            <div class="text-center">
+                <p
+                    class="lightFont mt-4 text-amber-300 lg:text-3xl text-xl font-bold"
+                >
+                    {{ $t("Entérate de todas nuestras") }}
                 </p>
-                <h1 class="boldFont text-gray-500 text-9xl font-bold">Noticias</h1>
+                <h1
+                    class="boldFont text-gray-500 lg:text-9xl text-7xl font-bold"
+                >
+                    {{ $t("Noticias") }}
+                </h1>
             </div>
-
-            <div class="lg:hidden text-center">
-                <p class="lightFont mt-4 text-amber-300 text-xl font-bold">
-                    Entérate de todas nuestras
-                </p>
-                <h1 class="boldFont text-gray-500 text-7xl font-bold">Noticias</h1>
-            </div>
-
             <div
                 class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 sm:grid-cols-2 xl:grid-cols-3 lg:grid-cols-3 pb-36"
             >

@@ -35,7 +35,7 @@ a img {
 
 h1 {
     color: #3d4852;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
     margin-top: 0;
     text-align: left;
@@ -43,7 +43,7 @@ h1 {
 
 h2 {
     color: #3d4852;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     margin-top: 0;
     text-align: left;
@@ -51,15 +51,15 @@ h2 {
 
 h3 {
     color: #3d4852;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
     margin-top: 0;
     text-align: left;
 }
 
-p {
+p, ul, li {
     color: #3d4852;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5em;
     margin-top: 0;
     text-align: left;

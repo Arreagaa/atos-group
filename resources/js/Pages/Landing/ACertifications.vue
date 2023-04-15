@@ -4,7 +4,7 @@
             <h2
                 class="mb-8 lg:mb-8 text-2xl boldFont tracking-tight leading-tight text-center text-gray-900 uppercase"
             >
-                trabajamos de la mano
+                {{ $t("trabajamos de la mano") }}
             </h2>
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                 <a class="flex justify-center items-center">

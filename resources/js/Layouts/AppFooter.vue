@@ -49,28 +49,28 @@
                         <div class="w-full lg:w-4/12 mb-2 px-4 ml-auto">
                             <span
                                 class="block uppercase text-white text-sm font-semibold mb-2"
-                                >Website Links</span
+                                >{{ $t("Enlaces Web") }}</span
                             >
                             <ul class="list-unstyled">
                                 <li>
                                     <a
                                         class="text-white hover:text-amber-300 font-semibold block pb-2 text-sm"
                                         href="/#history"
-                                        >History</a
+                                        >{{ $t("Historia") }}</a
                                     >
                                 </li>
                                 <li>
                                     <a
                                         class="text-white hover:text-amber-300 font-semibold block pb-2 text-sm"
                                         href="/#about"
-                                        >About</a
+                                        >{{ $t("Nosotros") }}</a
                                     >
                                 </li>
                                 <li>
                                     <a
                                         class="text-white hover:text-amber-300 font-semibold block pb-2 text-sm"
                                         href="/#products"
-                                        >Products</a
+                                        >{{ $t("Productos") }}</a
                                     >
                                 </li>
                                 <li>
@@ -85,7 +85,7 @@
                         <div class="w-full lg:w-4/12 px-4">
                             <span
                                 class="block uppercase text-white text-sm font-semibold mb-2"
-                                >Resources</span
+                                >{{ $t("Recursos") }}</span
                             >
                             <ul class="list-unstyled">
                                 <li>
@@ -93,14 +93,14 @@
                                         class="text-white hover:text-amber-300 font-semibold block pb-2 text-sm"
                                         href="https://policies.google.com/privacy?hl=es"
                                         target="_blank"
-                                        >Privacy Policy</a
+                                        >{{ $t("Política de Privacidad") }}</a
                                     >
                                 </li>
                                 <li>
                                     <a
                                         class="text-white hover:text-amber-300 font-semibold block pb-2 text-sm"
                                         href="/"
-                                        >Website Access</a
+                                        >{{ $t("Acceso al Sitio Web") }}</a
                                     >
                                 </li>
                                 <li>
@@ -108,7 +108,7 @@
                                         class="text-white hover:text-amber-300 font-semibold block pb-2 text-sm"
                                         href="/"
                                         target="_blank"
-                                        >Site Map</a
+                                        >{{ $t("Mapa") }}</a
                                     >
                                 </li>
                                 <li>
@@ -116,7 +116,7 @@
                                         class="text-white hover:text-amber-300 font-semibold block pb-2 text-sm"
                                         href="https://policies.google.com/privacy?hl=es"
                                         target="_blank"
-                                        >Usage Terms &amp; Conditions</a
+                                        >{{ $t("Términos y Condiciones") }}</a
                                     >
                                 </li>
                             </ul>

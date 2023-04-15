@@ -1,11 +1,11 @@
-<script type="text/javascript">
+<script>
 (function () {
     var options = {
         call: "+502 2295 6100",
         call_color: "#666666",
         whatsapp: "+(502) 4005 1798",
         whatsapp_color: "#666666",
-        call_to_action: "¡Ponte en Contacto!",
+        call_to_action: "Get in touch!",
         button_color: "rgb(252 211 77)",
         position: "right",
         order: "call,whatsapp",

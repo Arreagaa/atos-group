@@ -2,10 +2,11 @@
     <div class="boldFont lg:block hidden container max-w-fit mx-auto mt-4">
         <div class="flex text-start justify-around w-full uppercase">
             <h1 class="font-bold tracking-tight text-zinc-600 mt-36">
-                <span class="block text-zinc-600 text-2xl"
-                    >Actualmente producimos</span
+                <span class="block text-zinc-600 text-2xl">{{
+                    $t("Actualmente producimos")
+                }}</span
                 ><span class="block text-amber-300 text-4xl"
-                    >más de 1,600,000
+                    >{{ $t("más de 1,600,000") }}
                 </span>
             </h1>
             <div class="flex flex-col items-center -mb-48 z-50 scale-75">
@@ -17,23 +18,35 @@
             </div>
 
             <h1 class="font-bold tracking-tight text-zinc-600 text-4xl mt-36">
-                <span class="block text-zinc-600">cajas de banano</span
-                ><span class="block text-zinc-600">premium por año</span>
+                <span class="block text-zinc-600">{{
+                    $t("cajas de banano")
+                }}</span
+                ><span class="block text-zinc-600">{{
+                    $t("premium por año")
+                }}</span>
             </h1>
         </div>
         <br />
     </div>
     <div
-        class="boldFont lg:hidden container max-w-fit mx-auto mt-4 justify-center text-center items-center uppercase mx-1"
+        class="boldFont lg:hidden container max-w-fit mx-auto mt-4 justify-center text-center items-center uppercase mx-2"
     >
         <div class="">
             <h1 class="font-bold tracking-tight text-zinc-600 mt-20 text-3xl">
-                <span class="block text-zinc-600">Actualmente producimos</span
-                ><span class="block text-amber-300">más de 1,600,000 </span>
+                <span class="block text-zinc-600">{{
+                    $t("Actualmente producimos")
+                }}</span
+                ><span class="block text-amber-300">{{
+                    $t("más de 1,600,000")
+                }}</span>
             </h1>
             <h1 class="font-bold tracking-tight text-zinc-600 text-3xl mb-5">
-                <span class="block text-zinc-600">cajas de banano</span
-                ><span class="block text-zinc-600">premium por año</span>
+                <span class="block text-zinc-600">{{
+                    $t("cajas de banano")
+                }}</span
+                ><span class="block text-zinc-600">{{
+                    $t("premium por año")
+                }}</span>
             </h1>
             <div class="flex flex-col items-center -mb-32">
                 <img

@@ -1,6 +1,7 @@
 <script setup>
 import Dropdown from "@/Components/Dropdown.vue";
 import DropdownLink from "@/Components/DropdownLink.vue";
+import ATranslate from "./utils/ATranslate.vue";
 </script>
 <template>
     <div class="bg-transparent max-w-fill text-white font-bold">
@@ -38,21 +39,21 @@ import DropdownLink from "@/Components/DropdownLink.vue";
                                 <a
                                     class="inline-block text-xl no-underline py-2 px-4 hover:text-amber-300"
                                     href="/#history"
-                                    >¿Quiénes Somos?</a
+                                    >{{ $t("¿Quiénes Somos?") }}</a
                                 >
                             </li>
                             <li>
                                 <a
                                     class="inline-block text-xl no-underline py-2 px-4 hover:text-amber-300"
                                     href="/#about"
-                                    >¿Qué hacemos?</a
+                                    >{{ $t("¿Qué hacemos?") }}</a
                                 >
                             </li>
                             <li>
                                 <a
                                     class="inline-block text-xl no-underline py-2 px-4 hover:text-amber-300"
                                     href="/products"
-                                    >Productos</a
+                                    >{{ $t("Productos") }}</a
                                 >
                             </li>
                             <li>
@@ -70,7 +71,7 @@ import DropdownLink from "@/Components/DropdownLink.vue";
                                                     type="button"
                                                     class="inline-flex items-center text-xl no-underline py-2 px-4 hover:text-amber-300 leading-4 transition"
                                                 >
-                                                    Sostenibilidad
+                                                    {{ $t("Sostenibilidad") }}
 
                                                     <svg
                                                         class="ml-2 -mr-0.5 h-4 w-4"
@@ -92,32 +93,85 @@ import DropdownLink from "@/Components/DropdownLink.vue";
                                                 href="/sustainability"
                                                 class="block px-4 py-2 text-sm text-gray-400 no-underline hover:text-amber-300"
                                             >
-                                                Nuestro Enfoque
+                                                {{ $t("Nuestro Enfoque") }}
                                             </a>
                                             <DropdownLink
                                                 :href="route('environment')"
                                             >
-                                                Agricultura Regenerativa
+                                                {{
+                                                    $t(
+                                                        "Agricultura Regenerativa"
+                                                    )
+                                                }}
                                             </DropdownLink>
                                             <DropdownLink
                                                 :href="route('socialWork')"
                                             >
-                                                Trabajo social
+                                                {{ $t("Trabajo social") }}
                                             </DropdownLink>
                                             <DropdownLink
                                                 :href="route('laboratory')"
                                             >
-                                                Laboratorio
+                                                {{ $t("Laboratorio") }}
                                             </DropdownLink>
                                             <DropdownLink
                                                 :href="route('bio-security')"
                                             >
-                                                Bio-seguridad
+                                                {{ $t("Bio-seguridad") }}
                                             </DropdownLink>
                                             <DropdownLink
                                                 :href="route('certifications')"
                                             >
-                                                Certificaciones
+                                                {{ $t("Certificaciones") }}
+                                            </DropdownLink>
+
+                                            <div
+                                                class="border-t border-gray-100"
+                                            />
+                                        </template>
+                                    </Dropdown>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="inline-block py-2 no-underline">
+                                    <Dropdown align="right" width="48">
+                                        <template #trigger>
+                                            <button
+                                                class="inline-flex text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-gray-300 transition"
+                                            ></button>
+
+                                            <span
+                                                class="inline-flex rounded-md"
+                                            >
+                                                <button
+                                                    type="button"
+                                                    class="inline-flex items-center text-xl no-underline py-2 px-4 hover:text-amber-300 leading-4 transition"
+                                                >
+                                                    {{ $t("Noticias") }}
+
+                                                    <svg
+                                                        class="ml-2 -mr-0.5 h-4 w-4"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        viewBox="0 0 20 20"
+                                                        fill="currentColor"
+                                                    >
+                                                        <path
+                                                            fill-rule="evenodd"
+                                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                                            clip-rule="evenodd"
+                                                        />
+                                                    </svg>
+                                                </button>
+                                            </span>
+                                        </template>
+                                        <template #content>
+                                            <DropdownLink :href="route('news')">
+                                                {{ $t("Nuestras Noticias") }}
+                                            </DropdownLink>
+                                            <DropdownLink
+                                                :href="route('login')"
+                                            >
+                                                {{ $t("Iniciar Sesión") }}
                                             </DropdownLink>
 
                                             <div
@@ -130,16 +184,15 @@ import DropdownLink from "@/Components/DropdownLink.vue";
                             <li>
                                 <a
                                     class="inline-block text-xl no-underline py-2 px-4 hover:text-amber-300"
-                                    href="/news"
-                                    >Noticias</a
+                                    href="/#contact"
+                                >
+                                    {{ $t("Contáctanos") }}</a
                                 >
                             </li>
                             <li>
-                                <a
-                                    class="inline-block text-xl no-underline py-2 px-4 hover:text-amber-300"
-                                    href="/#contact"
-                                    >Contáctanos</a
-                                >
+                                <div class="inline-block py-2 no-underline">
+                                    <ATranslate />
+                                </div>
                             </li>
                         </ul>
                     </nav>
@@ -166,7 +219,7 @@ import DropdownLink from "@/Components/DropdownLink.vue";
                         <a
                             class="inline-block text-xl no-underline py-2 px-4 hover:text-amber-300"
                             href="/#history"
-                            >¿Quiénes Somos?</a
+                            >{{ $t("¿Quiénes Somos?") }}</a
                         >
                     </a>
 
@@ -174,7 +227,7 @@ import DropdownLink from "@/Components/DropdownLink.vue";
                         <a
                             class="inline-block text-xl no-underline py-2 px-4 hover:text-amber-300"
                             href="/#about"
-                            >¿Qué hacemos?</a
+                            >{{ $t("¿Qué hacemos?") }}</a
                         >
                     </a>
 
@@ -182,7 +235,7 @@ import DropdownLink from "@/Components/DropdownLink.vue";
                         <a
                             class="inline-block text-xl no-underline py-2 px-4 hover:text-amber-300"
                             href="/products"
-                            >Productos</a
+                            >{{ $t("Productos") }}</a
                         >
                     </a>
 
@@ -198,7 +251,7 @@ import DropdownLink from "@/Components/DropdownLink.vue";
                                         type="button"
                                         class="inline-flex items-center text-xl no-underline py-2 px-4 hover:text-amber-300 leading-4 transition"
                                     >
-                                        Sostenibilidad
+                                        {{ $t("Sostenibilidad") }}
 
                                         <svg
                                             class="ml-2 -mr-0.5 h-4 w-4"
@@ -220,22 +273,64 @@ import DropdownLink from "@/Components/DropdownLink.vue";
                                     href="/sustainability"
                                     class="block px-4 py-2 text-sm text-gray-400 no-underline hover:text-amber-300"
                                 >
-                                    Nuestro Enfoque
+                                    {{ $t("Nuestro Enfoque") }}
                                 </a>
                                 <DropdownLink :href="route('environment')">
-                                    Agricultura Regenerativa
+                                    {{ $t("Agricultura Regenerativa") }}
                                 </DropdownLink>
                                 <DropdownLink :href="route('socialWork')">
-                                    Trabajo social
+                                    {{ $t("Trabajo social") }}
                                 </DropdownLink>
                                 <DropdownLink :href="route('laboratory')">
-                                    Laboratorio
+                                    {{ $t("Laboratorio") }}
                                 </DropdownLink>
                                 <DropdownLink :href="route('bio-security')">
-                                    Bio-seguridad
+                                    {{ $t("Bio-seguridad") }}
                                 </DropdownLink>
                                 <DropdownLink :href="route('certifications')">
-                                    Certificaciones
+                                    {{ $t("Certificaciones") }}
+                                </DropdownLink>
+
+                                <div class="border-t border-gray-100" />
+                            </template>
+                        </Dropdown>
+                    </div>
+
+                    <div class="inline-block no-underline">
+                        <Dropdown align="right" width="48">
+                            <template #trigger>
+                                <button
+                                    class="inline-flex text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-gray-300 transition"
+                                ></button>
+
+                                <span class="inline-flex rounded-md">
+                                    <button
+                                        type="button"
+                                        class="inline-flex items-center text-xl no-underline py-2 px-4 hover:text-amber-300 leading-4 transition"
+                                    >
+                                        {{ $t("Noticias") }}
+
+                                        <svg
+                                            class="ml-2 -mr-0.5 h-4 w-4"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20"
+                                            fill="currentColor"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                                clip-rule="evenodd"
+                                            />
+                                        </svg>
+                                    </button>
+                                </span>
+                            </template>
+                            <template #content>
+                                <DropdownLink :href="route('news')">
+                                    {{ $t("Nuestras Noticias") }}
+                                </DropdownLink>
+                                <DropdownLink :href="route('login')">
+                                    {{ $t("Iniciar Sesión") }}
                                 </DropdownLink>
 
                                 <div class="border-t border-gray-100" />
@@ -246,17 +341,14 @@ import DropdownLink from "@/Components/DropdownLink.vue";
                     <a class="inline-block no-underline">
                         <a
                             class="inline-block text-xl no-underline py-2 px-4 hover:text-amber-300"
-                            href="/news"
-                            >Noticias
+                            href="/#contact"
+                        >
+                            {{ $t("Contáctanos") }}
                         </a>
                     </a>
 
                     <a class="inline-block no-underline">
-                        <a
-                            class="inline-block text-xl no-underline py-2 px-4 hover:text-amber-300"
-                            href="/#contact"
-                            >Contáctanos
-                        </a>
+                        <ATranslate />
                     </a>
                 </div>
 

@@ -7,6 +7,8 @@ import { InertiaProgress } from '@inertiajs/progress';
 import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import { ZiggyVue } from '../../vendor/tightenco/ziggy/dist/vue.m';
 
+import { i18n } from './i18n';
+
 /* import the fontawesome core */
 import { library } from '@fortawesome/fontawesome-svg-core'
 
@@ -35,6 +37,7 @@ createInertiaApp({
             .component('l-icon', FontAwesomeIcon)
             .use(plugin)
             .use(ZiggyVue, Ziggy)
+            .use(i18n)
             .mount(el);
     },
 });

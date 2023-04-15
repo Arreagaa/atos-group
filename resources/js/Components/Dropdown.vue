@@ -30,6 +30,8 @@ onUnmounted(() => document.removeEventListener("keydown", closeOnEscape));
 const widthClass = computed(() => {
     return {
         48: "w-48",
+        32: "w-32",
+        20: "w-20",
     }[props.width.toString()];
 });
 
@@ -39,7 +41,7 @@ const alignmentClasses = computed(() => {
     }
 
     if (props.align === "right") {
-        return "origin-top-right right-0";
+        return "origin-top-right";
     }
 
     return "origin-top";
@@ -65,7 +67,7 @@ const alignmentClasses = computed(() => {
         >
             <div
                 v-show="open"
-                class="absolute z-50 mt-2 rounded-md pl-6"
+                class="absolute z-50 mt-2 rounded-md"
                 :class="[widthClass, alignmentClasses]"
                 style="display: none"
                 @click="open = false"

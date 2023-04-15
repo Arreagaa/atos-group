@@ -5,78 +5,42 @@ import AppFooter from "../../Layouts/AppFooter.vue";
 <template>
     <AppWhiteHeader />
     <div
-        class="lg:block hidden py-72 bg-[url('/assets/img/Sostenibillidad.jpg')] bg-cover"
+        class="lg:py-72 py-48 bg-[url('/assets/img/Sostenibillidad.jpg')] bg-cover"
     >
         <div class="container items-center m-auto px-6 text-white">
-            <p class="boldFont text-8xl font-bold text-center">
-                Sostenibillidad
+            <p class="boldFont lg:text-8xl text-5xl font-bold text-center">
+                {{ $t("Sostenibilidad") }}
             </p>
-            <p class="lightFont text-2xl font-base text-center mt-12">
-                Nos enfocamos en crear valor a largo plazo para los accionistas
-                mediante <br />
-                el aprovechamiento de oportunidades y la gestión eficaz de los
-                riesgos <br />
-                inherentes al desarrollo económico, medioambiental y social.
-            </p>
-        </div>
-    </div>
-
-    <div
-        class="lg:hidden py-48 bg-[url('/assets/img/Sostenibillidad.jpg')] bg-cover"
-    >
-        <div class="container items-center m-auto px-6 text-white">
-            <p class="boldFont text-5xl font-bold text-center">
-                Sostenibillidad
-            </p>
-            <p class="lightFont text-xl font-base text-center mt-12">
-                Nos enfocamos en crear valor a largo plazo para los accionistas
-                mediante el aprovechamiento de oportunidades y la gestión eficaz
-                de los riesgos inherentes al desarrollo económico,
-                medioambiental y social.
+            <p
+                class="lightFont lg:text-2xl text-xl font-base text-center mt-12 2xl:px-96 xl:px-72"
+            >
+                {{
+                    $t(
+                        "Nos enfocamos en crear valor a largo plazo para los accionistas mediante el aprovechamiento de oportunidades y la gestión eficaz de los riesgos inherentes al desarrollo económico, medioambiental y social."
+                    )
+                }}
             </p>
         </div>
     </div>
 
     <div class="max-w-app lg:my-40 items-left text-left">
-        <div class="lg:block hidden container max-w-5xl mx-auto m-8 uppercase">
-            <span
-                class="boldFont leading-tight mx-auto w-full my-2 text-5xl font-bold leading-tight text-amber-400"
-            >
-                NUESTRA META:
-            </span>
-            <h1
-                class="boldFont leading-tight mx-auto w-full my-2 text-8xl font-bold leading-tight text-zinc-600"
-            >
-                REUTILIZAR O RECICLAR EL 100% <br />
-                DE MATERIALES
-            </h1>
-            <p
-                class="lightFont text-5xl leading-tight mx-auto w-full my-2 leading-tight text-zinc-600"
-            >
-                EN NUESTROS PROCESOS <br />
-                PARA EL 2025
-            </p>
-        </div>
-
         <div
-            class="lg:hidden container max-w-5xl mx-auto m-12 px-3 py-8 uppercase"
+            class="container max-w-5xl mx-auto lg:m-8 m-12 px-3 py-8 uppercase"
         >
             <span
-                class="boldFont leading-tight mx-auto w-full my-2 text-3xl font-bold leading-tight text-amber-400"
+                class="boldFont leading-tight mx-auto w-full my-2 lg:text-5xl text-3xl font-bold leading-tight text-amber-400"
             >
-                NUESTRA META:
+                {{ $t("NUESTRA META:") }}
             </span>
             <h1
-                class="boldFont leading-tight mx-auto w-full my-2 text-4xl font-bold leading-tight text-zinc-600"
+                class="boldFont leading-tight mx-auto w-full my-2 lg:pr-12 lg:text-8xl text-4xl font-bold leading-tight text-zinc-600"
             >
-                REUTILIZAR O RECICLAR EL <br />
-                100% DE MATERIALES
+                {{ $t("REUTILIZAR O RECICLAR EL 100% DE MATERIALES") }}
             </h1>
             <p
-                class="lightFont text-2xl leading-tight mx-auto w-full my-2 font-bold leading-tight text-zinc-600"
+                class="lightFont lg:text-5xl text-2xl leading-tight lg:pr-80 mx-auto w-full my-2 leading-tight text-zinc-600 pr-12"
             >
-                EN NUESTROS PROCESOS <br />
-                PARA EL 2025
+                {{ $t("EN NUESTROS PROCESOS PARA EL 2025") }}
             </p>
         </div>
     </div>

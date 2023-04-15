@@ -21,7 +21,7 @@ import ACertifications from "./ACertifications.vue";
 <template>
     <section
         id="Welcome"
-        class="bg-[url('/assets/1-Principal/Principal.png')] bg-cover"
+        class="bg-[url('/assets/1-Principal/IMG_1221.jpg')] bg-cover"
     >
         <div>
             <AppHeader />

@@ -8,28 +8,11 @@
             />
         </div>
         <br />
-        <div class="lg:block hidden text-5xl">
+        <div class="lg:text-5xl text-4xl">
             <h1
-                class="leading-tight mx-auto w-full my-2 font-bold leading-tight text-center text-amber-300"
+                class="leading-tight mx-auto w-full my-2 font-bold leading-tight text-center text-amber-300 lg:px-56 lg:px-0 px-2"
             >
-                CONOCE MÁS DE <br />
-                <span
-                    class="leading-tight mx-auto w-full my-2 font-bold leading-tight text-center text-amber-300"
-                >
-                    NUESTRA HISTORIA
-                </span>
-            </h1>
-        </div>
-        <div class="lg:hidden text-4xl">
-            <h1
-                class="leading-tight mx-auto w-full my-2 font-bold leading-tight text-center text-amber-300"
-            >
-                CONOCE MÁS DE <br />
-                <span
-                    class="leading-tight mx-auto w-full font-bold leading-tight text-center text-amber-300"
-                >
-                    NUESTRA HISTORIA
-                </span>
+                {{ $t("CONOCE MÁS DE NUESTRA HISTORIA") }}
             </h1>
         </div>
     </div>

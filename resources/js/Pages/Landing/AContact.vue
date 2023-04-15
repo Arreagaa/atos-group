@@ -38,7 +38,7 @@ const submit = () => {
                 <h1
                     class="container mx-auto w-full lg:text-5xl text-4xl font-bold text-center text-white"
                 >
-                    ¿Seguimos en contacto?
+                    {{ $t("¿Seguimos en contacto?") }}
                 </h1>
             </div>
         </div>
@@ -51,7 +51,7 @@ const submit = () => {
                         class="appearance-none block w-full bg-grey-lighter text-grey-darker border-2 rounded-lg py-3 px-4 mb-3 focus-danger focus-form"
                         id="name"
                         type="text"
-                        placeholder="Nombre y Apellido *"
+                        :placeholder="$t('Nombre y Apellido *')"
                     />
                     <input
                         v-else
@@ -59,7 +59,7 @@ const submit = () => {
                         class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-3 focus-form"
                         id="name"
                         type="text"
-                        placeholder="Nombre y Apellido *"
+                        :placeholder="$t('Nombre y Apellido *')"
                     />
                 </div>
                 <div class="md:w-1/2 px-3">
@@ -69,7 +69,7 @@ const submit = () => {
                         class="appearance-none block w-full bg-grey-lighter text-grey-darker border-2 rounded-lg py-3 px-4 mb-3 focus-danger focus-form"
                         id="phone"
                         type="phone"
-                        placeholder="Teléfono *"
+                        :placeholder="$t('Teléfono *')"
                     />
                     <input
                         v-else
@@ -77,7 +77,7 @@ const submit = () => {
                         class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-3 focus-form"
                         id="phone"
                         type="phone"
-                        placeholder="Teléfono *"
+                        :placeholder="$t('Teléfono *')"
                     />
                 </div>
             </div>
@@ -89,7 +89,7 @@ const submit = () => {
                         class="appearance-none block w-full bg-grey-lighter text-grey-darker border-2 rounded-lg py-3 px-4 mb-3 focus-danger focus-form"
                         id="email"
                         type="email"
-                        placeholder="Correo Electrónico *"
+                        :placeholder="$t('Correo Electrónico *')"
                     />
                     <input
                         v-else
@@ -97,7 +97,7 @@ const submit = () => {
                         class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-3 focus-form"
                         id="email"
                         type="email"
-                        placeholder="Correo Electrónico *"
+                        :placeholder="$t('Correo Electrónico *')"
                     />
                 </div>
             </div>
@@ -109,7 +109,7 @@ const submit = () => {
                         class="appearance-none block w-full bg-grey-lighter text-grey-darker border-2 rounded-lg py-3 px-4 mb-3 focus-danger focus-form"
                         id="message"
                         type="text"
-                        placeholder="Mensaje *"
+                        :placeholder="$t('Mensaje *')"
                     />
                     <textarea
                         v-else
@@ -117,7 +117,7 @@ const submit = () => {
                         class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-3 focus-form"
                         id="message"
                         type="text"
-                        placeholder="Mensaje *"
+                        :placeholder="$t('Mensaje *')"
                     />
                 </div>
             </div>
@@ -126,13 +126,16 @@ const submit = () => {
                     type="submit"
                     class="text-amber-300 bg-zinc-900 hover:bg-amber-300 hover:text-black font-bold rounded-lg text-lg w-full sm:w-auto px-5 py-2.5 text-center uppercase"
                 >
-                    Enviar
+                    {{ $t("Enviar") }}
                 </button>
             </div>
             <div class="inline-flex justify-end mb-6">
                 <div v-if="showMessage" class="alert-success">
-                    ¡El Mensaje fue enviado correctamente, pronto nos pondremos
-                    en contacto!
+                    {{
+                        $t(
+                            "¡El Mensaje fue enviado correctamente, pronto nos pondremos en contacto!"
+                        )
+                    }}
                 </div>
                 <div
                     v-if="
@@ -142,8 +145,11 @@ const submit = () => {
                     "
                     class="alert-danger"
                 >
-                    Debes completar la información del formulario para
-                    continuar.
+                    {{
+                        $t(
+                            "Debes completar la información del formulario para continuar."
+                        )
+                    }}
                 </div>
             </div>
         </form>

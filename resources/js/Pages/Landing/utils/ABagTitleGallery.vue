@@ -1,53 +1,25 @@
 <template>
-    <div class="max-w-5xl mx-auto mb-12">
-        <br />
-        <div class="lg:block hidden uppercase">
+    <div class="max-w-5xl mx-auto lg:my-12 my-4">
+        <div class="uppercase">
             <h1
-                class="blackFont container mx-auto w-full text-4xl font-bold text-center text-zinc-600"
+                class="blackFont container mx-auto w-full lg:text-4xl text-2xl font-bold text-center text-zinc-600"
             >
-                Los grandes
-                <br />
-                <span
-                    class="blackFont container mx-auto w-full text-8xl font-bold text-center text-zinc-600"
+                {{ $t("Los grandes") }}
+                <p
+                    class="blackFont container mx-auto w-full lg:text-8xl text-5xl font-bold text-center text-zinc-600"
                 >
-                    trabajos
-                </span>
-                <br />
-                <span
-                    class="regularFont mx-auto w-full text-6xl font-normal text-center text-zinc-600"
+                    {{ $t("trabajos") }}
+                </p>
+                <p
+                    class="regularFont mx-auto w-full lg:text-6xl text-3xl font-normal text-center text-zinc-600"
                 >
-                    son hechos por la
-                </span>
-                <span
-                    class="blackFont container mx-auto w-full text-8xl font-bold text-center text-amber-300"
+                    {{ $t("son hechos por la") }}
+                </p>
+                <p
+                    class="blackFont container mx-auto w-full lg:text-8xl text-4xl font-bold text-center text-amber-300"
                 >
-                    perseverancia
-                </span>
-            </h1>
-        </div>
-        <div class="lg:hidden uppercase">
-            <h1
-                class="blackFont container mx-auto w-full text-2xl font-bold text-center text-zinc-600"
-            >
-                Los grandes
-                <br />
-                <span
-                    class="blackFont container mx-auto w-full text-5xl font-bold text-center text-zinc-600"
-                >
-                    trabajos
-                </span>
-                <br />
-                <span
-                    class="regularFont mx-auto w-full text-3xl font-normal text-center text-zinc-600"
-                >
-                    son hechos por la
-                </span>
-                <br />
-                <span
-                    class="blackFont container mx-auto w-full text-4xl font-bold text-center text-amber-300"
-                >
-                    perseverancia
-                </span>
+                    {{ $t("perseverancia") }}
+                </p>
             </h1>
         </div>
     </div>

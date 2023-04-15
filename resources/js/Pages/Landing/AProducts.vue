@@ -13,7 +13,7 @@
                 />
             </div>
             <div class="text-center">
-                <p class="text-xl text-black">Algodón</p>
+                <p class="text-xl text-black">{{ $t("Algodón") }}</p>
             </div>
         </div>
         <div
@@ -27,7 +27,7 @@
                 />
             </div>
             <div class="text-center">
-                <p class="text-xl text-black">Plátano</p>
+                <p class="text-xl text-black">{{ $t("Plátano") }}</p>
             </div>
         </div>
         <div
@@ -41,7 +41,7 @@
                 />
             </div>
             <div class="text-center">
-                <p class="text-xl text-black">Pimiento Morrón</p>
+                <p class="text-xl text-black">{{ $t("Pimiento Morrón") }}</p>
             </div>
         </div>
         <div
@@ -55,7 +55,7 @@
                 />
             </div>
             <div class="text-center">
-                <p class="text-xl text-black">Tomate</p>
+                <p class="text-xl text-black">{{ $t("Tomate") }}</p>
             </div>
         </div>
         <div
@@ -69,7 +69,7 @@
                 />
             </div>
             <div class="text-center">
-                <p class="text-xl text-black">Banano</p>
+                <p class="text-xl text-black">{{ $t("Banano") }}</p>
             </div>
         </div>
     </div>

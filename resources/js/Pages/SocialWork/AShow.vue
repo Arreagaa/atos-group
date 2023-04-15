@@ -5,43 +5,30 @@ import AppFooter from "../../Layouts/AppFooter.vue";
 <template>
     <AppWhiteHeader />
     <div
-        class="lg:block hidden py-72 bg-[url('/assets/img/socialWork.jpeg')] bg-cover"
+        class="lg:py-72 py-48 bg-[url('/assets/img/socialWork.jpeg')] bg-cover bg-center"
     >
         <div class="container items-center m-auto px-6 text-white">
-            <p class="boldFont text-8xl font-bold text-center">
-                Trabajo Social
+            <p
+                class="boldFont lg:text-8xl text-5xl font-bold text-center capitalize"
+            >
+                {{ $t("Trabajo social") }}
             </p>
-            <p class="lightFont text-xl font-base text-center mt-12">
-                Estamos orientados a lograr calidad de vida laboral, compromiso
-                y la <br />
-                retención de talento, aspectos que impactan de forma positiva en
-                la <br />
-                productividad de la empresa.
-            </p>
-        </div>
-    </div>
-
-    <div
-        class="lg:hidden py-48 bg-[url('/assets/img/socialWork.jpeg')] bg-cover bg-center"
-    >
-        <div class="container items-center m-auto px-6 text-white">
-            <p class="boldFont text-5xl font-bold text-center">
-                Trabajo Social
-            </p>
-            <p class="lightFont text-xl lightFont font-base text-center mt-12">
-                Estamos orientados a lograr calidad de vida laboral, compromiso
-                y la <br />
-                retención de talento, aspectos que impactan de forma positiva en
-                la <br />
-                productividad de la empresa.
+            <p
+                class="lightFont lg:text-2xl text-xl xl:mx-96 font-base text-center mt-12"
+            >
+                {{
+                    $t(
+                        "Estamos orientados a lograr calidad de vida laboral, compromiso y la retención de talento, aspectos que impactan de forma positiva en la productividad de la empresa."
+                    )
+                }}
             </p>
         </div>
     </div>
 
     <div class="max-w-app my-12 items-left text-left">
         <h1 class="boldFont font-bold lg:text-4xl text-2xl text-amber-300">
-            MAS DE 50 PROYECTOS CON <br />
-            NUESTRAS COMUNIDADES:
+            {{ $t("MAS DE 50 PROYECTOS CON") }} <br />
+            {{ $t("NUESTRAS COMUNIDADES:") }}
         </h1>
 
         <div class="">
@@ -59,7 +46,7 @@ import AppFooter from "../../Layouts/AppFooter.vue";
 
                             <div class="space-y-2">
                                 <h5 class="lightFont text-xl text-gray-800">
-                                    Alimentación.
+                                    {{ $t("Alimentación.") }}
                                 </h5>
                             </div>
                         </div>
@@ -74,8 +61,11 @@ import AppFooter from "../../Layouts/AppFooter.vue";
 
                             <div class="space-y-2">
                                 <h5 class="lightFont text-xl text-gray-800">
-                                    Concientización, muestreos y seguimiento de
-                                    VIH en la región.
+                                    {{
+                                        $t(
+                                            "Concientización, muestreos y seguimiento de VIH en la región."
+                                        )
+                                    }}
                                 </h5>
                             </div>
                         </div>
@@ -90,8 +80,11 @@ import AppFooter from "../../Layouts/AppFooter.vue";
 
                             <div class="space-y-2">
                                 <h5 class="lightFont text-xl text-gray-800">
-                                    Programa de maestros, educación para niños
-                                    de comunidades aledañas.
+                                    {{
+                                        $t(
+                                            "Programa de maestros, educación para niños de comunidades aledañas."
+                                        )
+                                    }}
                                 </h5>
                             </div>
                         </div>
@@ -106,7 +99,7 @@ import AppFooter from "../../Layouts/AppFooter.vue";
 
                             <div class="space-y-2">
                                 <h5 class="lightFont text-xl text-gray-800">
-                                    Campeonatos internos futbol.
+                                    {{ $t("Campeonatos internos futbol.") }}
                                 </h5>
                             </div>
                         </div>
@@ -121,8 +114,11 @@ import AppFooter from "../../Layouts/AppFooter.vue";
 
                             <div class="space-y-2">
                                 <h5 class="lightFont text-xl text-gray-800">
-                                    Cooperativa creada conjunto con
-                                    colaboradores de la empresa.
+                                    {{
+                                        $t(
+                                            "Cooperativa creada conjunto con colaboradores de la empresa."
+                                        )
+                                    }}
                                 </h5>
                             </div>
                         </div>
@@ -137,7 +133,11 @@ import AppFooter from "../../Layouts/AppFooter.vue";
 
                             <div class="space-y-2">
                                 <h5 class="lightFont text-xl text-gray-800">
-                                    Trabajos de salud con colaboradores y niños.
+                                    {{
+                                        $t(
+                                            "Trabajos de salud con colaboradores y niños."
+                                        )
+                                    }}
                                 </h5>
                             </div>
                         </div>
@@ -160,21 +160,26 @@ import AppFooter from "../../Layouts/AppFooter.vue";
                                     class="lg:block hidden lightFont text-xl text-gray-800"
                                 >
                                     <span class="font-bold">
-                                        Reserva en Monterrico, costas del
-                                        Pacifico de Guatemala:
+                                        {{
+                                            $t(
+                                                "Reserva en Monterrico, costas del Pacifico de Guatemala"
+                                            )
+                                        }}:
                                     </span>
-                                    Trabajo de limpieza de playas y
-                                    mantenimiento de biodiversidad de especies
-                                    locales. Reproducción y liberación de la
-                                    tortuga Parlama (Lepidochelys olivacea) o la
-                                    conservación del Mangle en la costa del
-                                    Pacifico.
+                                    {{
+                                        $t(
+                                            "Trabajo de limpieza de playas y mantenimiento de biodiversidad de especies locales. Reproducción y liberación de la tortuga Parlama (Lepidochelys olivacea) o la conservación del Mangle en la costa del Pacifico."
+                                        )
+                                    }}
                                 </h5>
                                 <h5
                                     class="lg:hidden lightFont text-xl text-gray-800"
                                 >
-                                    Reserva en Monterrico, costas del Pacifico
-                                    de Guatemala.
+                                    {{
+                                        $t(
+                                            "Reserva en Monterrico, costas del Pacifico de Guatemala"
+                                        )
+                                    }}.
                                 </h5>
                             </div>
                         </div>
