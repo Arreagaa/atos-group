@@ -3,8 +3,9 @@
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\PostController;
+use App\Models\Post;
 use Inertia\Inertia;
-
 
 /*
 |--------------------------------------------------------------------------
@@ -29,9 +30,9 @@ Route::get('/products', function () {
     return Inertia::render('Products/AShow');
 })->name('products');
 
-Route::get('/news', function () {
-    return Inertia::render('News/AShow');
-})->name('news');
+Route::group([], function () {
+    Route::resource('/posts', PostController::class);
+});
 
 Route::get('/socialWork', function () {
     return Inertia::render('SocialWork/AShow');
@@ -54,3 +55,15 @@ Route::get('/certifications', function () {
 })->name('certifications');
 
 Route::post('/contact', ContactController::class)->name('contact');
+
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified',
+])->group(function () {
+    Route::get('/dashboard', function () {
+        $posts = Post::all();
+        return Inertia::render('Dashboard', ['posts'=>$posts]);
+    }
+    )->name('dashboard');
+});

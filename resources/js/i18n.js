@@ -200,6 +200,16 @@ const messages = {
         "Todo esto para tratar de evitar o minimizar el riesgo del el ingreso del hongo patógeno a las areas de producción.":
             "Todo esto para tratar de evitar o minimizar el riesgo del el ingreso del hongo patógeno a las areas de producción.",
         "Entérate de todas nuestras": "Entérate de todas nuestras",
+        "Advertencia, este apartado es solo para personal Autorizado.":
+            "Advertencia, este apartado es solo para personal Autorizado.",
+        "Inicia sesión para poder continuar":
+            "Inicia sesión para poder continuar",
+        "Correo electrónico": "Correo electrónico",
+        Contraseña: "Contraseña",
+        "¿Olvidaste tu contraseña?": "¿Olvidaste tu contraseña?",
+        "Guardar Usuario": "Guardar Usuario",
+        "Leer más": "Leer más",
+        Cuenta: "Cuenta",
     },
     en: {
         Productos: "Products",
@@ -397,6 +407,15 @@ const messages = {
         "Todo esto para tratar de evitar o minimizar el riesgo del el ingreso del hongo patógeno a las areas de producción.":
             "All this to try to avoid or minimize the risk of pathogenic fungus entering production areas.",
         "Entérate de todas nuestras": "Find out about all our",
+        "Advertencia, este apartado es solo para personal Autorizado.":
+            "Warning, this section is only for Authorized personnel.",
+        "Inicia sesión para poder continuar": "Log in to continue",
+        "Correo electrónico": "Email",
+        Contraseña: "Password",
+        "¿Olvidaste tu contraseña?": "Did you forget your password?",
+        "Guardar Usuario": "Save User",
+        "Leer más": "Read More",
+        Cuenta: "Account",
     },
 };
 

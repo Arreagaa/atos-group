@@ -1,6 +1,17 @@
-<script setup>
+<script>
 import AppWhiteHeader from "../../Layouts/AppWhiteHeader.vue";
 import AppFooter from "../../Layouts/AppFooter.vue";
+import ANews from "./ANews.vue";
+export default {
+    props: {
+        posts: Array,
+    },
+    components: {
+        AppWhiteHeader,
+        AppFooter,
+        ANews,
+    },
+};
 </script>
 <template>
     <div>
@@ -20,71 +31,8 @@ import AppFooter from "../../Layouts/AppFooter.vue";
                     {{ $t("Noticias") }}
                 </h1>
             </div>
-            <div
-                class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 sm:grid-cols-2 xl:grid-cols-3 lg:grid-cols-3 pb-36"
-            >
-                <div class="w-full">
-                    <div class="w-full h-64 bg-gray-300 rounded-lg"></div>
-
-                    <h1 class="w-56 h-2 mt-4 bg-gray-200 rounded-lg"></h1>
-                    <p class="w-24 h-2 mt-4 bg-gray-200 rounded-lg"></p>
-                </div>
-
-                <div class="w-full">
-                    <div class="w-full h-64 bg-gray-300 rounded-lg"></div>
-
-                    <h1 class="w-56 h-2 mt-4 bg-gray-200 rounded-lg"></h1>
-                    <p class="w-24 h-2 mt-4 bg-gray-200 rounded-lg"></p>
-                </div>
-
-                <div class="w-full">
-                    <div class="w-full h-64 bg-gray-300 rounded-lg"></div>
-
-                    <h1 class="w-56 h-2 mt-4 bg-gray-200 rounded-lg"></h1>
-                    <p class="w-24 h-2 mt-4 bg-gray-200 rounded-lg"></p>
-                </div>
-
-                <div class="w-full">
-                    <div class="w-full h-64 bg-gray-300 rounded-lg"></div>
-
-                    <h1 class="w-56 h-2 mt-4 bg-gray-200 rounded-lg"></h1>
-                    <p class="w-24 h-2 mt-4 bg-gray-200 rounded-lg"></p>
-                </div>
-
-                <div class="w-full">
-                    <div class="w-full h-64 bg-gray-300 rounded-lg"></div>
-
-                    <h1 class="w-56 h-2 mt-4 bg-gray-200 rounded-lg"></h1>
-                    <p class="w-24 h-2 mt-4 bg-gray-200 rounded-lg"></p>
-                </div>
-
-                <div class="w-full">
-                    <div class="w-full h-64 bg-gray-300 rounded-lg"></div>
-
-                    <h1 class="w-56 h-2 mt-4 bg-gray-200 rounded-lg"></h1>
-                    <p class="w-24 h-2 mt-4 bg-gray-200 rounded-lg"></p>
-                </div>
-
-                <div class="w-full">
-                    <div class="w-full h-64 bg-gray-300 rounded-lg"></div>
-
-                    <h1 class="w-56 h-2 mt-4 bg-gray-200 rounded-lg"></h1>
-                    <p class="w-24 h-2 mt-4 bg-gray-200 rounded-lg"></p>
-                </div>
-
-                <div class="w-full">
-                    <div class="w-full h-64 bg-gray-300 rounded-lg"></div>
-
-                    <h1 class="w-56 h-2 mt-4 bg-gray-200 rounded-lg"></h1>
-                    <p class="w-24 h-2 mt-4 bg-gray-200 rounded-lg"></p>
-                </div>
-
-                <div class="w-full">
-                    <div class="w-full h-64 bg-gray-300 rounded-lg"></div>
-
-                    <h1 class="w-56 h-2 mt-4 bg-gray-200 rounded-lg"></h1>
-                    <p class="w-24 h-2 mt-4 bg-gray-200 rounded-lg"></p>
-                </div>
+            <div>
+                <ANews :posts="posts" />
             </div>
         </div>
     </section>

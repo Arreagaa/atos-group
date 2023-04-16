@@ -165,10 +165,17 @@ import ATranslate from "./utils/ATranslate.vue";
                                             </span>
                                         </template>
                                         <template #content>
-                                            <DropdownLink :href="route('news')">
+                                            <DropdownLink :href="route('posts.index')">
                                                 {{ $t("Nuestras Noticias") }}
                                             </DropdownLink>
                                             <DropdownLink
+                                                v-if="$page.props.user"
+                                                :href="route('dashboard')"
+                                            >
+                                                {{ $t("Cuenta") }}
+                                            </DropdownLink>
+                                            <DropdownLink
+                                                v-else
                                                 :href="route('login')"
                                             >
                                                 {{ $t("Iniciar Sesión") }}
@@ -326,10 +333,16 @@ import ATranslate from "./utils/ATranslate.vue";
                                 </span>
                             </template>
                             <template #content>
-                                <DropdownLink :href="route('news')">
+                                <DropdownLink :href="route('posts.index')">
                                     {{ $t("Nuestras Noticias") }}
                                 </DropdownLink>
-                                <DropdownLink :href="route('login')">
+                                <DropdownLink
+                                    v-if="$page.props.user"
+                                    :href="route('dashboard')"
+                                >
+                                    {{ $t("Cuenta") }}
+                                </DropdownLink>
+                                <DropdownLink v-else :href="route('login')">
                                     {{ $t("Iniciar Sesión") }}
                                 </DropdownLink>
 
