@@ -1,10 +1,12 @@
 <script>
 import AppLayout from "@/Layouts/AppLayout.vue";
+import AVImage from "../../../Components/utils/AVImage.vue";
 import Swal from "sweetalert2/dist/sweetalert2.js";
 import "sweetalert2/dist/sweetalert2.min.css";
 export default {
     components: {
         AppLayout,
+        AVImage,
     },
     data() {
         return {
@@ -12,6 +14,7 @@ export default {
                 title: null,
                 description: null,
                 image: null,
+                pdf: null,
             },
             previewImageUrl: null,
         };
@@ -57,7 +60,7 @@ export default {
 </script>
 <template>
     <AppLayout title="Dashboard">
-        <div class="py-24">
+        <div class="lg:py-24 py-8">
             <div
                 class="container flex flex-col px-6 py-4 mx-auto lg:space-y-2 space-y-8 md:h-128 md:py-16 md:flex-row md:items-center"
             >
@@ -65,9 +68,15 @@ export default {
                     <img
                         v-if="previewImageUrl"
                         :src="previewImageUrl"
-                        class="object-cover w-full h-full max-w-2xl rounded-md"
+                        class="object-cover w-full max-w-2xl rounded-md"
                         alt=""
                     />
+                    <div
+                        v-else
+                        class="object-cover w-full h-full max-w-2xl rounded-md opacity-60"
+                    >
+                        <AVImage />
+                    </div>
                 </div>
                 <div
                     class="flex flex-col items-center w-full md:flex-row md:w-1/2"
@@ -116,10 +125,12 @@ export default {
                                 >Documento de la Noticia
                             </label>
                             <input
+                                @change="(e) => (form.pdf = e.target.files[0])"
                                 class="lightFont w-full px-3 py-2 border border-gray-300 rounded-md focus-form"
                                 type="file"
                                 id="pdf"
                                 name="pdf"
+                                required
                             />
                         </div>
                         <div class="mb-4">

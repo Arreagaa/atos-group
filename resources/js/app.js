@@ -22,7 +22,14 @@ import {
     faInstagram,
     faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faClock } from "@fortawesome/free-regular-svg-icons";
+import {
+    faEnvelope,
+    faClock,
+    faNewspaper,
+    faImage,
+    faPenToSquare,
+    faTrashCan,
+} from "@fortawesome/free-regular-svg-icons";
 import {
     faArrowRight,
     faBars,
@@ -57,7 +64,11 @@ library.add(
     faTractor,
     faBriefcase,
     faScrewdriver,
-    faWhatsapp
+    faWhatsapp,
+    faNewspaper,
+    faImage,
+    faPenToSquare,
+    faTrashCan
 );
 
 const appName =

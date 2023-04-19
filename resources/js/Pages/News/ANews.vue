@@ -1,5 +1,7 @@
 <script>
 import ABtn from "@/Components/utils/ABtn.vue";
+import Swal from "sweetalert2/dist/sweetalert2.js";
+import "sweetalert2/dist/sweetalert2.min.css";
 
 export default {
     props: {
@@ -7,6 +9,32 @@ export default {
     },
     components: {
         ABtn,
+    },
+    methods: {
+        deletePost(id) {
+            Swal.fire({
+                title: "¿Estás seguro?",
+                text: "Asegúrate que sea la Noticia correcta.",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#FFCC00",
+                cancelButtonColor: "#d33",
+                confirmButtonText: "¡Si, eliminar Noticia!",
+                cancelButtonText: "Cancelar",
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    this.$inertia.delete(route("posts.destroy", id), {
+                        preserveScroll: true,
+                    });
+                    Swal.fire({
+                        title: "¡Actualización de Noticias!",
+                        text: "Se ha eliminado exitosamente.",
+                        icon: "success",
+                        confirmButtonColor: "#FFCC00",
+                    });
+                }
+            });
+        },
     },
 };
 </script>
@@ -26,7 +54,7 @@ export default {
             class="max-w-xs md:max-w-none overflow-hidden"
         >
             <img
-                class="h-56 lg:h-70  w-full object-cover rounded"
+                class="h-56 lg:h-70 w-full object-cover rounded"
                 :src="'/images/' + post.image"
                 alt=""
             />
@@ -42,9 +70,25 @@ export default {
                 <p class="regularFont paragraph-normal text-gray-600">
                     {{ post.description }}
                 </p>
-                <a class="lightFont mt-3 block" href="#" target="_blank"
+                <a
+                    class="lightFont mt-3 block"
+                    :href="'/pdf/' + post.pdf"
+                    target="_blank"
                     >{{ $t("Leer más") }} >></a
                 >
+                <div v-if="$page.props.user" class="flex items-center py-4">
+                    <a :href="route('posts.edit', post.id)"
+                        ><l-icon
+                            icon="fa-regular fa-pen-to-square"
+                            class="text-amber-300 text-2xl font-bold"
+                    /></a>
+
+                    <a @click="deletePost(post.id)"
+                        ><l-icon
+                            icon="fa-regular fa-trash-can"
+                            class="text-red-400 text-2xl font-bold px-4 cursor-pointer"
+                    /></a>
+                </div>
             </div>
         </div>
     </div>

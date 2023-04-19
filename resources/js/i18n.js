@@ -210,6 +210,7 @@ const messages = {
         "Guardar Usuario": "Guardar Usuario",
         "Leer más": "Leer más",
         Cuenta: "Cuenta",
+        "No hay noticias para mostrar": "No hay noticias para mostrar",
     },
     en: {
         Productos: "Products",
@@ -416,6 +417,7 @@ const messages = {
         "Guardar Usuario": "Save User",
         "Leer más": "Read More",
         Cuenta: "Account",
+        "No hay noticias para mostrar": "There are no news to show",
     },
 };
 

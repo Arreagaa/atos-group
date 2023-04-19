@@ -1,6 +1,7 @@
 <script>
 import AppWhiteHeader from "../../Layouts/AppWhiteHeader.vue";
 import AppFooter from "../../Layouts/AppFooter.vue";
+import AValidate from "../../Components/utils/AValidate.vue";
 import ANews from "./ANews.vue";
 export default {
     props: {
@@ -9,6 +10,7 @@ export default {
     components: {
         AppWhiteHeader,
         AppFooter,
+        AValidate,
         ANews,
     },
 };
@@ -31,8 +33,11 @@ export default {
                     {{ $t("Noticias") }}
                 </h1>
             </div>
-            <div>
+            <div v-if="posts.length > 0">
                 <ANews :posts="posts" />
+            </div>
+            <div v-else class="lg:py-32 py-24">
+                <AValidate />
             </div>
         </div>
     </section>

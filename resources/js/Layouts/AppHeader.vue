@@ -208,7 +208,7 @@ import ATranslate from "./utils/ATranslate.vue";
                 <div>
                     <a
                         class="flex items-center tracking-wide no-underline hover:no-underline font-bold text-gray-800 mr-8"
-                        href="/"
+                        :href="route('landing')"
                     >
                         <img
                             src="/assets/Logos/LogoFooter.png"

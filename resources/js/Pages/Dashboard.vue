@@ -1,9 +1,11 @@
 <script>
 import AppLayout from "@/Layouts/AppLayout.vue";
+import AValidate from "../Components/utils/AValidate.vue";
 import ANews from "./News/ANews.vue";
 export default {
     components: {
         AppLayout,
+        AValidate,
         ANews,
     },
     props: {
@@ -24,6 +26,9 @@ export default {
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <ANews :posts="posts" />
             </div>
+        </div>
+        <div v-if="!posts.length > 0">
+            <AValidate />
         </div>
     </AppLayout>
 </template>

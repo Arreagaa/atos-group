@@ -6,36 +6,21 @@ use App\Models\Post;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\File;
 
 class PostController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
         $posts = Post::all();
         return Inertia::render('News/AShow', ['posts'=>$posts]);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
         return Inertia::render('News/utils/ACreate');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
         $post = new Post([
@@ -50,56 +35,49 @@ class PostController extends Controller
             $image->move($destinationPath, $name);
             $post->image = $name;
         }
+
+        if ($request->hasFile('pdf')) {
+            $pdf = $request->file('pdf');
+            $name = time().'.'.$pdf->getClientOriginalExtension();
+            $destinationPath = public_path('/pdf');
+            $pdf->move($destinationPath, $name);
+            $post->pdf = $name;
+        }
         
         $post->save();
         
         return Redirect::route('dashboard');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\post  $post
-     * @return \Illuminate\Http\Response
-     */
-    public function show(post $post)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\post  $post
-     * @return \Illuminate\Http\Response
-     */
     public function edit(post $post)
     {
         return Inertia::render('News/utils/AEdit', ['post' => $post]);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\post  $post
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, post $post)
+    public function update(Request $request, Post $post)
     {
-        $post->update($request->all());
-        return Redirect::route('posts.index');
+        $post->update([
+            'title' => $request->input('title'),
+            'description' => $request->input('description'),
+        ]);
+
+        return Redirect::route('dashboard');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\post  $post
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(post $post)
+    public function destroy(Post $post)
     {
+        $publicPath = public_path();
+
+        if (File::exists($publicPath . '/pdf/' . $post->pdf)) {
+            File::delete($publicPath . '/pdf/' . $post->pdf);
+        }
+
+        if (File::exists($publicPath . '/images/' . $post->image)) {
+            File::delete($publicPath . '/images/' . $post->image);
+        }
+
         $post->delete();
-        return Redirect::route('posts.index');
+
+        return Redirect::route('dashboard');
     }
 }

@@ -8,9 +8,9 @@
             />
         </div>
         <br />
-        <div class="lg:text-5xl text-4xl">
+        <div class="lg:text-5xl text-4xl lg:px-56">
             <h1
-                class="leading-tight mx-auto w-full my-2 font-bold leading-tight text-center text-amber-300 lg:px-56 lg:px-0 px-2"
+                class="leading-tight mx-auto w-full my-2 font-bold leading-tight text-center text-amber-300"
             >
                 {{ $t("CONOCE MÁS DE NUESTRA HISTORIA") }}
             </h1>
