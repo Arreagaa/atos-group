@@ -122,14 +122,15 @@ export default {
                             <label
                                 class="regularFont block text-gray-700 text-base font-bold mb-2"
                                 for="pdf"
-                                >Documento de la Noticia
-                            </label>
+                                >Documento de la Noticia</label
+                            >
                             <input
                                 @change="(e) => (form.pdf = e.target.files[0])"
                                 class="lightFont w-full px-3 py-2 border border-gray-300 rounded-md focus-form"
                                 type="file"
                                 id="pdf"
                                 name="pdf"
+                                accept="application/pdf"
                                 required
                             />
                         </div>
@@ -137,15 +138,15 @@ export default {
                             <label
                                 class="regularFont block text-gray-700 text-base font-bold mb-2"
                                 for="image"
+                                >Imagen de la Noticia</label
                             >
-                                Imagen de la Noticia
-                            </label>
                             <input
                                 @change="previewImage"
                                 class="lightFont w-full px-3 py-2 border border-gray-300 rounded-md focus-form"
                                 type="file"
                                 id="image"
                                 name="image"
+                                accept="image/*"
                                 required
                             />
                         </div>

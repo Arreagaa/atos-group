@@ -54,7 +54,7 @@ export default {
             class="max-w-xs md:max-w-none overflow-hidden"
         >
             <img
-                class="h-56 lg:h-70 w-full object-cover rounded"
+                class="h-56 lg:h-80 w-full object-cover rounded"
                 :src="'/images/' + post.image"
                 alt=""
             />
