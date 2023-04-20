@@ -59,7 +59,7 @@ export default {
             >
                 <div class="flex items-center justify-center w-full md:w-1/2">
                     <img
-                        :src="'/images/' + post.image"
+                        :src="'/storage/images/' + post.image"
                         class="object-cover w-full max-w-2xl rounded-md"
                         alt=""
                     />

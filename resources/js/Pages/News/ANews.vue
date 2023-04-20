@@ -55,7 +55,7 @@ export default {
         >
             <img
                 class="h-56 lg:h-80 w-full object-cover rounded"
-                :src="'/images/' + post.image"
+                :src="'/storage/images/' + post.image"
                 alt=""
             />
             <div class="py-3">
@@ -72,7 +72,7 @@ export default {
                 </p>
                 <a
                     class="lightFont mt-3 block"
-                    :href="'/pdf/' + post.pdf"
+                    :href="'/storage/pdf/' + post.pdf"
                     target="_blank"
                     >{{ $t("Leer más") }} >></a
                 >
