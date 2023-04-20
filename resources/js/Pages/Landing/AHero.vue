@@ -10,7 +10,7 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div
-                            class="carousel-container absolute top-40 lg:left-52 left-4"
+                            class="carousel-container absolute top-40 lg:left-52 left-3"
                         >
                             <section
                                 class="flex flex-wrap items-center lg:-mx-6 lg:px-4 lg:py-4 -mx-3 px-3 mx-auto w-full lg:max-w-screen-lg sm:max-w-screen-sm md:max-w-screen-md"
