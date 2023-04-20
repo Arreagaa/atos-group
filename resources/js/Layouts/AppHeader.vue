@@ -90,7 +90,7 @@ import ATranslate from "./utils/ATranslate.vue";
                                         </template>
                                         <template #content>
                                             <a
-                                                href="/sustainability"
+                                                :href="route('sustainability')"
                                                 class="block px-4 py-2 text-sm text-gray-400 no-underline hover:text-amber-300"
                                             >
                                                 {{ $t("Nuestro Enfoque") }}
@@ -165,7 +165,9 @@ import ATranslate from "./utils/ATranslate.vue";
                                             </span>
                                         </template>
                                         <template #content>
-                                            <DropdownLink :href="route('posts.index')">
+                                            <DropdownLink
+                                                :href="route('posts.index')"
+                                            >
                                                 {{ $t("Nuestras Noticias") }}
                                             </DropdownLink>
                                             <DropdownLink
@@ -277,7 +279,7 @@ import ATranslate from "./utils/ATranslate.vue";
                             </template>
                             <template #content>
                                 <a
-                                    href="/sustainability"
+                                    :href="route('sustainability')"
                                     class="block px-4 py-2 text-sm text-gray-400 no-underline hover:text-amber-300"
                                 >
                                     {{ $t("Nuestro Enfoque") }}
