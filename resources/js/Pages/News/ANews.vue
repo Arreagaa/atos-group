@@ -83,10 +83,10 @@ export default {
                             class="text-amber-300 text-2xl font-bold"
                     /></a>
 
-                    <a @click="deletePost(post.id)"
+                    <a @click="deletePost(post.id)" class="px-4"
                         ><l-icon
                             icon="fa-regular fa-trash-can"
-                            class="text-red-400 text-2xl font-bold px-4 cursor-pointer"
+                            class="text-red-400 text-2xl font-bold cursor-pointer"
                     /></a>
                 </div>
             </div>

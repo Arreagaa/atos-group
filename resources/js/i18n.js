@@ -211,6 +211,7 @@ const messages = {
         "Leer más": "Leer más",
         Cuenta: "Cuenta",
         "No hay noticias para mostrar": "No hay noticias para mostrar",
+        "¡Ponte en contacto!": "¡Ponte en contacto!",
     },
     en: {
         Productos: "Products",
@@ -418,6 +419,7 @@ const messages = {
         "Leer más": "Read More",
         Cuenta: "Account",
         "No hay noticias para mostrar": "There are no news to show",
+        "¡Ponte en contacto!": "Get in touch!",
     },
 };
 

@@ -14,8 +14,8 @@ export default {
     data() {
         return {
             form: {
-                title: this.$props.post.title,
-                description: this.$props.post.description,
+                title: this.post.title,
+                description: this.post.description,
             },
         };
     },
@@ -28,12 +28,12 @@ export default {
                 showCancelButton: true,
                 confirmButtonColor: "#FFCC00",
                 cancelButtonColor: "#d33",
-                confirmButtonText: "¡Si, crear Noticia!",
+                confirmButtonText: "¡Si, actualizar Noticia!",
                 cancelButtonText: "Cancelar",
             }).then((result) => {
                 if (result.isConfirmed) {
                     this.$inertia.put(
-                        route("posts.update", this.$props.post.id),
+                        route("posts.update", this.post.id),
                         this.form,
                         {
                             preserveScroll: true,
@@ -41,7 +41,7 @@ export default {
                     );
                     Swal.fire({
                         title: "¡Actualización de Noticias!",
-                        text: "Se ha agregado exitosamente.",
+                        text: "Se ha actualizado exitosamente.",
                         icon: "success",
                         confirmButtonColor: "#FFCC00",
                     });
@@ -76,7 +76,7 @@ export default {
                             <label
                                 class="regularFont block text-gray-700 text-base font-bold mb-2"
                                 for="title"
-                                >Título de la Noticia</label
+                                >Nuevo Título de la Noticia</label
                             >
                             <input
                                 v-model="form.title"
@@ -92,7 +92,7 @@ export default {
                             <label
                                 class="regularFont block text-gray-700 text-base font-bold mb-2"
                                 for="description"
-                                >Descripción
+                                >Nueva Descripción
                             </label>
                             <textarea
                                 v-model="form.description"

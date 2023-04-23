@@ -25,8 +25,8 @@ class PostController extends Controller
     public function store(Request $request)
     {
         $post = new Post([
-            'title' => $request->get('title'),
-            'description' => $request->get('description'),
+            'title' => $request->input('title'),
+            'description' => $request->input('description'),
         ]);
 
         if ($request->hasFile('image')) {
