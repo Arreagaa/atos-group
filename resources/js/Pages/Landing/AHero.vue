@@ -10,7 +10,7 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div
-                            class="carousel-container absolute top-40 lg:left-52 left-2"
+                            class="carousel-container absolute top-40 lg:left-52"
                         >
                             <section
                                 class="flex flex-wrap items-center lg:-mx-6 lg:px-4 lg:py-4 -mx-3 px-3 mx-auto w-full lg:max-w-screen-lg sm:max-w-screen-sm md:max-w-screen-md"
@@ -35,7 +35,7 @@
                                         </h2>
 
                                         <p
-                                            class="lightFont visible mx-0 mt-3 mb-0 lg:text-2xl text-xl leading-relaxed text-left text-slate-200 pr-8"
+                                            class="lightFont visible mx-0 mt-3 mb-0 lg:text-2xl text-xl leading-relaxed text-left text-slate-200 max-[375px]:pr-0 pr-8"
                                         >
                                             {{
                                                 $t(
