@@ -64,11 +64,10 @@ const submit = () => {
             >
                 <div class="flex-1">
                     <div class="text-center">
-                        <a href="/">
+                        <a :href="route('landing')">
                             <img
                                 src="/assets/1-Principal/LogoATOSGray.png"
-                                alt="image"
-                                class="rounded mx-auto d-block lg:scale-110"
+                                class="scale-110"
                             />
                         </a>
 

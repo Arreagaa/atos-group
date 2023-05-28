@@ -23,7 +23,7 @@ export default {
         <div class="container px-6 lg:py-16 py-8 mx-auto">
             <div class="text-center">
                 <p
-                    class="lightFont mt-4 text-amber-300 lg:text-3xl text-xl font-bold"
+                    class="lightFont mt-4 text-[#e7bd5f] lg:text-3xl text-xl font-bold"
                 >
                     {{ $t("Entérate de todas nuestras") }}
                 </p>

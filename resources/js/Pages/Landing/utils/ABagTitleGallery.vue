@@ -16,7 +16,7 @@
                     {{ $t("son hechos por la") }}
                 </p>
                 <p
-                    class="blackFont container mx-auto w-full lg:text-8xl text-4xl font-bold text-center text-amber-300"
+                    class="blackFont container mx-auto w-full lg:text-8xl text-4xl font-bold text-center text-[#e7bd5f]"
                 >
                     {{ $t("perseverancia") }}
                 </p>

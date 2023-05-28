@@ -34,7 +34,7 @@ const submit = () => {
                 <img
                     src="/assets/1-Principal/LogoATOSGray.png"
                     alt="image"
-                    class="rounded mx-auto d-block pb-8 lg:scale-125"
+                    class="rounded mx-auto d-block pb-8 w-96 scale-110"
                 />
             </a>
         </template>

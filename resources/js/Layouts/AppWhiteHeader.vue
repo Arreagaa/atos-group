@@ -2,28 +2,37 @@
 import Dropdown from "@/Components/Dropdown.vue";
 import DropdownLink from "@/Components/DropdownLink.vue";
 import ATranslate from "./utils/ATranslate.vue";
+import { Link } from "@inertiajs/inertia-vue3";
+import { ref } from "vue";
+
+const isMenuOpen = ref(false);
+
+function toggleMenu() {
+    isMenuOpen.value = !isMenuOpen.value;
+}
 </script>
 <template>
     <div class="bg-white max-w-fill text-white font-bold">
         <nav id="header" class="w-full z-30 top-0 py-1">
             <div
-                class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-3 py-3"
+                class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-3 py-6"
             >
                 <label
                     for="menu-toggle"
-                    class="absolute top-11 right-6 cursor-pointer md:hidden block"
+                    class="absolute top-9 right-6 cursor-pointer md:hidden block"
                 >
-                    <svg
-                        class="fill-current text-gray-500"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 20 20"
-                    >
-                        <path
-                            d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"
-                        ></path>
-                    </svg>
+                    <l-icon
+                        v-if="!isMenuOpen"
+                        icon="fa-solid fa-bars"
+                        class="text-gray-500 text-2xl"
+                        @click="toggleMenu"
+                    />
+                    <l-icon
+                        v-else
+                        icon="fa-solid fa-xmark"
+                        class="text-gray-500 text-2xl"
+                        @click="toggleMenu"
+                    />
                 </label>
                 <input class="hidden" type="checkbox" id="menu-toggle" />
 
@@ -36,28 +45,28 @@ import ATranslate from "./utils/ATranslate.vue";
                             class="md:flex items-center justify-between text-base text-gray-500 pt-8 md:pt-0"
                         >
                             <li>
-                                <a
-                                    class="inline-block text-xl no-underline py-2 px-4 hover:text-amber-300"
+                                <Link
+                                    class="inline-block text-xl py-2 px-4 hover:text-[#e7bd5f]"
                                     href="/#history"
-                                    >{{ $t("¿Quiénes Somos?") }}</a
+                                    >{{ $t("¿Quiénes Somos?") }}</Link
                                 >
                             </li>
                             <li>
-                                <a
-                                    class="inline-block text-xl no-underline py-2 px-4 hover:text-amber-300"
+                                <Link
+                                    class="inline-block text-xl py-2 px-4 hover:text-[#e7bd5f]"
                                     href="/#about"
-                                    >{{ $t("¿Qué hacemos?") }}</a
+                                    >{{ $t("¿Qué hacemos?") }}</Link
                                 >
                             </li>
                             <li>
-                                <a
-                                    class="inline-block text-xl no-underline py-2 px-4 hover:text-amber-300"
-                                    href="/products"
-                                    >{{ $t("Productos") }}</a
+                                <Link
+                                    class="inline-block text-xl py-2 px-4 hover:text-[#e7bd5f]"
+                                    :href="route('products')"
+                                    >{{ $t("Productos") }}</Link
                                 >
                             </li>
                             <li>
-                                <div class="inline-block py-2 no-underline">
+                                <div class="inline-block py-2">
                                     <Dropdown align="right" width="48">
                                         <template #trigger>
                                             <button
@@ -69,7 +78,7 @@ import ATranslate from "./utils/ATranslate.vue";
                                             >
                                                 <button
                                                     type="button"
-                                                    class="inline-flex items-center text-xl no-underline py-2 px-4 hover:text-amber-300 leading-4 transition"
+                                                    class="inline-flex items-center text-xl py-2 px-4 hover:text-[#e7bd5f] leading-4 transition"
                                                 >
                                                     {{ $t("Sostenibilidad") }}
 
@@ -89,12 +98,12 @@ import ATranslate from "./utils/ATranslate.vue";
                                             </span>
                                         </template>
                                         <template #content>
-                                            <a
+                                            <Link
                                                 :href="route('sustainability')"
-                                                class="block px-4 py-2 text-sm text-gray-400 no-underline hover:text-amber-300"
+                                                class="block px-4 py-2 text-sm text-gray-400 hover:text-[#e7bd5f]"
                                             >
                                                 {{ $t("Nuestro Enfoque") }}
-                                            </a>
+                                            </Link>
                                             <DropdownLink
                                                 :href="route('environment')"
                                             >
@@ -133,7 +142,7 @@ import ATranslate from "./utils/ATranslate.vue";
                                 </div>
                             </li>
                             <li>
-                                <div class="inline-block py-2 no-underline">
+                                <div class="inline-block py-2">
                                     <Dropdown align="right" width="48">
                                         <template #trigger>
                                             <button
@@ -145,7 +154,7 @@ import ATranslate from "./utils/ATranslate.vue";
                                             >
                                                 <button
                                                     type="button"
-                                                    class="inline-flex items-center text-xl no-underline py-2 px-4 hover:text-amber-300 leading-4 transition"
+                                                    class="inline-flex items-center text-xl py-2 px-4 hover:text-[#e7bd5f] leading-4 transition"
                                                 >
                                                     {{ $t("Noticias") }}
 
@@ -165,7 +174,9 @@ import ATranslate from "./utils/ATranslate.vue";
                                             </span>
                                         </template>
                                         <template #content>
-                                            <DropdownLink :href="route('posts.index')">
+                                            <DropdownLink
+                                                :href="route('posts.index')"
+                                            >
                                                 {{ $t("Nuestras Noticias") }}
                                             </DropdownLink>
                                             <DropdownLink
@@ -189,15 +200,15 @@ import ATranslate from "./utils/ATranslate.vue";
                                 </div>
                             </li>
                             <li>
-                                <a
-                                    class="inline-block text-xl no-underline py-2 px-4 hover:text-amber-300"
+                                <Link
+                                    class="inline-block text-xl py-2 px-4 hover:text-[#e7bd5f]"
                                     href="/#contact"
                                 >
-                                    {{ $t("Contáctanos") }}</a
+                                    {{ $t("Contáctanos") }}</Link
                                 >
                             </li>
                             <li>
-                                <div class="inline-block py-2 no-underline">
+                                <div class="inline-block py-2">
                                     <ATranslate />
                                 </div>
                             </li>
@@ -206,47 +217,47 @@ import ATranslate from "./utils/ATranslate.vue";
                 </div>
 
                 <div>
-                    <a
-                        class="flex items-center tracking-wide no-underline hover:no-underline font-bold text-gray-800 mr-8"
+                    <Link
+                        class="flex items-center mx-4"
                         :href="route('landing')"
                     >
                         <img
                             src="/assets/1-Principal/LogoATOSGray.png"
                             alt="image"
-                            class="rounded mx-auto d-block scale-90"
+                            class="rounded mx-auto d-block w-96"
                         />
-                    </a>
+                    </Link>
                 </div>
 
                 <div
                     class="regularFont order-2 md:order-3 text-gray-500 flex items-center lg:block hidden"
                     id="nav-content"
                 >
-                    <a class="inline-block no-underline">
-                        <a
-                            class="inline-block text-xl no-underline py-2 px-4 hover:text-amber-300"
+                    <a class="inline-block">
+                        <Link
+                            class="inline-block text-xl py-2 px-4 hover:text-[#e7bd5f]"
                             href="/#history"
-                            >{{ $t("¿Quiénes Somos?") }}</a
+                            >{{ $t("¿Quiénes Somos?") }}</Link
                         >
                     </a>
 
-                    <a class="inline-block no-underline">
-                        <a
-                            class="inline-block text-xl no-underline py-2 px-4 hover:text-amber-300"
+                    <a class="inline-block">
+                        <Link
+                            class="inline-block text-xl py-2 px-4 hover:text-[#e7bd5f]"
                             href="/#about"
-                            >{{ $t("¿Qué hacemos?") }}</a
+                            >{{ $t("¿Qué hacemos?") }}</Link
                         >
                     </a>
 
-                    <a class="inline-block no-underline">
-                        <a
-                            class="inline-block text-xl no-underline py-2 px-4 hover:text-amber-300"
-                            href="/products"
-                            >{{ $t("Productos") }}</a
+                    <a class="inline-block">
+                        <Link
+                            class="inline-block text-xl py-2 px-4 hover:text-[#e7bd5f]"
+                            :href="route('products')"
+                            >{{ $t("Productos") }}</Link
                         >
                     </a>
 
-                    <div class="inline-block no-underline">
+                    <div class="inline-block">
                         <Dropdown align="right" width="48">
                             <template #trigger>
                                 <button
@@ -256,7 +267,7 @@ import ATranslate from "./utils/ATranslate.vue";
                                 <span class="inline-flex rounded-md">
                                     <button
                                         type="button"
-                                        class="inline-flex items-center text-xl no-underline py-2 px-4 hover:text-amber-300 leading-4 transition"
+                                        class="inline-flex items-center text-xl py-2 px-4 hover:text-[#e7bd5f] leading-4 transition"
                                     >
                                         {{ $t("Sostenibilidad") }}
 
@@ -276,12 +287,12 @@ import ATranslate from "./utils/ATranslate.vue";
                                 </span>
                             </template>
                             <template #content>
-                                <a
+                                <Link
                                     :href="route('sustainability')"
-                                    class="block px-4 py-2 text-sm text-gray-400 no-underline hover:text-amber-300"
+                                    class="block px-4 py-2 text-sm text-gray-400 hover:text-[#e7bd5f]"
                                 >
                                     {{ $t("Nuestro Enfoque") }}
-                                </a>
+                                </Link>
                                 <DropdownLink :href="route('environment')">
                                     {{ $t("Agricultura Regenerativa") }}
                                 </DropdownLink>
@@ -303,7 +314,7 @@ import ATranslate from "./utils/ATranslate.vue";
                         </Dropdown>
                     </div>
 
-                    <div class="inline-block no-underline">
+                    <div class="inline-block">
                         <Dropdown align="right" width="48">
                             <template #trigger>
                                 <button
@@ -313,7 +324,7 @@ import ATranslate from "./utils/ATranslate.vue";
                                 <span class="inline-flex rounded-md">
                                     <button
                                         type="button"
-                                        class="inline-flex items-center text-xl no-underline py-2 px-4 hover:text-amber-300 leading-4 transition"
+                                        class="inline-flex items-center text-xl py-2 px-4 hover:text-[#e7bd5f] leading-4 transition"
                                     >
                                         {{ $t("Noticias") }}
 
@@ -351,16 +362,16 @@ import ATranslate from "./utils/ATranslate.vue";
                         </Dropdown>
                     </div>
 
-                    <a class="inline-block no-underline">
-                        <a
-                            class="inline-block text-xl no-underline py-2 px-4 hover:text-amber-300"
+                    <a class="inline-block">
+                        <Link
+                            class="inline-block text-xl py-2 px-4 hover:text-[#e7bd5f]"
                             href="/#contact"
                         >
                             {{ $t("Contáctanos") }}
-                        </a>
+                        </Link>
                     </a>
 
-                    <a class="inline-block no-underline">
+                    <a class="inline-block">
                         <ATranslate />
                     </a>
                 </div>

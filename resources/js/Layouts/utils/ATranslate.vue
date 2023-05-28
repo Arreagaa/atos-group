@@ -34,7 +34,7 @@ export default {
             <span class="inline-flex rounded-md">
                 <button
                     type="button"
-                    class="inline-flex items-center text-xl no-underline py-2 px-4 hover:text-amber-300 leading-4 transition capitalize"
+                    class="inline-flex items-center text-xl no-underline py-2 px-4 hover:text-[#e7bd5f] leading-4 transition capitalize"
                 >
                     {{ currentLanguage }}
                     <svg
@@ -55,14 +55,14 @@ export default {
         <template #content>
             <a
                 href="#"
-                class="block px-3 py-2 text-sm text-gray-700 no-underline hover:text-amber-300"
+                class="block px-3 py-2 text-sm text-gray-700 no-underline hover:text-[#e7bd5f]"
                 @click.prevent="setLanguage('es')"
             >
                 {{ $i18n.t("Español") }}
             </a>
             <a
                 href="#"
-                class="block px-3 py-2 text-sm text-gray-700 no-underline hover:text-amber-300"
+                class="block px-3 py-2 text-sm text-gray-700 no-underline hover:text-[#e7bd5f]"
                 @click.prevent="setLanguage('en')"
             >
                 {{ $i18n.t("English") }}

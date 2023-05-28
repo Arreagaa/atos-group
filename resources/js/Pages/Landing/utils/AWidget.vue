@@ -6,7 +6,7 @@ export default {
             call_color: "#666666",
             whatsapp: "+(502) 4005 1798",
             whatsapp_color: "#666666",
-            button_color: "rgb(252 211 77)",
+            button_color: "#e7bd5f",
             position: "right",
             order: "call,whatsapp",
             pre_filled_message: "Contacto de WhatsApp",

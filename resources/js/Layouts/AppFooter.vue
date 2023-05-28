@@ -1,3 +1,6 @@
+<script setup>
+import { Link } from "@inertiajs/inertia-vue3";
+</script>
 <template>
     <footer class="regularFont bg-zinc-900 pt-8 pb-6">
         <div class="max-w-app mx-auto px-4">
@@ -6,7 +9,7 @@
                     <img
                         src="/assets/Logos/LogoFooter.png"
                         alt="image"
-                        class="rounded inline-flex scale-90"
+                        class="rounded inline-flex w-80 pl-2"
                     />
                     <div class="icons mt-6 lg:mb-0 mb-6 px-3">
                         <a
@@ -53,31 +56,31 @@
                             >
                             <ul class="list-unstyled">
                                 <li>
-                                    <a
-                                        class="text-white hover:text-amber-300 font-semibold block pb-2 text-sm"
+                                    <Link
+                                        class="text-white hover:text-[#e7bd5f] font-semibold block pb-2 text-sm"
                                         href="/#history"
-                                        >{{ $t("Historia") }}</a
+                                        >{{ $t("Historia") }}</Link
                                     >
                                 </li>
                                 <li>
-                                    <a
-                                        class="text-white hover:text-amber-300 font-semibold block pb-2 text-sm"
+                                    <Link
+                                        class="text-white hover:text-[#e7bd5f] font-semibold block pb-2 text-sm"
                                         href="/#about"
-                                        >{{ $t("Nosotros") }}</a
+                                        >{{ $t("Nosotros") }}</Link
                                     >
                                 </li>
                                 <li>
-                                    <a
-                                        class="text-white hover:text-amber-300 font-semibold block pb-2 text-sm"
+                                    <Link
+                                        class="text-white hover:text-[#e7bd5f] font-semibold block pb-2 text-sm"
                                         href="/#products"
-                                        >{{ $t("Productos") }}</a
+                                        >{{ $t("Productos") }}</Link
                                     >
                                 </li>
                                 <li>
-                                    <a
-                                        class="text-white hover:text-amber-300 font-semibold block pb-2 text-sm"
+                                    <Link
+                                        class="text-white hover:text-[#e7bd5f] font-semibold block pb-2 text-sm"
                                         href="/#media"
-                                        >Media</a
+                                        >Media</Link
                                     >
                                 </li>
                             </ul>
@@ -89,34 +92,38 @@
                             >
                             <ul class="list-unstyled">
                                 <li>
-                                    <a
-                                        class="text-white hover:text-amber-300 font-semibold block pb-2 text-sm"
+                                    <Link
+                                        class="text-white hover:text-[#e7bd5f] font-semibold block pb-2 text-sm"
                                         href="https://policies.google.com/privacy?hl=es"
                                         target="_blank"
-                                        >{{ $t("Política de Privacidad") }}</a
+                                        >{{
+                                            $t("Política de Privacidad")
+                                        }}</Link
                                     >
                                 </li>
                                 <li>
-                                    <a
-                                        class="text-white hover:text-amber-300 font-semibold block pb-2 text-sm"
+                                    <Link
+                                        class="text-white hover:text-[#e7bd5f] font-semibold block pb-2 text-sm"
                                         href="/"
-                                        >{{ $t("Acceso al Sitio Web") }}</a
+                                        >{{ $t("Acceso al Sitio Web") }}</Link
                                     >
                                 </li>
                                 <li>
-                                    <a
-                                        class="text-white hover:text-amber-300 font-semibold block pb-2 text-sm"
+                                    <Link
+                                        class="text-white hover:text-[#e7bd5f] font-semibold block pb-2 text-sm"
                                         href="/"
                                         target="_blank"
-                                        >{{ $t("Mapa") }}</a
+                                        >{{ $t("Mapa") }}</Link
                                     >
                                 </li>
                                 <li>
-                                    <a
-                                        class="text-white hover:text-amber-300 font-semibold block pb-2 text-sm"
+                                    <Link
+                                        class="text-white hover:text-[#e7bd5f] font-semibold block pb-2 text-sm"
                                         href="https://policies.google.com/privacy?hl=es"
                                         target="_blank"
-                                        >{{ $t("Términos y Condiciones") }}</a
+                                        >{{
+                                            $t("Términos y Condiciones")
+                                        }}</Link
                                     >
                                 </li>
                             </ul>

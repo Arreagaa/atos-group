@@ -5,7 +5,7 @@
                 <span class="block text-zinc-600 text-2xl">{{
                     $t("Actualmente producimos")
                 }}</span
-                ><span class="block text-amber-300 text-4xl"
+                ><span class="block text-[#e7bd5f] text-4xl"
                     >{{ $t("más de 1,600,000") }}
                 </span>
             </h1>
@@ -36,7 +36,7 @@
                 <span class="block text-zinc-600">{{
                     $t("Actualmente producimos")
                 }}</span
-                ><span class="block text-amber-300">{{
+                ><span class="block text-[#e7bd5f]">{{
                     $t("más de 1,600,000")
                 }}</span>
             </h1>

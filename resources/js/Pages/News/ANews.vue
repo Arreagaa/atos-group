@@ -80,7 +80,7 @@ export default {
                     <a :href="route('posts.edit', post.id)"
                         ><l-icon
                             icon="fa-regular fa-pen-to-square"
-                            class="text-amber-300 text-2xl font-bold"
+                            class="text-[#e7bd5f] text-2xl font-bold"
                     /></a>
 
                     <a @click="deletePost(post.id)" class="px-4"

@@ -6,7 +6,7 @@
             icon="fa-regular fa-image"
             class="boldFont text-gray-500 text-9xl font-bold"
         />
-        <p class="boldFont text-amber-300 lg:text-2xl text-xl py-4">
+        <p class="boldFont text-[#e7bd5f] lg:text-2xl text-xl py-4">
             No hay imagen para mostrar
         </p>
     </div>

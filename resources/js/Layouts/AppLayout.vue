@@ -40,7 +40,7 @@ const logout = () => {
         <div class="min-h-screen bg-gray-100">
             <nav class="bg-white border-b border-gray-100">
                 <!-- Primary Navigation Menu -->
-                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-0">
                     <div class="flex justify-between h-18">
                         <div class="flex">
                             <!-- Logo -->
@@ -49,7 +49,7 @@ const logout = () => {
                                     <img
                                         src="/assets/1-Principal/LogoATOSGray.png"
                                         alt="image"
-                                        class="rounded mx-auto d-block py-2 lg:scale-100 scale-75"
+                                        class="py-2 w-96"
                                     />
                                 </Link>
                             </div>
@@ -379,7 +379,9 @@ const logout = () => {
                             </div>
 
                             <div>
-                                <div class="font-bold text-medium text-zinc-600">
+                                <div
+                                    class="font-bold text-medium text-zinc-600"
+                                >
                                     {{ $page.props.user.name }}
                                 </div>
                                 <div class="font-bold text-base text-gray-500">

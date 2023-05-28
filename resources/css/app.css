@@ -33,6 +33,9 @@
 .max-w-app{
     @apply max-w-7xl mx-auto py-2 px-4;
 }
+.max-w-hero{
+    @apply 2xl:max-w-[1500px] lg:max-w-7xl md:max-w-5xl mx-auto py-20;
+}
 .alert-success{
     @apply m-2 p-4 bg-green-300 text-green-700 rounded-lg;
 }
@@ -48,15 +51,12 @@
 ::-webkit-scrollbar {
     width: 10px;
 }
-
 ::-webkit-scrollbar-track {
     background-color: #f1f1f1;
 }
-
 ::-webkit-scrollbar-thumb {
-    background-color: rgb(252 211 77);
+    background-color: #e7bd5f;
 }
-
 ::-webkit-scrollbar-thumb:hover {
     background-color: #555;
 }

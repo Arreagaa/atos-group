@@ -39,13 +39,13 @@ export default {
                             </h2>
 
                             <h2
-                                class="blackFont box mb-4 text-7xl font-bold text-left text-amber-300"
+                                class="blackFont box mb-4 text-7xl font-bold text-left text-[#e7bd5f]"
                             >
                                 1,632,000
                             </h2>
 
                             <h2
-                                class="blackFont box mb-4 text-2xl font-bold text-left text-amber-300"
+                                class="blackFont box mb-4 text-2xl font-bold text-left text-[#e7bd5f]"
                             >
                                 {{ $t("Cajas por año.") }}
                             </h2>
@@ -73,13 +73,13 @@ export default {
                             </h2>
 
                             <h2
-                                class="blackFont box mb-4 text-7xl font-bold text-left text-amber-300"
+                                class="blackFont box mb-4 text-7xl font-bold text-left text-[#e7bd5f]"
                             >
                                 1,632,000
                             </h2>
 
                             <h2
-                                class="blackFont box mb-4 text-2xl font-bold text-left text-amber-300"
+                                class="blackFont box mb-4 text-2xl font-bold text-left text-[#e7bd5f]"
                             >
                                 {{ $t("Cajas por año.") }}
                             </h2>
@@ -111,7 +111,7 @@ export default {
                                 {{ $t("Contamos con equipo experto en") }}
                             </p>
                             <span
-                                class="blackFont text-box visible mx-0 mb-0 text-7xl leading-relaxed text-amber-300 -ml-44"
+                                class="blackFont text-box visible mx-0 mb-0 text-7xl leading-relaxed text-[#e7bd5f] -ml-44"
                             >
                                 {{ $t("Trazabilidad") }}
                             </span>
@@ -137,7 +137,7 @@ export default {
                                 {{ $t("Contamos con equipo experto en") }}
                             </p>
                             <p
-                                class="blackFont text-box visible mx-0 mb-0 text-5xl leading-relaxed text-amber-300"
+                                class="blackFont text-box visible mx-0 mb-0 text-5xl leading-relaxed text-[#e7bd5f]"
                             >
                                 {{ $t("Trazabilidad") }}
                             </p>

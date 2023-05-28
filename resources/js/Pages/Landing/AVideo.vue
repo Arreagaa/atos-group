@@ -1,6 +1,6 @@
 <script setup></script>
 <template>
-    <div class="blackFont text-amber-300 uppercase text-center mt-20 mb-8">
+    <div class="blackFont text-[#e7bd5f] uppercase text-center mt-20 mb-8">
         <h1 class="title-video font-bold lg:text-5xl text-4xl lg:px-0 px-2">
             {{ $t("Esto es lo que hacemos") }}
         </h1>

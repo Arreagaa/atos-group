@@ -28,7 +28,7 @@ import AppFooter from "../../Layouts/AppFooter.vue";
             class="container max-w-5xl mx-auto lg:m-8 m-12 px-3 py-8 uppercase"
         >
             <span
-                class="boldFont leading-tight mx-auto w-full my-2 lg:text-5xl text-3xl font-bold leading-tight text-amber-400"
+                class="boldFont leading-tight mx-auto w-full my-2 lg:text-5xl text-3xl font-bold leading-tight text-[#e7bd5f]"
             >
                 {{ $t("NUESTRA META:") }}
             </span>

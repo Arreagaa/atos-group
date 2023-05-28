@@ -7,7 +7,7 @@
                 icon="fa-regular fa-newspaper"
                 class="boldFont text-gray-500 text-9xl font-bold"
             />
-            <p class="boldFont text-amber-300 lg:text-2xl text-xl py-2">
+            <p class="boldFont text-[#e7bd5f] lg:text-2xl text-xl py-2">
                 {{ $t("No hay noticias para mostrar") }}
             </p>
         </div>

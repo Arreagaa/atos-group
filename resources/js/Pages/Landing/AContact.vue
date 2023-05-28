@@ -124,7 +124,7 @@ const submit = () => {
             <div class="inline-flex justify-end mb-6">
                 <button
                     type="submit"
-                    class="text-amber-300 bg-zinc-900 hover:bg-amber-300 hover:text-black font-bold rounded-lg text-lg w-full sm:w-auto px-5 py-2.5 text-center uppercase"
+                    class="text-[#e7bd5f] bg-zinc-900 hover:bg-[#e7bd5f] hover:text-black font-bold rounded-lg text-lg w-full sm:w-auto px-5 py-2.5 text-center uppercase"
                 >
                     {{ $t("Enviar") }}
                 </button>

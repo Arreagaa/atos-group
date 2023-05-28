@@ -54,7 +54,7 @@ export default {
     bottom: -100px;
     right: 20px;
     color: #ffffff;
-    background-color: rgb(252 211 77);
+    background-color: #e7bd5f;
     width: 45px;
     height: 45px;
     opacity: 0;

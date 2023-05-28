@@ -26,7 +26,7 @@ import AppFooter from "../../Layouts/AppFooter.vue";
     </div>
 
     <div class="max-w-app my-12 items-left text-left">
-        <h1 class="boldFont font-bold lg:text-4xl text-2xl text-amber-300">
+        <h1 class="boldFont font-bold lg:text-4xl text-2xl text-[#e7bd5f]">
             {{ $t("MAS DE 50 PROYECTOS CON") }} <br />
             {{ $t("NUESTRAS COMUNIDADES:") }}
         </h1>
