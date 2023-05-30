@@ -60,8 +60,7 @@ import AppFooter from "../../Layouts/AppFooter.vue";
                         {{ $t("HONGOS") }}
                     </p>
                     <p
-                        class="lightFont mt-5 text-xl text-blueGray-600 text md:text-left"
-                        style="text-align: justify"
+                        class="lightFont mt-5 text-xl text-blueGray-600 text md:text-justify"
                     >
                         {{
                             $t(
@@ -71,8 +70,7 @@ import AppFooter from "../../Layouts/AppFooter.vue";
                     </p>
                     <br />
                     <p
-                        class="lightFont mt-5 text-xl text-blueGray-600 text md:text-left"
-                        style="text-align: justify"
+                        class="lightFont mt-5 text-xl text-blueGray-600 text md:text-justify"
                     >
                         <span class="boldFont font-bold"
                             >Pochonia chlamydosporia:</span
@@ -133,8 +131,7 @@ import AppFooter from "../../Layouts/AppFooter.vue";
                         {{ $t("BACTERIAS") }}
                     </p>
                     <p
-                        class="lightFont mt-5 text-xl text-blueGray-600 text md:text-left"
-                        style="text-align: justify"
+                        class="lightFont mt-5 text-xl text-blueGray-600 text md:text-justify"
                     >
                         <span class="boldFont font-bold">Chromobacteria:</span>
                         {{
@@ -145,8 +142,7 @@ import AppFooter from "../../Layouts/AppFooter.vue";
                     </p>
                     <br />
                     <p
-                        class="lightFont mt-5 text-xl text-blueGray-600 text md:text-left"
-                        style="text-align: justify"
+                        class="lightFont mt-5 text-xl text-blueGray-600 text md:text-justify"
                     >
                         <span class="boldFont font-bold"
                             >Bacillus thuringiensis (Bt):</span

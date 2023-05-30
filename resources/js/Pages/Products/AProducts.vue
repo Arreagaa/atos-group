@@ -12,13 +12,7 @@ const props = defineProps({
 </script>
 <template>
     <div
-        class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp"
-        data-wow-duration="1s"
-        style="
-            visibility: visible;
-            animation-duration: 1s;
-            animation-name: fadeInUp;
-        "
+        class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 animate-fadeInUp"
     >
         <div
             class="py-8 px-8 mb-12 transform transition duration-300 ease-in-out hover:-translate-y-2"

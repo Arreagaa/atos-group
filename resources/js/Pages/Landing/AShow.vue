@@ -30,7 +30,7 @@ import ACertifications from "./ACertifications.vue";
     </section>
 
     <section>
-        <div class="view relative">
+        <div class="view bg-white relative">
             <br />
             <ABagTitleHistory id="history" />
             <div
@@ -42,7 +42,7 @@ import ACertifications from "./ACertifications.vue";
                     <AProducts />
                 </div>
             </div>
-            <div id="about" class="products pt-16">
+            <div id="about" class="bg-[#ebedef] pt-16">
                 <AVideo />
             </div>
         </div>
@@ -58,14 +58,14 @@ import ACertifications from "./ACertifications.vue";
         </div>
     </section>
 
-    <section id="media" class="products">
+    <section id="media" class="bg-[#ebedef]">
         <div class="py-12">
             <ABagTitleGallery />
             <AGallery />
         </div>
     </section>
 
-    <section id="contact" class="products">
+    <section id="contact" class="bg-[#ebedef]">
         <div class="bg-[url('/assets/5-contacto/contacto.png')] bg-cover">
             <div class="py-4">
                 <AContact />
@@ -78,12 +78,3 @@ import ACertifications from "./ACertifications.vue";
         <AWidget />
     </section>
 </template>
-
-<style>
-.view {
-    background-color: #fff;
-}
-.products {
-    background-color: #ebedef;
-}
-</style>

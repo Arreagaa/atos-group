@@ -39,12 +39,3 @@ export default {
     },
 };
 </script>
-
-<style>
-.sc-1au8ryl-0 {
-    visibility: hidden;
-}
-.r8rfzx-2 {
-    background-color: #666666 !important;
-}
-</style>

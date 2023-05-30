@@ -214,53 +214,8 @@ export default {
     </div>
 </template>
 <style>
-.swiper {
-    height: 100%;
-    background: #eee;
-    font-size: 14px;
-    color: #000;
-    margin: 0;
-    padding: 0;
-}
-
-.swiper {
-    width: 100%;
-    height: 100%;
-}
-
 .swiper-button-next,
 .swiper-button-prev {
     color: #ebebeb;
-}
-
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-}
-
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.card {
-    background-size: cover;
-    padding: 120px 0;
-    height: 700px;
 }
 </style>

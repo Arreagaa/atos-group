@@ -7,14 +7,12 @@
     </div>
     <div class="flex items-center justify-center mb-16">
         <video
-            class="w-4/5 aspect-video -m-16 mt-8"
+            class="w-4/5 aspect-video -m-16 mt-8 object-cover object-center"
             src="/assets/Gallery/GrupoAtos.mp4"
             poster="/assets/Gallery/IMG_1345.jpg"
             controls
             preload
             loop
-            style="object-fit: cover; object-position: center"
         ></video>
-        <br />
     </div>
 </template>
