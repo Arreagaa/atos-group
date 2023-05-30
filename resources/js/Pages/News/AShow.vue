@@ -1,7 +1,8 @@
 <script>
-import AppWhiteHeader from "../../Layouts/AppWhiteHeader.vue";
-import AppFooter from "../../Layouts/AppFooter.vue";
-import AValidate from "../../Components/utils/AValidate.vue";
+import AppWhiteHeader from "@/Layouts/AppWhiteHeader.vue";
+import AppFooter from "@/Layouts/AppFooter.vue";
+import AValidate from "@/Components/utils/AValidate.vue";
+import ABtn from "@/Components/utils/ABtn.vue";
 import ANews from "./ANews.vue";
 export default {
     props: {
@@ -12,6 +13,7 @@ export default {
         AppFooter,
         AValidate,
         ANews,
+        ABtn
     },
 };
 </script>
@@ -34,6 +36,15 @@ export default {
                 </h1>
             </div>
             <div v-if="posts.length > 0">
+                <div
+                    v-if="$page.props.user"
+                    class="flex flex-col items-center w-full md:flex-row md:w-1/2 pt-12"
+                >
+                    <ABtn
+                        :href="route('posts.create')"
+                        text="Agregar Noticia"
+                    />
+                </div>
                 <ANews :posts="posts" />
             </div>
             <div v-else class="lg:py-32 py-24">

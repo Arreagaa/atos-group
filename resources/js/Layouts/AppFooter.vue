@@ -9,9 +9,9 @@ import { Link } from "@inertiajs/inertia-vue3";
                     <img
                         src="/assets/Logos/LogoFooter.png"
                         alt="image"
-                        class="rounded inline-flex w-80 pl-2"
+                        class="rounded inline-flex w-80 md:pl-0 pl-2"
                     />
-                    <div class="icons mt-6 lg:mb-0 mb-6 px-3">
+                    <div class="icons mt-6 lg:mb-0 mb-6 md:px-0 px-3">
                         <a
                             class="inline-flex tracking-wide no-underline hover:no-underline"
                             href="/"
@@ -25,7 +25,7 @@ import { Link } from "@inertiajs/inertia-vue3";
                         </a>
                         <a
                             class="inline-flex tracking-wide no-underline hover:no-underline"
-                            href="/"
+                            href="https://www.instagram.com/grupoatosgt/?igshid=MzRlODBiNWFlZA%3D%3D"
                             target="_blank"
                         >
                             <img
@@ -36,7 +36,7 @@ import { Link } from "@inertiajs/inertia-vue3";
                         </a>
                         <a
                             class="inline-flex tracking-wide no-underline hover:no-underline"
-                            href="/"
+                            href="https://www.youtube.com/@GrupoAtos-oy6ct"
                             target="_blank"
                         >
                             <img
@@ -49,51 +49,53 @@ import { Link } from "@inertiajs/inertia-vue3";
                 </div>
                 <div class="w-full lg:w-6/12 px-4">
                     <div class="flex flex-wrap items-top mb-6">
-                        <div class="w-full lg:w-4/12 mb-2 px-4 ml-auto">
-                            <span
-                                class="block uppercase text-white text-sm font-semibold mb-2"
-                                >{{ $t("Enlaces Web") }}</span
-                            >
+                        <div
+                            class="lightFont text-white text-base font-semibold w-full lg:w-4/12 mb-2 md:px-0 px-4 ml-auto"
+                        >
+                            <span class="block uppercase mb-2">{{
+                                $t("Enlaces Web")
+                            }}</span>
                             <ul class="list-unstyled">
                                 <li>
                                     <Link
-                                        class="text-white hover:text-[#e7bd5f] font-semibold block pb-2 text-sm"
+                                        class="hover:text-[#e7bd5f] block pb-2"
                                         href="/#history"
                                         >{{ $t("Historia") }}</Link
                                     >
                                 </li>
                                 <li>
                                     <Link
-                                        class="text-white hover:text-[#e7bd5f] font-semibold block pb-2 text-sm"
+                                        class="hover:text-[#e7bd5f] block pb-2"
                                         href="/#about"
                                         >{{ $t("Nosotros") }}</Link
                                     >
                                 </li>
                                 <li>
                                     <Link
-                                        class="text-white hover:text-[#e7bd5f] font-semibold block pb-2 text-sm"
+                                        class="hover:text-[#e7bd5f] block pb-2"
                                         href="/#products"
                                         >{{ $t("Productos") }}</Link
                                     >
                                 </li>
                                 <li>
                                     <Link
-                                        class="text-white hover:text-[#e7bd5f] font-semibold block pb-2 text-sm"
+                                        class="hover:text-[#e7bd5f] block pb-2"
                                         href="/#media"
                                         >Media</Link
                                     >
                                 </li>
                             </ul>
                         </div>
-                        <div class="w-full lg:w-4/12 px-4">
-                            <span
-                                class="block uppercase text-white text-sm font-semibold mb-2"
-                                >{{ $t("Recursos") }}</span
-                            >
+                        <div
+                            class="w-full text-white font-semibold lg:w-4/12 md:px-0 px-4"
+                        >
+                            <span class="uppercase block mb-2">{{
+                                $t("Recursos")
+                            }}</span>
                             <ul class="list-unstyled">
                                 <li>
                                     <Link
-                                        class="text-white hover:text-[#e7bd5f] font-semibold block pb-2 text-sm"
+                                        class="hover:text-[#e7bd5f] block pb-2"
                                         href="https://policies.google.com/privacy?hl=es"
                                         target="_blank"
                                         >{{
@@ -103,14 +105,14 @@ import { Link } from "@inertiajs/inertia-vue3";
                                 </li>
                                 <li>
                                     <Link
-                                        class="text-white hover:text-[#e7bd5f] font-semibold block pb-2 text-sm"
+                                        class="hover:text-[#e7bd5f] block pb-2"
                                         href="/"
                                         >{{ $t("Acceso al Sitio Web") }}</Link
                                     >
                                 </li>
                                 <li>
                                     <Link
-                                        class="text-white hover:text-[#e7bd5f] font-semibold block pb-2 text-sm"
+                                        class="hover:text-[#e7bd5f] block pb-2"
                                         href="/"
                                         target="_blank"
                                         >{{ $t("Mapa") }}</Link
@@ -118,7 +120,7 @@ import { Link } from "@inertiajs/inertia-vue3";
                                 </li>
                                 <li>
                                     <Link
-                                        class="text-white hover:text-[#e7bd5f] font-semibold block pb-2 text-sm"
+                                        class="hover:text-[#e7bd5f] block pb-2"
                                         href="https://policies.google.com/privacy?hl=es"
                                         target="_blank"
                                         >{{

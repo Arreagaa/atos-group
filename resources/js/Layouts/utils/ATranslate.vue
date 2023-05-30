@@ -34,7 +34,7 @@ export default {
             <span class="inline-flex rounded-md">
                 <button
                     type="button"
-                    class="inline-flex items-center text-xl no-underline py-2 px-4 hover:text-[#e7bd5f] leading-4 transition capitalize"
+                    class="inline-flex items-center py-2 px-4 hover:text-[#e7bd5f] leading-4 transition capitalize"
                 >
                     {{ currentLanguage }}
                     <svg

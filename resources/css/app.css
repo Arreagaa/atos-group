@@ -18,35 +18,35 @@
     font-family: Outfit-Bold;
     src: url("../../public/assets/Font/Outfit-Bold.ttf");
 }
-.blackFont{
+.blackFont {
     font-family: Outfit-Black;
 }
-.regularFont{
+.regularFont {
     font-family: Outfit-Regular;
 }
-.lightFont{
+.lightFont {
     font-family: Outfit-Light;
 }
-.boldFont{
+.boldFont {
     font-family: Outfit-Bold;
 }
-.max-w-app{
+.max-w-app {
     @apply max-w-7xl mx-auto py-2 px-4;
 }
-.max-w-hero{
+.max-w-hero {
     @apply 2xl:max-w-[1500px] lg:max-w-7xl md:max-w-5xl mx-auto py-20;
 }
-.alert-success{
+.alert-success {
     @apply m-2 p-4 bg-green-300 text-green-700 rounded-lg;
 }
-.alert-danger{
+.alert-danger {
     @apply m-2 p-4 bg-red-300 text-red-700 rounded-lg;
 }
-.focus-danger{
+.focus-danger {
     @apply ring-red-400 border-red-400;
 }
-.focus-form{
-    @apply focus:ring-yellow-400 focus:border-yellow-400
+.focus-form {
+    @apply focus:ring-yellow-400 focus:border-yellow-400;
 }
 ::-webkit-scrollbar {
     width: 10px;
@@ -59,4 +59,25 @@
 }
 ::-webkit-scrollbar-thumb:hover {
     background-color: #555;
+}
+#menu-toggle:checked + #menu {
+    display: block;
+}
+.hover\:grow {
+    transition: all 0.3s;
+    transform: scale(1);
+}
+.hover\:grow:hover {
+    transform: scale(1.02);
+}
+#sortbox:checked ~ #sortboxmenu {
+    opacity: 1;
+}
+#sortboxlg:checked ~ #sortboxmenulg {
+    opacity: 1;
+}
+@media (min-width: 800px) and (max-width: 1023px) {
+    .res-size {
+        font-size: 96px;
+    }
 }

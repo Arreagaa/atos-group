@@ -44,12 +44,12 @@ const logout = () => {
                     <div class="flex justify-between h-18">
                         <div class="flex">
                             <!-- Logo -->
-                            <div class="shrink-0 flex items-center">
+                            <div class="shrink-0 flex items-center mx-4">
                                 <Link :href="route('landing')">
                                     <img
                                         src="/assets/1-Principal/LogoATOSGray.png"
                                         alt="image"
-                                        class="py-2 w-96"
+                                        class="py-2 w-72"
                                     />
                                 </Link>
                             </div>

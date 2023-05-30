@@ -26,7 +26,7 @@ export default {
                 text: "Asegúrate que la Noticia este correcta.",
                 icon: "warning",
                 showCancelButton: true,
-                confirmButtonColor: "#FFCC00",
+                confirmButtonColor: "#e7bd5f",
                 cancelButtonColor: "#d33",
                 confirmButtonText: "¡Si, crear Noticia!",
                 cancelButtonText: "Cancelar",
@@ -40,7 +40,7 @@ export default {
                         title: "¡Actualización de Noticias!",
                         text: "Se ha agregado exitosamente.",
                         icon: "success",
-                        confirmButtonColor: "#FFCC00",
+                        confirmButtonColor: "#e7bd5f",
                     });
                 }
             });

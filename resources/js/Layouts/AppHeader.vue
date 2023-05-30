@@ -2,24 +2,36 @@
 import Dropdown from "@/Components/Dropdown.vue";
 import DropdownLink from "@/Components/DropdownLink.vue";
 import ATranslate from "./utils/ATranslate.vue";
-import { ref } from "vue";
 import { Link } from "@inertiajs/inertia-vue3";
+import { ref, watch } from "vue";
 
 const isMenuOpen = ref(false);
 
 function toggleMenu() {
     isMenuOpen.value = !isMenuOpen.value;
 }
+
+watch(isMenuOpen, (newIsMenuOpen) => {
+    const body = document.body;
+
+    if (newIsMenuOpen) {
+        body.classList.add("overflow-hidden");
+        body.classList.remove("overflow-auto");
+    } else {
+        body.classList.add("overflow-auto");
+        body.classList.remove("overflow-hidden");
+    }
+});
 </script>
 <template>
     <div class="bg-transparent max-w-fill text-white font-bold">
         <nav id="header" class="w-full z-30 top-0 py-1">
             <div
-                class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-3 py-6"
+                class="w-full 2xl:container mx-auto flex flex-wrap items-center justify-between mt-0 px-3 py-6"
             >
                 <label
                     for="menu-toggle"
-                    class="absolute top-9 right-6 cursor-pointer md:hidden block"
+                    class="absolute top-9 right-6 cursor-pointer lg:hidden block"
                 >
                     <l-icon
                         v-if="!isMenuOpen"
@@ -36,36 +48,39 @@ function toggleMenu() {
                 </label>
                 <input class="hidden" type="checkbox" id="menu-toggle" />
                 <div
-                    class="regularFont hidden md:flex md:items-center md:w-auto w-full order-3 md:order-1"
+                    class="regularFont font-semibold text-2xl hidden lg:flex lg:items-center lg:w-auto w-full order-3 lg:order-1"
                     id="menu"
                 >
-                    <nav class="lg:hidden">
+                    <nav class="lg:hidden h-screen">
                         <ul
-                            class="md:flex items-center justify-between text-base text-white pt-8 md:pt-0"
+                            class="lg:flex items-center justify-between text-white pt-8 lg:pt-0"
                         >
                             <li>
-                                <a
-                                    class="inline-block text-xl py-2 px-4 hover:text-[#e7bd5f]"
+                                <Link
+                                    class="inline-block py-3 px-4 hover:text-[#e7bd5f]"
                                     href="/#history"
-                                    >{{ $t("¿Quiénes Somos?") }}</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    class="inline-block text-xl py-2 px-4 hover:text-[#e7bd5f]"
-                                    href="/#about"
-                                    >{{ $t("¿Qué hacemos?") }}</a
+                                    @click="toggleMenu"
+                                    >{{ $t("¿Quiénes Somos?") }}</Link
                                 >
                             </li>
                             <li>
                                 <Link
-                                    class="inline-block text-xl py-2 px-4 hover:text-[#e7bd5f]"
+                                    class="inline-block py-3 px-4 hover:text-[#e7bd5f]"
+                                    href="/#about"
+                                    @click="toggleMenu"
+                                    >{{ $t("¿Qué hacemos?") }}</Link
+                                >
+                            </li>
+                            <li>
+                                <Link
+                                    class="inline-block py-3 px-4 hover:text-[#e7bd5f]"
                                     :href="route('products')"
+                                    @click="toggleMenu"
                                     >{{ $t("Productos") }}</Link
                                 >
                             </li>
                             <li>
-                                <div class="inline-block py-2">
+                                <div class="inline-block py-3">
                                     <Dropdown align="right" width="48">
                                         <template #trigger>
                                             <button
@@ -73,11 +88,11 @@ function toggleMenu() {
                                             ></button>
 
                                             <span
-                                                class="inline-flex rounded-md"
+                                                class="inline-flex rounded-lg"
                                             >
                                                 <button
                                                     type="button"
-                                                    class="inline-flex items-center text-xl py-2 px-4 hover:text-[#e7bd5f] leading-4 transition"
+                                                    class="inline-flex items-center py-2 px-4 hover:text-[#e7bd5f] leading-4 transition"
                                                 >
                                                     {{ $t("Sostenibilidad") }}
 
@@ -97,14 +112,16 @@ function toggleMenu() {
                                             </span>
                                         </template>
                                         <template #content>
-                                            <a
+                                            <Link
                                                 :href="route('sustainability')"
+                                                @click="toggleMenu"
                                                 class="block px-4 py-2 text-sm text-gray-400 hover:text-[#e7bd5f]"
                                             >
                                                 {{ $t("Nuestro Enfoque") }}
-                                            </a>
+                                            </Link>
                                             <DropdownLink
                                                 :href="route('environment')"
+                                                @click="toggleMenu"
                                             >
                                                 {{
                                                     $t(
@@ -114,21 +131,25 @@ function toggleMenu() {
                                             </DropdownLink>
                                             <DropdownLink
                                                 :href="route('socialWork')"
+                                                @click="toggleMenu"
                                             >
                                                 {{ $t("Trabajo social") }}
                                             </DropdownLink>
                                             <DropdownLink
                                                 :href="route('laboratory')"
+                                                @click="toggleMenu"
                                             >
                                                 {{ $t("Laboratorio") }}
                                             </DropdownLink>
                                             <DropdownLink
                                                 :href="route('bio-security')"
+                                                @click="toggleMenu"
                                             >
                                                 {{ $t("Bio-seguridad") }}
                                             </DropdownLink>
                                             <DropdownLink
                                                 :href="route('certifications')"
+                                                @click="toggleMenu"
                                             >
                                                 {{ $t("Certificaciones") }}
                                             </DropdownLink>
@@ -141,7 +162,7 @@ function toggleMenu() {
                                 </div>
                             </li>
                             <li>
-                                <div class="inline-block py-2">
+                                <div class="inline-block py-3">
                                     <Dropdown align="right" width="48">
                                         <template #trigger>
                                             <button
@@ -149,11 +170,11 @@ function toggleMenu() {
                                             ></button>
 
                                             <span
-                                                class="inline-flex rounded-md"
+                                                class="inline-flex rounded-lg"
                                             >
                                                 <button
                                                     type="button"
-                                                    class="inline-flex items-center text-xl py-2 px-4 hover:text-[#e7bd5f] leading-4 transition"
+                                                    class="inline-flex items-center py-2 px-4 hover:text-[#e7bd5f] leading-4 transition"
                                                 >
                                                     {{ $t("Noticias") }}
 
@@ -175,18 +196,21 @@ function toggleMenu() {
                                         <template #content>
                                             <DropdownLink
                                                 :href="route('posts.index')"
+                                                @click="toggleMenu"
                                             >
                                                 {{ $t("Nuestras Noticias") }}
                                             </DropdownLink>
                                             <DropdownLink
                                                 v-if="$page.props.user"
                                                 :href="route('dashboard')"
+                                                @click="toggleMenu"
                                             >
                                                 {{ $t("Cuenta") }}
                                             </DropdownLink>
                                             <DropdownLink
                                                 v-else
                                                 :href="route('login')"
+                                                @click="toggleMenu"
                                             >
                                                 {{ $t("Iniciar Sesión") }}
                                             </DropdownLink>
@@ -200,14 +224,15 @@ function toggleMenu() {
                             </li>
                             <li>
                                 <a
-                                    class="inline-block text-xl py-2 px-4 hover:text-[#e7bd5f]"
+                                    class="inline-block py-3 px-4 hover:text-[#e7bd5f]"
                                     href="/#contact"
+                                    @click="toggleMenu"
                                 >
                                     {{ $t("Contáctanos") }}</a
                                 >
                             </li>
                             <li>
-                                <div class="inline-block py-2">
+                                <div class="inline-block py-3">
                                     <ATranslate />
                                 </div>
                             </li>
@@ -222,25 +247,25 @@ function toggleMenu() {
                         <img
                             src="/assets/Logos/LogoFooter.png"
                             alt="image"
-                            class="rounded mx-auto d-block md:w-80 w-72"
+                            class="rounded mx-auto d-block lg:w-80 w-72"
                         />
                     </Link>
                 </div>
                 <div
-                    class="regularFont order-2 md:order-3 flex items-center lg:block hidden"
+                    class="regularFont font-semibold min-[1372px]:text-xl text-lg order-2 lg:order-3 flex items-center lg:block hidden"
                     id="nav-content"
                 >
                     <a class="inline-block">
-                        <a
-                            class="inline-block text-xl py-2 px-4 hover:text-[#e7bd5f]"
+                        <Link
+                            class="inline-block py-2 px-4 hover:text-[#e7bd5f]"
                             href="/#history"
-                            >{{ $t("¿Quiénes Somos?") }}</a
+                            >{{ $t("¿Quiénes Somos?") }}</Link
                         >
                     </a>
 
                     <a class="inline-block">
                         <Link
-                            class="inline-block text-xl py-2 px-4 hover:text-[#e7bd5f]"
+                            class="inline-block py-2 px-4 hover:text-[#e7bd5f]"
                             href="/#about"
                             >{{ $t("¿Qué hacemos?") }}</Link
                         >
@@ -248,7 +273,7 @@ function toggleMenu() {
 
                     <a class="inline-block">
                         <Link
-                            class="inline-block text-xl py-2 px-4 hover:text-[#e7bd5f]"
+                            class="inline-block py-2 px-4 hover:text-[#e7bd5f]"
                             :href="route('products')"
                             >{{ $t("Productos") }}</Link
                         >
@@ -260,10 +285,10 @@ function toggleMenu() {
                                     class="inline-flex text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-gray-300 transition"
                                 ></button>
 
-                                <span class="inline-flex rounded-md">
+                                <span class="inline-flex rounded-lg">
                                     <button
                                         type="button"
-                                        class="inline-flex items-center text-xl py-2 px-4 hover:text-[#e7bd5f] leading-4 transition"
+                                        class="inline-flex items-center py-2 px-4 hover:text-[#e7bd5f] leading-4 transition"
                                     >
                                         {{ $t("Sostenibilidad") }}
 
@@ -316,10 +341,10 @@ function toggleMenu() {
                                     class="inline-flex text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-gray-300 transition"
                                 ></button>
 
-                                <span class="inline-flex rounded-md">
+                                <span class="inline-flex rounded-lg">
                                     <button
                                         type="button"
-                                        class="inline-flex items-center text-xl py-2 px-4 hover:text-[#e7bd5f] leading-4 transition"
+                                        class="inline-flex items-center py-2 px-4 hover:text-[#e7bd5f] leading-4 transition"
                                     >
                                         {{ $t("Noticias") }}
 
@@ -358,7 +383,7 @@ function toggleMenu() {
                     </div>
                     <a class="inline-block">
                         <Link
-                            class="inline-block text-xl py-2 px-4 hover:text-[#e7bd5f]"
+                            class="inline-block py-2 px-4 hover:text-[#e7bd5f]"
                             href="/#contact"
                         >
                             {{ $t("Contáctanos") }}
@@ -370,28 +395,10 @@ function toggleMenu() {
                     </a>
                 </div>
                 <div
-                    class="regularFont order-2 md:order-3 flex items-center lg:hidden"
+                    class="regularFont order-2 lg:order-3 flex items-center lg:hidden"
                     id="nav-content"
                 ></div>
             </div>
         </nav>
     </div>
 </template>
-<style>
-#menu-toggle:checked + #menu {
-    display: block;
-}
-.hover\:grow {
-    transition: all 0.3s;
-    transform: scale(1);
-}
-.hover\:grow:hover {
-    transform: scale(1.02);
-}
-#sortbox:checked ~ #sortboxmenu {
-    opacity: 1;
-}
-#sortboxlg:checked ~ #sortboxmenulg {
-    opacity: 1;
-}
-</style>

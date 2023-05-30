@@ -1,14 +1,10 @@
 <script>
-import ABtn from "@/Components/utils/ABtn.vue";
 import Swal from "sweetalert2/dist/sweetalert2.js";
 import "sweetalert2/dist/sweetalert2.min.css";
 
 export default {
     props: {
         posts: Array,
-    },
-    components: {
-        ABtn,
     },
     methods: {
         deletePost(id) {
@@ -17,7 +13,7 @@ export default {
                 text: "Asegúrate que sea la Noticia correcta.",
                 icon: "warning",
                 showCancelButton: true,
-                confirmButtonColor: "#FFCC00",
+                confirmButtonColor: "#e7bd5f",
                 cancelButtonColor: "#d33",
                 confirmButtonText: "¡Si, eliminar Noticia!",
                 cancelButtonText: "Cancelar",
@@ -30,7 +26,7 @@ export default {
                         title: "¡Actualización de Noticias!",
                         text: "Se ha eliminado exitosamente.",
                         icon: "success",
-                        confirmButtonColor: "#FFCC00",
+                        confirmButtonColor: "#e7bd5f",
                     });
                 }
             });
@@ -39,12 +35,6 @@ export default {
 };
 </script>
 <template>
-    <div
-        v-if="$page.props.user"
-        class="flex flex-col items-center w-full md:flex-row md:w-1/2 pt-12"
-    >
-        <ABtn :href="route('posts.create')" text="Agregar Noticia" />
-    </div>
     <div
         class="grid justify-center md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10 my-10"
     >
@@ -67,7 +57,7 @@ export default {
                 >
                     {{ post.title }}
                 </h3>
-                <p class="regularFont paragraph-normal text-gray-600">
+                <p class="regularFont paragraph-normal text-gray-600 h-12">
                     {{ post.description }}
                 </p>
                 <a

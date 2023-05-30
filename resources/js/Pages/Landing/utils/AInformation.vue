@@ -1,5 +1,6 @@
+<script></script>
 <template>
-    <div class="boldFont lg:block hidden container max-w-fit mx-auto mt-4">
+    <div class="boldFont xl:block hidden container max-w-fit mx-auto mt-4">
         <div class="flex text-start justify-around w-full uppercase">
             <h1 class="font-bold tracking-tight text-zinc-600 mt-36">
                 <span class="block text-zinc-600 text-2xl">{{
@@ -29,7 +30,7 @@
         <br />
     </div>
     <div
-        class="boldFont lg:hidden container max-w-fit mx-auto mt-4 justify-center text-center items-center uppercase mx-2"
+        class="boldFont xl:hidden mx-auto mt-4 justify-center text-center items-center uppercase mx-2"
     >
         <div class="">
             <h1 class="font-bold tracking-tight text-zinc-600 mt-20 text-3xl">

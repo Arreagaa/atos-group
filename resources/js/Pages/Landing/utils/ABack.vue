@@ -70,7 +70,7 @@ i {
 .go-top {
     opacity: 1;
     visibility: visible;
-    bottom: 95px;
+    bottom: 85px;
     margin-right: 5px;
 }
 :hover {

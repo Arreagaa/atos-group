@@ -2,7 +2,7 @@
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
 import "swiper/css/navigation";
-import { Navigation } from "swiper";
+import { Navigation, Autoplay } from "swiper";
 export default {
     components: {
         Swiper,
@@ -10,14 +10,23 @@ export default {
     },
     setup() {
         return {
-            modules: [Navigation],
+            modules: [Navigation, Autoplay],
         };
     },
 };
 </script>
 <template>
     <div class="swiper">
-        <swiper :navigation="true" :modules="modules" class="mySwiper">
+        <swiper
+            :navigation="true"
+            :loop="true"
+            :autoplay="{
+                delay: 5000,
+                disableOnInteraction: false,
+            }"
+            :modules="modules"
+            class="mySwiper"
+        >
             <swiper-slide>
                 <card
                     class="card bg-[url('/assets/4-Exportacion/fondoexport.png')] flex flex-wrap items-center -mx-3 font-sans px-4 mx-auto w-full pb-20"
