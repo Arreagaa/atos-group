@@ -14,7 +14,7 @@ import { Link } from "@inertiajs/inertia-vue3";
                     <div class="icons mt-6 lg:mb-0 mb-6 md:px-0 px-3">
                         <a
                             class="inline-flex tracking-wide no-underline hover:no-underline"
-                            href="/"
+                            href="https://www.facebook.com/grupoatosgt?mibextid=LQQJ4d"
                             target="_blank"
                         >
                             <img
