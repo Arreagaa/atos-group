@@ -27,7 +27,7 @@ watch(isMenuOpen, (newIsMenuOpen) => {
     <div class="bg-white max-w-fill font-bold">
         <nav id="header" class="w-full z-30 top-0 py-1">
             <div
-                class="w-full xl:container mx-auto flex flex-wrap items-center justify-between mt-0 px-3 py-6"
+                class="w-full 2xl:container mx-auto flex flex-wrap items-center justify-between mt-0 px-3 py-6"
             >
                 <label
                     for="menu-toggle"

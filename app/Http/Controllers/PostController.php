@@ -48,7 +48,7 @@ class PostController extends Controller
         return Redirect::route('dashboard');
     }
 
-    public function edit(post $post)
+    public function edit(Post $post)
     {
         return Inertia::render('News/utils/AEdit', ['post' => $post]);
     }

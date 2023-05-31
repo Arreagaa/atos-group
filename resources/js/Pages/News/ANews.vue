@@ -48,7 +48,7 @@ export default {
                 :src="'/storage/images/' + post.image"
                 alt=""
             />
-            <div class="py-3">
+            <div class="py-3 lg:px-2">
                 <span class="lightFont text-sm text-primary">{{
                     post.created_at
                 }}</span>
@@ -57,15 +57,20 @@ export default {
                 >
                     {{ post.title }}
                 </h3>
-                <p class="regularFont paragraph-normal text-gray-600 h-12">
+                <p
+                    class="regularFont paragraph-normal text-gray-600 xl:h-14 h-16"
+                >
                     {{ post.description }}
                 </p>
-                <a
-                    class="lightFont mt-3 block"
-                    :href="'/storage/pdf/' + post.pdf"
-                    target="_blank"
-                    >{{ $t("Leer más") }} >></a
-                >
+                <div class="flex mt-3">
+                    <a
+                        class="lightFont"
+                        :href="'/storage/pdf/' + post.pdf"
+                        target="_blank"
+                    >
+                        {{ $t("Leer más") }} >>
+                    </a>
+                </div>
                 <div v-if="$page.props.user" class="flex items-center py-4">
                     <a :href="route('posts.edit', post.id)"
                         ><l-icon

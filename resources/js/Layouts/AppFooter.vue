@@ -96,15 +96,14 @@ import { Link } from "@inertiajs/inertia-vue3";
                                 <li>
                                     <Link
                                         class="hover:text-[#e7bd5f] block pb-2"
-                                        href="/"
-                                        target="_blank"
+                                        :href="route('posts.index')"
                                         >{{ $t("Noticias") }}</Link
                                     >
                                 </li>
                                 <li>
                                     <Link
                                         class="hover:text-[#e7bd5f] block pb-2"
-                                        href="/"
+                                        :href="route('sustainability')"
                                         >{{ $t("Nuestro Enfoque") }}</Link
                                     >
                                 </li>

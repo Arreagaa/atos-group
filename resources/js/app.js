@@ -44,6 +44,7 @@ import {
     faBriefcase,
     faScrewdriver,
     faXmark,
+    faPlay,
 } from "@fortawesome/free-solid-svg-icons";
 
 /* add icons to the library */
@@ -70,7 +71,8 @@ library.add(
     faImage,
     faPenToSquare,
     faTrashCan,
-    faXmark
+    faXmark,
+    faPlay
 );
 
 const appName =
