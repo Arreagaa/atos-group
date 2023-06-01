@@ -35,7 +35,7 @@ function playVideo() {
                 v-else
                 id="youtube-iframe"
                 class="w-full h-full"
-                src="https://www.youtube.com/embed/n4XloocUmX0?autoplay=1"
+                src="https://www.youtube.com/embed/n4XloocUmX0?autoplay=1&rel=0"
                 frameborder="0"
                 allow="autoplay; encrypted-media"
                 allowfullscreen
