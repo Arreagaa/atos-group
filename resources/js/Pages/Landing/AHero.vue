@@ -4,7 +4,7 @@
         id="hero"
         class="w-full h-screen overflow-hidden relative md:h-screen-150vh md:aspect-w-100 md:aspect-h-150"
     >
-        <div class="w-full 2xl:container md:mx-auto px-3 pt-20">
+        <div class="w-full 2xl:container mx-auto md:px-3 pt-20">
             <div
                 class="flex flex-wrap items-center lg:-mx-6 lg:px-4 lg:py-4 -mx-3 px-3 mx-auto w-full lg:max-w-screen-lg sm:max-w-screen-sm md:max-w-screen-md"
             >
