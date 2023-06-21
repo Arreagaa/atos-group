@@ -7,9 +7,9 @@ import AppFooter from "../../Layouts/AppFooter.vue";
     <div
         class="lg:py-72 py-48 lg:bg-[url('/assets/img/laboratory.jpeg')] bg-[url('/assets/img/laboratoryrs.jpeg')] bg-cover bg-center"
     >
-        <div class="container items-center m-auto px-6 text-white">
+        <div class="container items-center m-auto md:px-6 px-4 text-white">
             <p
-                class="boldFont lg:text-8xl text-5xl boldFont font-bold text-center"
+                class="res-title boldFont lg:text-8xl text-5xl boldFont font-bold text-center"
             >
                 {{ $t("Laboratorio") }}
             </p>

@@ -7,8 +7,8 @@ import AppFooter from "../../Layouts/AppFooter.vue";
     <div
         class="lg:py-72 py-48 bg-[url('/assets/img/Environment.jpeg')] bg-cover bg-center"
     >
-        <div class="container items-center m-auto px-6 text-white">
-            <p class="boldFont lg:text-8xl text-5xl font-bold text-center">
+        <div class="container items-center m-auto md:px-6 px-4 text-white">
+            <p class="res-title boldFont lg:text-8xl text-5xl font-bold text-center">
                 {{ $t("Agricultura Regenerativa") }}
             </p>
             <p

@@ -7,9 +7,9 @@ import AppFooter from "../../Layouts/AppFooter.vue";
     <div
         class="lg:py-72 py-48 bg-[url('/assets/img/socialWork.jpeg')] bg-cover bg-center"
     >
-        <div class="container items-center m-auto px-6 text-white">
+        <div class="container items-center m-auto md:px-6 px-4 text-white">
             <p
-                class="boldFont lg:text-8xl text-5xl font-bold text-center capitalize"
+                class="res-title boldFont lg:text-8xl text-5xl font-bold text-center capitalize"
             >
                 {{ $t("Trabajo social") }}
             </p>

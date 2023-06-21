@@ -13,7 +13,7 @@
                         class="text-[#e7bd5f] mx-auto mb-8 max-w-lg text-center lg:mx-0 lg:max-w-md lg:text-left"
                     >
                         <h2
-                            class="blackFont atos mb-4 font-semibold text-left lg:text-8xl max-[375px]:text-6xl res-size"
+                            class="blackFont atos mb-4 font-semibold text-left lg:text-8xl max-[375px]:text-6xl res-sizez max-[320px]:text-5xl"
                             :class="
                                 $i18n.locale === 'es' ? 'text-7xl' : 'text-6xl'
                             "

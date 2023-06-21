@@ -31,7 +31,7 @@ export default {
                 <card
                     class="card bg-[url('/assets/4-Exportacion/fondoexport.png')] flex flex-wrap items-center -mx-3 font-sans px-4 mx-auto w-full pb-20"
                 >
-                    <div class="lg:block hidden px-40 ml-64 w-full lg:w-2/5">
+                    <div class="lg:block hidden px-40 ml-64 w-full">
                         <div
                             class="mx-auto mb-8 max-w-lg text-left lg:mx-0 lg:max-w-md lg:text-left"
                         >
@@ -71,7 +71,7 @@ export default {
                         </div>
                     </div>
 
-                    <div class="lg:hidden px-4 ml-3 w-full lg:w-2/5">
+                    <div class="lg:hidden px-4 ml-3 w-full">
                         <div
                             class="mx-auto mb-8 max-w-lg lg:mx-0 lg:max-w-md text-left"
                         >
@@ -82,7 +82,7 @@ export default {
                             </h2>
 
                             <h2
-                                class="blackFont box mb-4 text-7xl font-bold text-left text-[#e7bd5f]"
+                                class="blackFont box mb-4 text-7xl max-[320px]:text-5xl font-bold text-left text-[#e7bd5f]"
                             >
                                 1,632,000
                             </h2>
@@ -110,7 +110,7 @@ export default {
                 ><card
                     class="card bg-[url('/assets/banners/banner_trazabilidad.png')] bg-center flex flex-wrap items-center -mx-3 font-sans px-4 mx-auto w-full pb-20"
                 >
-                    <div class="lg:block hidden px-40 ml-64 w-full lg:w-2/5">
+                    <div class="lg:block hidden px-40 ml-64 w-full">
                         <div
                             class="mx-auto mb-8 max-w-lg text-left lg:mx-0 lg:max-w-md lg:text-left"
                         >
@@ -136,7 +136,7 @@ export default {
                         </div>
                     </div>
 
-                    <div class="lg:hidden px-4 ml-6 w-full lg:w-2/5">
+                    <div class="lg:hidden px-4 ml-6 w-full">
                         <div
                             class="mx-auto mb-40 max-w-lg text-left lg:mx-0 lg:max-w-md lg:text-left"
                         >
@@ -146,7 +146,7 @@ export default {
                                 {{ $t("Contamos con equipo experto en") }}
                             </p>
                             <p
-                                class="blackFont text-box visible mx-0 mb-0 text-5xl leading-relaxed text-[#e7bd5f]"
+                                class="blackFont text-box visible mx-0 mb-0 text-5xl max-[320px]:text-4xl max-[320px]:py-4 leading-relaxed text-[#e7bd5f]"
                             >
                                 {{ $t("Trazabilidad") }}
                             </p>
@@ -167,7 +167,7 @@ export default {
                 ><card
                     class="card bg-[url('/assets/banners/banner_sostenibilidad.png')] flex flex-wrap items-center -mx-3 font-sans px-4 mx-auto w-full pb-20"
                 >
-                    <div class="lg:block hidden px-36 ml-64 w-full lg:w-2/5">
+                    <div class="lg:block hidden px-36 ml-64 w-full">
                         <div
                             class="mx-auto mb-8 max-w-lg text-left lg:mx-0 lg:max-w-md lg:text-left"
                         >
@@ -188,12 +188,12 @@ export default {
                         </div>
                     </div>
 
-                    <div class="lg:hidden px-4 ml-6 w-full lg:w-2/5">
+                    <div class="lg:hidden px-4 ml-6 w-full">
                         <div
                             class="mx-auto mb-40 max-w-lg text-left lg:mx-0 lg:max-w-md lg:text-left"
                         >
                             <p
-                                class="blackFont text-box visible mx-0 mb-0 text-5xl leading-relaxed text-white"
+                                class="blackFont text-box visible mx-0 mb-0 text-5xl max-[320px]:text-4xl max-[320px]:py-4 leading-relaxed text-white"
                             >
                                 {{ $t("Sostenibilidad") }}
                             </p>

@@ -1,7 +1,7 @@
 <template>
     <div>
         <div
-            class="container mx-auto flex justify-center items-center px-4 md:px-10 pb-10"
+            class="container mx-auto md:flex justify-center items-center px-4 md:px-10 pb-10"
         >
             <div
                 class="lightFont text-history bg-transparent text-xl text-black font-normal px-3 md:px-4 py-2 flex flex-col justify-center items-center"
@@ -31,7 +31,7 @@
                 </p>
                 <br />
                 <div class="flex flex-wrap mt-10 justify-center uppercase">
-                    <div class="w-full lg:w-3/12 px-32 py-6 text-center">
+                    <div class="w-full lg:w-3/12 md:px-32 py-6 text-center">
                         <div
                             class="text-lightBlue-300 p-3 w-24 h-24 inline-flex items-center justify-center"
                         >

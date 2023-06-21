@@ -31,18 +31,18 @@ watch(isMenuOpen, (newIsMenuOpen) => {
             >
                 <label
                     for="menu-toggle"
-                    class="absolute top-9 right-6 cursor-pointer lg:hidden block"
+                    class="absolute top-9 right-6 cursor-pointer lg:hidden block text-2xl max-[320px]:text-xl flex items-center"
                 >
                     <l-icon
                         v-if="!isMenuOpen"
                         icon="fa-solid fa-bars"
-                        class="text-white text-2xl"
+                        class="text-white"
                         @click="toggleMenu"
                     />
                     <l-icon
                         v-else
                         icon="fa-solid fa-xmark"
-                        class="text-white text-2xl"
+                        class="text-white"
                         @click="toggleMenu"
                     />
                 </label>
@@ -241,7 +241,7 @@ watch(isMenuOpen, (newIsMenuOpen) => {
                 </div>
                 <div>
                     <Link
-                        class="flex items-center mx-4"
+                        class="flex items-center mx-4 max-[320px]:mr-8 max-[320px]:mx-0"
                         :href="route('landing')"
                     >
                         <img

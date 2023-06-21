@@ -7,9 +7,9 @@ import AppFooter from "../../Layouts/AppFooter.vue";
     <div
         class="lg:py-72 py-48 bg-[url('/assets/img/Bio-security.jpeg')] bg-cover"
     >
-        <div class="container items-center m-auto px-6 text-white">
+        <div class="container items-center m-auto md:px-6 px-4 text-white">
             <p
-                class="boldFont lg:text-8xl text-5xl font-bold text-center capitalze"
+                class="res-title boldFont lg:text-8xl text-5xl font-bold text-center capitalze"
             >
                 {{ $t("Bio-seguridad") }}
             </p>

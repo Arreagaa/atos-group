@@ -7,8 +7,8 @@ import AppFooter from "../../Layouts/AppFooter.vue";
     <div
         class="lg:py-72 py-48 bg-[url('/assets/img/Sostenibillidad.jpg')] bg-cover"
     >
-        <div class="container items-center m-auto px-6 text-white">
-            <p class="boldFont lg:text-8xl text-5xl font-bold text-center">
+        <div class="container items-center m-auto md:px-6 px-4 text-white">
+            <p class="res-title boldFont lg:text-8xl text-5xl font-bold text-center">
                 {{ $t("Sostenibilidad") }}
             </p>
             <p
@@ -25,7 +25,7 @@ import AppFooter from "../../Layouts/AppFooter.vue";
 
     <div class="max-w-app lg:my-40 items-left text-left">
         <div
-            class="container max-w-5xl mx-auto lg:m-8 m-12 px-3 py-8 uppercase"
+            class="container lg:max-w-5xl mx-auto lg:m-8 m-12 px-3 py-8 uppercase"
         >
             <span
                 class="boldFont leading-tight mx-auto w-full my-2 lg:text-5xl text-3xl font-bold leading-tight text-[#e7bd5f]"
